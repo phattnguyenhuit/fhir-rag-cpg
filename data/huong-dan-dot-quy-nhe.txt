@@ -1,0 +1,70 @@
+1. ĐẠI CƯƠNG
+1.1. Định nghĩa
+1.1.1. Đột quỵ nhẹ
+Đột quỵ nhẹ là tình trạng đột quỵ nhồi máu não mà có điểm NIHSS (thang điểm đột quỵ
+của Viện sức khỏe Quốc gia Hoa Kỳ) ≤ 5 điểm.
+1.1.2. Cơn thiếu máu não thoáng qua
+Cơn thiếu máu não thoáng qua (CTMNTQ) được định nghĩa là sự khởi phát đột ngột
+triệu chứng thần kinh khu trú do thiếu máu não ở một khu vực hoặc võng mạc, và các
+triệu chứng này kéo dài không quá 24 giờ và không có sự hiện diện tổn thương nhồi máu
+não cấp trên hình ảnh cộng hưởng từ.
+1.2. Dịch tễ học
+Hàng năm tại Hoa Kỳ có 200.000 đến 500.000 trường hợp được chẩn đoán CTMNTQ,
+tỷ lệ hiện mắc trong dân số chiếm 2,3% và 1/15 số người trên 65 tuổi có tiền căn
+CTMNTQ. Ở Anh, 150.000 trường hợp CTMNTQ xảy ra hàng năm. Theo báo cáo thống
+kê năm 2020 ở Hàn Quốc, 29,7% tổng số người bệnh nhồi máu não đến viện trong 24
+giờ đầu là đột quỵ nhẹ và 7,4% các người bệnh đó bị rung nhĩ kèm theo nhồi máu não.
+Như vậy có đến ít nhất hơn một phần ba số người bệnh nhồi máu não cục bộ ở Hàn Quốc
+có mức độ nhẹ và người bệnh thiếu máu não thoáng qua trước đó có nhiều nguy cơ cao
+tiến triển hoặc tái phát đột quỵ sớm.
+2. NGUYÊN NHÂN
+- Xơ vữa động mạch lớn
+- Huyết khối tim
+- Tắc mạch nhỏ
+- Căn nguyên khác
+- Căn nguyên chưa xác định
+3. CHẨN ĐOÁN
+3.1. Lâm sàng
+3.1.1. Triệu chứng
+Một số dấu hiệu thần kinh khu trú điển hình có thể gặp và dễ bị bỏ qua như: méo miệng
+nhẹ, chóng mặt, thất điều, nói khó, rung giật nhãn cầu, rối loạn cảm giác một bên hoặc
+liệt nhẹ khu trú nửa người, liệt một tay hoặc chân, các triệu chứng có thể tiến triển nặng
+dần lên hoặc tiến triển nặng lên thành từng bậc.
+Triệu chứng thần kinh khu trú gây khuyết tật được định nghĩa là khiếm khuyết thần kinh,
+nếu không cải thiện, sẽ ngăn cản người bệnh thực hiện các hoạt động cơ bản của cuộc
+sống hàng ngày (ví dụ: tắm/mặc quần áo, đi lại, vệ sinh và ăn uống) hoặc quay trở lại
+làm việc như thường ngày
+3.2. Cận lâm sàng
+3.2.1. Chẩn đoán hình ảnh
+- Cắt lớp vi tính sọ não không tiêm thuốc cản quang: một số dấu hiệu sớm của nhồi
+máu não
++ Mất phân biệt chất xám chất trắng
++ Giảm tỷ trọng nhân xám
++ Giảm tỷ trọng vùng vỏ não, mất phân biệt rãnh cuộn não
+- Cộng hưởng từ não-mạch não:
++ Xác định vị trí và hình thái tổn thương nhu mô (tăng tín hiệu trên xung DWI và FLAIR), chảy máu chuyển dạng (giảm tín hiệu trên T2*)
++ Đánh giá mạch nội sọ qua xung TOF: vị trí hẹp/tắc/lóc tách
+3.2.2. Chẩn đoán chức năng
+- Siêu âm tim qua thành ngực và qua thực quản giúp xác định: hẹp hai lá, bệnh lý van
+tim khác, suy tim, huyết khối buồng tim, còn lỗ bầu dục…
+- Điện tim và Holter điện tim xác định rung nhĩ.
+- Siêu âm Doppler xuyên sọ xác định tình trạng hẹp mạch nội sọ và phát hiện luồng
+thông phải – trái bằng test bóng khí.
+- Siêu âm Doppler mạch cảnh, động mạch đốt sống xác định tình trạng vữa xơ, hẹp
+động mạch cảnh ngoài sọ.
+3.2.3. Các xét nghiệm máu
+- Đánh giá công thức máu, CRP, PT, APTT, điện giải đồ, creatinine, glucose, HbA1c,
+lipid máu (Cholesterol toàn phần; LDL – Cholesterol; HDL – Cholesterol; ApoA;
+ApoB và Triglyceride máu), tốc độ máu lắng…
+- Các xét nghiệm bệnh tự miễn như lupus, viêm mạch tự miễn, các yếu tố liên quan
+đến quá trình tăng đông như protein S, protein C, AT III…
+3.3. Chẩn đoán xác định
+3.3.1. Cơn thiếu máu não thoáng qua
+- Có triệu chứng tổn thương thần kinh khu trú, triệu chứng kéo dài <24 giờ và không
+có hình ảnh tổn thương trên xung DWI của cộng hưởng từ não.
+3.3.2. Đột quỵ nhẹ
+- Có triệu chứng tổn thương thần kinh khu trú, có hình ảnh tổn thương trên xung DWI
+của cộng hưởng từ não và điểm NIHSS ≤ 5 điểm.
+3.4. Chẩn đoán phân biệt
+- Cần chẩn đoán phân biệt với một số bệnh có triệu chứng tương tự như đau nửa đầu,
+ngất, động kinh, cơn mất trí nhớ thoáng qua, cơn hạ glucose máu…

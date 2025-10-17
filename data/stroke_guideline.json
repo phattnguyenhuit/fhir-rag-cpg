@@ -1,0 +1,304 @@
+{
+  "resourceType": "Bundle",
+  "type": "collection",
+  "id": "dieu-tri-chan-doan-dot-quy-bundle",
+  "entry": [
+    {
+      "fullUrl": "urn:uuid:plan-dieu-tri-chan-doan-dot-quy",
+      "resource": {
+        "resourceType": "PlanDefinition",
+        "id": "dieu-tri-chan-doan-dot-quy-plan",
+        "title": "Chẩn đoán và Điều trị - Đột quỵ / CTMNTQ",
+        "status": "draft",
+        "date": "2025-10-09",
+        "description": "PlanDefinition generated from guideline markdown",
+        "action": [
+          { "title": "Quan sát và tái khám", "definitionCanonical": "ActivityDefinition/dieu-tri-chan-doan-dot-quy-activity-observe_and_followup" },
+          { "title": "Chẩn đoán TIA", "definitionCanonical": "ActivityDefinition/dieu-tri-chan-doan-dot-quy-activity-diagnose_TIA" },
+          { "title": "Chống kết tập tiểu cầu đơn", "definitionCanonical": "ActivityDefinition/dieu-tri-chan-doan-dot-quy-activity-single_antiplatelet_low_risk" },
+          { "title": "DAPT sớm cho nguy cơ cao", "definitionCanonical": "ActivityDefinition/dieu-tri-chan-doan-dot-quy-activity-early_DAPT_if_high_risk" },
+          { "title": "Chống kết tập tiểu cầu hoặc cân nhắc nguy cơ", "definitionCanonical": "ActivityDefinition/dieu-tri-chan-doan-dot-quy-activity-antiplatelet_or_consider_risk" },
+          { "title": "Chuyển viện / quản lý đột quỵ nặng", "definitionCanonical": "ActivityDefinition/dieu-tri-chan-doan-dot-quy-activity-stroke_management_refer" },
+          { "title": "Đường điều trị chống kết tập tiểu cầu", "definitionCanonical": "ActivityDefinition/dieu-tri-chan-doan-dot-quy-activity-antiplatelet_pathway" },
+          { "title": "Kháng đông cho rung nhĩ", "definitionCanonical": "ActivityDefinition/dieu-tri-chan-doan-dot-quy-activity-anticoagulation_for_af" },
+          { "title": "Kháng VKA cho van cơ học", "definitionCanonical": "ActivityDefinition/dieu-tri-chan-doan-dot-quy-activity-anticoagulation_vka_mechanical_valve" },
+          { "title": "Quyết định kháng đông hoặc kháng kết tập", "definitionCanonical": "ActivityDefinition/dieu-tri-chan-doan-dot-quy-activity-anticoagulation_or_antiplatelet_decision" },
+          { "title": "Xem xét tái thông động mạch cảnh", "definitionCanonical": "ActivityDefinition/dieu-tri-chan-doan-dot-quy-activity-consider_carotid_revascularization" },
+          { "title": "Điều trị nội khoa tối ưu", "definitionCanonical": "ActivityDefinition/dieu-tri-chan-doan-dot-quy-activity-medical_management" },
+          { "title": "Tham vấn chuyên gia", "definitionCanonical": "ActivityDefinition/dieu-tri-chan-doan-dot-quy-activity-consult_specialist" },
+          { "title": "Quản lý yếu tố nguy cơ", "definitionCanonical": "ActivityDefinition/dieu-tri-chan-doan-dot-quy-activity-risk_factor_management" },
+          { "title": "Sắp xếp tái khám", "definitionCanonical": "ActivityDefinition/dieu-tri-chan-doan-dot-quy-activity-schedule_followup" },
+          { "title": "Sắp xếp tái khám khẩn", "definitionCanonical": "ActivityDefinition/dieu-tri-chan-doan-dot-quy-activity-arrange_followup" }
+        ],
+        "library": [
+          "Library/dieu-tri-chan-doan-dot-quy-library"
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:library-dieu-tri-chan-doan-dot-quy",
+      "resource": {
+        "resourceType": "Library",
+        "id": "dieu-tri-chan-doan-dot-quy-library",
+        "title": "Library for dieu-tri-chan-doan-dot-quy",
+        "status": "draft",
+        "type": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/library-type",
+              "code": "logic-library",
+              "display": "Logic Library"
+            }
+          ]
+        },
+        "content": [
+          {
+            "contentType": "text/cql",
+            "data": "VGhpcyBpcyBhIHBsYWNlaG9sZGVyIGZvciBDUUwgY29udGVudCBmb3IgZGVtb25zdHJhdGlvbi4="
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:questionnaire-dieu-tri-chan-doan-dot-quy",
+      "resource": {
+        "resourceType": "Questionnaire",
+        "id": "dieu-tri-chan-doan-dot-quy-questionnaire",
+        "title": "Questionnaire - Chẩn đoán/Điều trị Đột quỵ/TIA",
+        "status": "draft",
+        "item": [
+          {
+            "linkId": "clinical_neurological_signs",
+            "text": "Có dấu hiệu thần kinh khu trú?",
+            "type": "boolean"
+          },
+          {
+            "linkId": "imaging_and_classification",
+            "text": "Đã thực hiện hình ảnh học (CT/MRI)?",
+            "type": "choice",
+            "option": [
+              { "valueString": "DWI dương" },
+              { "valueString": "DWI âm" }
+            ]
+          },
+          {
+            "linkId": "assess_tia_vs_minor",
+            "text": "Triệu chứng <24h và không có DWI tổn thương (TIA)?",
+            "type": "boolean"
+          },
+          {
+            "linkId": "classify_by_nihss",
+            "text": "Điểm NIHSS",
+            "type": "decimal"
+          },
+          {
+            "linkId": "abc_d2_score",
+            "text": "ABCD2 score",
+            "type": "decimal"
+          },
+          {
+            "linkId": "atrial_fibrillation_check",
+            "text": "Có rung nhĩ?",
+            "type": "boolean"
+          },
+          {
+            "linkId": "valvular_heart_disease_check",
+            "text": "Có bệnh van tim nặng?",
+            "type": "boolean"
+          },
+          {
+            "linkId": "carotid_stenosis_assessment",
+            "text": "Tỉ lệ hẹp động mạch cảnh (%)",
+            "type": "decimal"
+          },
+          {
+            "linkId": "intracranial_stenosis_or_dissection",
+            "text": "Hẹp mạch nội sọ / lóc tách?",
+            "type": "choice",
+            "option": [
+              { "valueString": "Lóc tách" },
+              { "valueString": "Xơ vữa nội sọ" }
+            ]
+          },
+          {
+            "linkId": "risk_factors_review",
+            "text": "Đã đánh giá các yếu tố nguy cơ?",
+            "type": "group",
+            "item": [
+              { "linkId": "bp_control", "text": "Huyết áp được kiểm soát?", "type": "boolean" },
+              { "linkId": "lipid_control", "text": "LDL-C mục tiêu đạt?", "type": "boolean" },
+              { "linkId": "diabetes_control", "text": "HbA1c mục tiêu đạt?", "type": "boolean" }
+            ]
+          },
+          {
+            "linkId": "followup_management",
+            "text": "Sắp xếp tái khám?",
+            "type": "boolean"
+          }
+        ]
+      }
+    }
+    ,
+    {
+      "fullUrl": "urn:uuid:activity-observe_and_followup",
+      "resource": {
+        "resourceType": "ActivityDefinition",
+        "id": "dieu-tri-chan-doan-dot-quy-activity-observe_and_followup",
+        "status": "draft",
+        "kind": "ServiceRequest",
+        "subjectCodeableConcept": { "text": "Patient" },
+        "description": "Quan sát lâm sàng và sắp xếp tái khám"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:activity-diagnose_TIA",
+      "resource": {
+        "resourceType": "ActivityDefinition",
+        "id": "dieu-tri-chan-doan-dot-quy-activity-diagnose_TIA",
+        "status": "draft",
+        "kind": "ServiceRequest",
+        "description": "Chẩn đoán CTMNTQ và khởi trị phòng ngừa sớm"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:activity-single_antiplatelet_low_risk",
+      "resource": {
+        "resourceType": "ActivityDefinition",
+        "id": "dieu-tri-chan-doan-dot-quy-activity-single_antiplatelet_low_risk",
+        "status": "draft",
+        "kind": "MedicationRequest",
+        "description": "Bắt đầu aspirin hoặc thuốc thay thế phù hợp"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:activity-early_DAPT_if_high_risk",
+      "resource": {
+        "resourceType": "ActivityDefinition",
+        "id": "dieu-tri-chan-doan-dot-quy-activity-early_DAPT_if_high_risk",
+        "status": "draft",
+        "kind": "MedicationRequest",
+        "description": "Khởi trị DAPT sớm (aspirin + clopidogrel hoặc aspirin + ticagrelor) theo chỉ dẫn"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:activity-antiplatelet_or_consider_risk",
+      "resource": {
+        "resourceType": "ActivityDefinition",
+        "id": "dieu-tri-chan-doan-dot-quy-activity-antiplatelet_or_consider_risk",
+        "status": "draft",
+        "kind": "MedicationRequest",
+        "description": "Chống kết tập tiểu cầu hoặc cân nhắc nguy cơ và lựa chọn"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:activity-stroke_management_refer",
+      "resource": {
+        "resourceType": "ActivityDefinition",
+        "id": "dieu-tri-chan-doan-dot-quy-activity-stroke_management_refer",
+        "status": "draft",
+        "kind": "ServiceRequest",
+        "description": "Quy trình quản lý đột quỵ nặng và chuyển viện chuyên khoa"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:activity-antiplatelet_pathway",
+      "resource": {
+        "resourceType": "ActivityDefinition",
+        "id": "dieu-tri-chan-doan-dot-quy-activity-antiplatelet_pathway",
+        "status": "draft",
+        "kind": "MedicationRequest",
+        "description": "Chu trình điều trị chống kết tập tiểu cầu theo mức độ nguy cơ"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:activity-anticoagulation_for_af",
+      "resource": {
+        "resourceType": "ActivityDefinition",
+        "id": "dieu-tri-chan-doan-dot-quy-activity-anticoagulation_for_af",
+        "status": "draft",
+        "kind": "MedicationRequest",
+        "description": "Kháng đông cho rung nhĩ - ưu tiên DOAC nếu phù hợp"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:activity-anticoagulation_vka_mechanical_valve",
+      "resource": {
+        "resourceType": "ActivityDefinition",
+        "id": "dieu-tri-chan-doan-dot-quy-activity-anticoagulation_vka_mechanical_valve",
+        "status": "draft",
+        "kind": "MedicationRequest",
+        "description": "Sử dụng VKA cho van cơ học với mục tiêu INR 2.5-3.5"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:activity-anticoagulation_or_antiplatelet_decision",
+      "resource": {
+        "resourceType": "ActivityDefinition",
+        "id": "dieu-tri-chan-doan-dot-quy-activity-anticoagulation_or_antiplatelet_decision",
+        "status": "draft",
+        "kind": "ServiceRequest",
+        "description": "Quyết định giữa kháng đông và kháng kết tập tiểu cầu dựa trên nguyên nhân và nguy cơ"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:activity-consider_carotid_revascularization",
+      "resource": {
+        "resourceType": "ActivityDefinition",
+        "id": "dieu-tri-chan-doan-dot-quy-activity-consider_carotid_revascularization",
+      "status": "draft",
+      "kind": "ServiceRequest",
+      "description": "Đánh giá và cân nhắc tái thông động mạch cảnh (stent/CEA)"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:activity-medical_management",
+      "resource": {
+        "resourceType": "ActivityDefinition",
+        "id": "dieu-tri-chan-doan-dot-quy-activity-medical_management",
+        "status": "draft",
+        "kind": "ServiceRequest",
+        "description": "Điều trị nội khoa tối ưu và kiểm soát yếu tố nguy cơ"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:activity-consult_specialist",
+      "resource": {
+        "resourceType": "ActivityDefinition",
+        "id": "dieu-tri-chan-doan-dot-quy-activity-consult_specialist",
+        "status": "draft",
+        "kind": "ServiceRequest",
+        "description": "Tham vấn chuyên gia thần kinh mạch máu hoặc can thiệp"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:activity-risk_factor_management",
+      "resource": {
+        "resourceType": "ActivityDefinition",
+        "id": "dieu-tri-chan-doan-dot-quy-activity-risk_factor_management",
+        "status": "draft",
+        "kind": "ServiceRequest",
+        "description": "Kế hoạch kiểm soát huyết áp, lipid, đường, lối sống"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:activity-schedule_followup",
+      "resource": {
+        "resourceType": "ActivityDefinition",
+        "id": "dieu-tri-chan-doan-dot-quy-activity-schedule_followup",
+        "status": "draft",
+        "kind": "ServiceRequest",
+        "description": "Sắp xếp tái khám định kỳ"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:activity-arrange_followup",
+      "resource": {
+        "resourceType": "ActivityDefinition",
+        "id": "dieu-tri-chan-doan-dot-quy-activity-arrange_followup",
+        "status": "draft",
+        "kind": "ServiceRequest",
+        "description": "Sắp xếp tái khám khẩn trong 1-2 tuần nếu cần"
+      }
+    }
+  ]
+}
