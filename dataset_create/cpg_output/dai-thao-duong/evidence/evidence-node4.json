@@ -1,0 +1,20 @@
+{
+  "resourceType": "Evidence",
+  "id": "evidence-node4",
+  "url": "http://example.org/fhir/Evidence/evidence-node4",
+  "title": "Evidence for Bắt đầu điều trị",
+  "status": "draft",
+  "description": "Bắt đầu điều trị đái tháo đường típ 2",
+  "certainty": [
+    {
+      "rating": {
+        "text": "high"
+      },
+      "note": [
+        {
+          "text": "Recommendation strength: strong"
+        }
+      ]
+    }
+  ]
+}

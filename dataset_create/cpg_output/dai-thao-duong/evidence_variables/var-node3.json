@@ -1,0 +1,14 @@
+{
+  "resourceType": "EvidenceVariable",
+  "id": "var-node3",
+  "url": "http://example.org/fhir/EvidenceVariable/var-node3",
+  "name": "glucose_huy_t_t__ng",
+  "title": "Glucose huyết tương",
+  "status": "draft",
+  "description": "Measurement: Glucose huyết tương (Unit: mg/dL)",
+  "note": [
+    {
+      "text": "Normal range: < 126, Threshold: ≥ 126"
+    }
+  ]
+}

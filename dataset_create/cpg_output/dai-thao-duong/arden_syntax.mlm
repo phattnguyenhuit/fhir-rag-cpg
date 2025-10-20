@@ -1,0 +1,87 @@
+maintenance:
+    title: Hướng_dẫn_chẩn_đoán_và_điều_trị_đái_tháo_đường_típ_2;;
+    mlmname: h--ng-d-n-ch-n--o-n-v---i-u-tr----i-th-o----ng-t-p-2;;
+    arden: Version 2.10;;
+    version: 1.0.0;;
+    institution: Generated from Medical Document;;
+    author: Automated Conversion System;;
+    specialist: ;;
+    date: 2025-10-20;;
+    validation: testing;;
+
+library:
+    purpose: Chẩn đoán và điều trị đái tháo đường típ 2;;
+    explanation: This MLM implements clinical decision logic extracted from
+                 a medical guideline document using AI text analysis and
+                 converted to FHIR PlanDefinition format.;;
+    keywords: Đái tháo đường típ 2;;
+    citations: ;;
+
+knowledge:
+    type: data-driven;;
+    
+    data:
+        /* Patient identifiers */
+        patient_id := read {patient_identifier};
+        encounter_id := read {encounter_id};
+        
+        /* Clinical data elements from document */
+        node1 := read {Triệu chứng kinh điển của tăng glucose huyết};
+        node3 := read {Glucose huyết tương lúc đói};
+    ;;
+    
+    evoke:
+        /* Trigger conditions */
+        Nghi ngờ đái tháo đường OR
+        clinical_decision_support_requested
+    ;;
+    
+    logic:
+        /* Initialize */
+        recommendations := [];
+        decision_path := "";
+        
+        /* Implement decision tree logic */
+
+        /* Chẩn đoán đái tháo đường */
+        if node1 then
+        else
+        endif;
+
+        /* Chẩn đoán đái tháo đường */
+
+        /* Thực hiện xét nghiệm chẩn đoán */
+        if node3 then
+        else
+        endif;
+
+        /* Bắt đầu điều trị */
+
+        /* Theo dõi và xét nghiệm lại */
+
+        /* Prepare output */
+        if count(recommendations) > 0 then
+            alert_needed := true;
+            alert_message := "Clinical Decision Support: " || 
+                          count(recommendations) || " recommendations";
+        else
+            alert_needed := false;
+            alert_message := "No specific recommendations at this time";
+        endif;
+    ;;
+    
+    action:
+        /* Execute recommendations */
+        if alert_needed then
+            write alert_message;
+            write "Decision Path: " || decision_path;
+            
+            for rec in recommendations do
+                write "  - " || rec;
+            enddo;
+            
+            return recommendations;
+        endif;
+    ;;
+
+end:

@@ -1,0 +1,20 @@
+{
+  "resourceType": "Evidence",
+  "id": "evidence-node2",
+  "url": "http://example.org/fhir/Evidence/evidence-node2",
+  "title": "Evidence for Chẩn đoán đái tháo đường",
+  "status": "draft",
+  "description": "Chẩn đoán đái tháo đường",
+  "certainty": [
+    {
+      "rating": {
+        "text": "high"
+      },
+      "note": [
+        {
+          "text": "Recommendation strength: strong"
+        }
+      ]
+    }
+  ]
+}

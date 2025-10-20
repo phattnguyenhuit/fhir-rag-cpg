@@ -1,0 +1,18 @@
+{
+  "resourceType": "ActivityDefinition",
+  "id": "action1",
+  "url": "http://example.org/fhir/ActivityDefinition/action1",
+  "name": "kh_i___u__i_u_tr__insulin",
+  "title": "Khởi đầu điều trị insulin",
+  "status": "draft",
+  "description": "Bắt đầu điều trị insulin nền cho bệnh nhân đái tháo đường típ 2.",
+  "kind": "MedicationRequest",
+  "intent": "proposal",
+  "priority": "routine",
+  "doNotPerform": false,
+  "dosage": [
+    {
+      "text": "0,1-0,2 đơn vị/kg Tiêm dưới da 1-2 lần/ngày"
+    }
+  ]
+}

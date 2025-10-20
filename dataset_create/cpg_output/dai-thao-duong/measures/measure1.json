@@ -1,0 +1,66 @@
+{
+  "resourceType": "Measure",
+  "id": "measure1",
+  "url": "http://example.org/fhir/Measure/measure1",
+  "name": "t__l__b_nh_nh_n____c_ch_n__o_n___i_th_o____ng",
+  "title": "Tỷ lệ bệnh nhân được chẩn đoán đái tháo đường",
+  "status": "draft",
+  "description": "Tỷ lệ bệnh nhân được chẩn đoán đúng theo tiêu chuẩn",
+  "scoring": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/measure-scoring",
+        "code": "proportion",
+        "display": "Proportion"
+      }
+    ]
+  },
+  "improvementNotation": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/measure-improvement-notation",
+        "code": "increase",
+        "display": "Increase"
+      }
+    ]
+  },
+  "group": [
+    {
+      "id": "main-group",
+      "population": [
+        {
+          "code": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                "code": "numerator",
+                "display": "Numerator"
+              }
+            ]
+          },
+          "description": "Số bệnh nhân được chẩn đoán đúng",
+          "criteria": {
+            "language": "text/cql",
+            "expression": "Số bệnh nhân được chẩn đoán đúng"
+          }
+        },
+        {
+          "code": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                "code": "denominator",
+                "display": "Denominator"
+              }
+            ]
+          },
+          "description": "Tổng số bệnh nhân được xét nghiệm",
+          "criteria": {
+            "language": "text/cql",
+            "expression": "Tổng số bệnh nhân được xét nghiệm"
+          }
+        }
+      ]
+    }
+  ]
+}

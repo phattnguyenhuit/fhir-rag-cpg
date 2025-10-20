@@ -1,0 +1,20 @@
+{
+  "resourceType": "Evidence",
+  "id": "evidence-node1",
+  "url": "http://example.org/fhir/Evidence/evidence-node1",
+  "title": "Evidence for Chẩn đoán đái tháo đường",
+  "status": "draft",
+  "description": "Có triệu chứng kinh điển của tăng glucose huyết không?",
+  "certainty": [
+    {
+      "rating": {
+        "text": "high"
+      },
+      "note": [
+        {
+          "text": "Recommendation strength: strong"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "resourceType": "Evidence",
+  "id": "evidence-node5",
+  "url": "http://example.org/fhir/Evidence/evidence-node5",
+  "title": "Evidence for Theo dõi và xét nghiệm lại",
+  "status": "draft",
+  "description": "Có cần xét nghiệm lại không?",
+  "certainty": [
+    {
+      "rating": {
+        "text": "moderate"
+      },
+      "note": [
+        {
+          "text": "Recommendation strength: weak"
+        }
+      ]
+    }
+  ]
+}

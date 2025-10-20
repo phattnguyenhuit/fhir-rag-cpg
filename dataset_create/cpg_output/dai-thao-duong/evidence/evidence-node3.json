@@ -1,0 +1,20 @@
+{
+  "resourceType": "Evidence",
+  "id": "evidence-node3",
+  "url": "http://example.org/fhir/Evidence/evidence-node3",
+  "title": "Evidence for Thực hiện xét nghiệm chẩn đoán",
+  "status": "draft",
+  "description": "Thực hiện xét nghiệm glucose huyết tương lúc đói?",
+  "certainty": [
+    {
+      "rating": {
+        "text": "high"
+      },
+      "note": [
+        {
+          "text": "Recommendation strength: strong"
+        }
+      ]
+    }
+  ]
+}

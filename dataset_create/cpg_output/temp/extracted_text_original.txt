@@ -1,113 +1,268 @@
-3 CHẨN ĐOÁN
-3.1 Lâm sàng
-Một số dấu hiệu thần kinh khu trú điển hình có thể gặp và dễ bị bỏ qua như: méo miệng nhẹ, chóng mặt, thất điều, nói khó, rung giật nhãn cầu, rối loạn cảm giác một bên hoặc liệt nhẹ khu trú nửa người, liệt một tay hoặc chân, các triệu chứng có thể tiến triển nặng dần lên hoặc tiến triển nặng lên thành từng bậc.
+BỘ Y TẾ
+________
+CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM
+Độc lập - Tự do - Hạnh phúc
+HƯỚNG DẪN CHẨN ĐOÁN VÀ ĐIỀU TRỊ ĐÁI THÁO ĐƯỜNG TÍP 2
+(Ban hành kèm theo Quyết định số 3319/QĐ-BYT
+ngày 19 tháng 7 năm 2017 của Bộ trưởng Bộ Y tế)
+I. ĐẠI CƯƠNG
+Bệnh đái tháo đường là bệnh rối loạn chuyển hóa không đồng nhất, có đặc điểm tăng
+glucose huyết do khiếm khuyết về tiết insulin, về tác động của insulin, hoặc cả hai. Tăng
+glucose mạn tính trong thời gian dài gây nên những rối loạn chuyển hóa carbohydrate,
+protide, lipide, gây tổn thương ở nhiều cơ quan khác nhau, đặc biệt ở tim và mạch máu,
+thận, mắt, thần kinh.
+Theo Liên đoàn Đái tháo đường Thế giới (IDF), năm 2015 toàn thế giới có 415 triệu người
+(trong độ tuổi 20-79) bị bệnh đái tháo đường (ĐTĐ), tương đương cứ 11 người có 1 người
+bị ĐTĐ, đến năm 2040 con số này sẽ là 642 triệu, tương đương cứ 10 người có 1 người bị
+ĐTĐ. Bên cạnh đó, cùng với việc tăng sử dụng thực phẩm không thích hợp, ít hoặc không
+hoạt động thể lực ở trẻ em, bệnh ĐTĐ típ 2 đang có xu hướng tăng ở cả trẻ em, trở thành
+vấn đề sức khỏe cộng đồng nghiêm trọng. Bệnh ĐTĐ gây nên nhiều biến chứng nguy
+hiểm, là nguyên nhân hàng đầu gây bệnh tim mạch, mù lòa, suy thận, và cắt cụt chi. Nhưng
+một điều đáng khả quan, có tới 70% trường hợp ĐTĐ típ 2 có thể dự phòng hoặc làm chậm
+xuất hiện bệnh bằng tuân thủ lối sống lành mạnh, dinh dưỡng hợp lý và tăng cường luyện
+tập thể lực.
+Ở Việt Nam, năm 1990 của thế kỷ trước, tỷ lệ bệnh ĐTĐ chỉ là 1,1% (ở thành phố Hà nội),
+2,25% (ở thành phố Hồ Chí Minh), 0,96% (thành phố Huế), nghiên cứu năm 2012 của
+Bệnh viện Nội tiết trung ương cho thấy: tỷ lệ hiện mắc ĐTĐ trên toàn quốc ở người trưởng
+thành là 5.42%, tỷ lệ đái tháo đường chưa được chẩn đoán trong cộng đồng là 63.6%. Tỷ
+lệ rối loạn dung nạp glucose toàn quốc 7,3%, rối loạn glucose máu lúc đói toàn quốc 1,9%
+(năm 2003). Theo kết quả điều tra STEPwise về các yếu tố nguy cơ của bệnh không lây
+nhiễm do Bộ Y tế thực hiện năm 2015, ở nhóm tuổi từ 18-69, cho thấy tỷ lệ ĐTĐ toàn
+quốc là 4,1%, tiền ĐTĐ là 3,6%.
+II. CHẨN ĐOÁN
+1. Chẩn đoán đái tháo đường
+Tiêu chuẩn chẩn đoán đái tháo đường (theo Hiệp Hội Đái tháo đường Mỹ - ADA) dựa vào
+1 trong 4 tiêu chuẩn sau đây:
+a) Glucose huyết tương lúc đói (fasting plasma glucose: FPG) ≥ 126 mg/dL (hay 7
+mmol/L). Bệnh nhân phải nhịn ăn (không uống nước ngọt, có thể uống nước lọc, nước
+đun sôi để nguội) ít nhất 8 giờ (thường phải nhịn đói qua đêm từ 8 -14 giờ), hoặc:
+2
+b) Glucose huyết tương ở thời điểm sau 2 giờ làm nghiệm pháp dung nạp glucose đường
+uống 75g (oral glucose tolerance test: OGTT) ≥ 200 mg/dL (hay 11,1 mmol/L).
+Nghiệm pháp dung nạp glucose đường uống phải được thực hiện theo hướng dẫn của
+Tổ chức Y tế thế giới: Bệnh nhân nhịn đói từ nửa đêm trước khi làm nghiệm pháp,
+dùng một lượng glucose tương đương với 75g glucose, hòa tan trong 250-300 ml nước,
+uống trong 5 phút; trong 3 ngày trước đó bệnh nhân ăn khẩu phần có khoảng 150-200
+gam carbohydrat mỗi ngày.
+c) HbA1c ≥ 6,5% (48 mmol/mol). Xét nghiệm này phải được thực hiện ở phòng thí
+nghiệm được chuẩn hóa theo tiêu chuẩn quốc tế.
+d) Ở bệnh nhân có triệu chứng kinh điển của tăng glucose huyết hoặc mức glucose huyết
+tương ở thời điểm bất kỳ ≥ 200 mg/dL (hay 11,1 mmol/L).
+Nếu không có triệu chứng kinh điển của tăng glucose huyết (bao gồm tiểu nhiều, uống
+nhiều, ăn nhiều, sụt cân không rõ nguyên nhân), xét nghiệm chẩn đoán a, b, d ở trên cần
+được thực hiện lặp lại lần 2 để xác định chẩn đoán. Thời gian thực hiện xét nghiệm lần 2
+sau lần thứ nhất có thể từ 1 đến 7 ngày.
+Trong điều kiện thực tế tại Việt Nam, nên dùng phương pháp đơn giản và hiệu quả để chẩn
+đoán đái tháo đường là định lượng glucose huyết tương lúc đói 2 lần ≥ 126 mg/dL (hay 7 mmol/L). Nếu HbA1c được đo tại phòng xét nghiệm được chuẩn hóa quốc tế, có thể đo
+HbA1c 2 lần để chẩn đoán ĐTĐ.
+2. Chẩn đoán tiền đái tháo đường
+Chẩn đoán tiền đái tháo đường khi có một trong các rối loạn sau đây:
+-­ Rối loạn glucose huyết đói (impaired fasting glucose: IFG): Glucose huyết tương lúc
+đói từ 100 (5,6mmol/L) đến 125 mg/dL (6,9 mmol/L), hoặc
+-­ Rối loạn dung nạp glucose (impaired glucose tolerance: IGT): Glucose huyết tương ở
+thời điểm 2 giờ sau khi làm nghiệm pháp dung nạp glucose bằng đường uống 75 g từ
+140 (7.8 mmol/L) đến 199 mg/dL (11 mmol/L), hoặc
+-­ HbA1c từ 5,7% (39 mmol/mol) đến 6,4% (47 mmol/mol).
+Những tình trạng rối loạn glucose huyết này chưa đủ tiêu chuẩn để chẩn đoán đái tháo
+đường nhưng vẫn có nguy cơ xuất hiện các biến chứng mạch máu lớn của đái tháo đường,
+được gọi là tiền đái tháo đường (pre-diabetes).
+3. Phân loại đái tháo đường
+a) Đái tháo đường típ 1 (do phá hủy tế bào beta tụy, dẫn đến thiếu insulin tuyệt đối).
+b) Đái tháo đường típ 2 (do giảm chức năng của tế bào beta tụy tiến triển trên nền tảng đề
+kháng insulin).
+c) Đái tháo đường thai kỳ (là ĐTĐ được chẩn đoán trong 3 tháng giữa hoặc 3 tháng cuối
+của thai kỳ và không có bằng chứng về ĐTĐ típ 1, típ 2 trước đó).
+3
+d) Thể bệnh chuyên biệt của ĐTĐ do các nguyên nhân khác, như ĐTĐ sơ sinh hoặc ĐTĐ
+do sử dụng thuốc và hoá chất như sử dụng glucocorticoid, điều trị HIV/AIDS hoặc sau
+cấy ghép mô…
+Chi tiết phân loại ĐTĐ trong Phụ lục 01 được ban hành kèm theo Quyết định này. Cách
+phân biệt ĐTĐ típ 1 và típ 2 trong Phụ lục 02 được ban hành kèm theo Quyết định này.
+4. Tiêu chuẩn để làm xét nghiệm chẩn đoán đái tháo đường hoặc tiền đái tháo đường
+ở người không có triệu chứng ĐTĐ:
+a) Người lớn có BMI ≥ 23 kg/m2
+, hoặc cân nặng lớn hơn 120% cân nặng lý tưởng và có
+một hoặc nhiều hơn một trong các yếu tố nguy cơ sau:
+- Ít vận động thể lực
+- Gia đình có người bị đái tháo đường ở thế hệ cận kề (bố, mẹ, anh chị em ruột)
+- Tăng huyết áp (huyết áp tâm thu ≥ 140 mmHg và/hoặc huyết áp tâm trương ≥ 90 mmHg
+hay đang điều trị thuốc hạ huyết áp)
+- Nồng độ HDL cholesterol < 35 mg/ (0,9 mmol/L) và/hoặc nồng độ triglyceride > 250
+mg/dL (2,82 mmol/L)
+- Vòng bụng to: ở nam ≥ 90 cm, ở nữ ≥ 80 cm
+- Phụ nữ bị buồng trứng đa nang
+- Phụ nữ bị buồng trứng đa nang
+- Phụ nữ đã mắc đái tháo đường thai kỳ
+- HbA1c ≥ 5,7% (39 mmol/mol), rối loạn glucose huyết đói hay rối loạn dung nạp
+glucose ở lần xét nghiệm trước đó.
+- Có các dấu hiệu đề kháng insulin trên lâm sàng (như béo phì, dấu gai đen…).
+- Tiền sử có bệnh tim mạch do xơ vữa động mạch.
+b) Ở bệnh nhân không có các dấu hiệu/triệu chứng trên, bắt đầu thực hiện xét nghiệm phát
+hiện sớm đái tháo đường ở người ≥ 45 tuổi.
+c) Nếu kết quả xét nghiệm bình thường, nên lặp lại xét nghiệm sau mỗi 1- 3 năm. Có thể
+thực hiện xét nghiệm sớm hơn tùy thuộc vào kết quả xét nghiệm trước đó  và yếu tố
+nguy cơ. Đối với người tiền đái tháo đường: thực hiện xét nghiệm hàng năm
 
-Triệu chứng thần kinh khu trú gây khuyết tật được định nghĩa là khiếm khuyết thần kinh, nếu không cải thiện, sẽ ngăn cản người bệnh thực hiện các hoạt động cơ bản của cuộc sống hàng ngày (ví dụ: tắm/mặc quần áo, đi lại, vệ sinh và ăn uống) hoặc quay trở lại làm việc như thường ngày.
-
-3.2 Cận lâm sàng
-3.2.1 Chẩn đoán hình ảnh
-Cắt lớp vi tính sọ não không tiêm thuốc cản quang: một số dấu hiệu sớm của nhồi máu não 
-
-Mất phân biệt chất xám chất trắng
-Giảm tỷ trọng nhân xám 
-Giảm tỷ trọng vùng vỏ não, mất phân biệt rãnh cuộn não
-Cộng hưởng từ não-mạch não: 
-
-Xác định vị trí và hình thái tổn thương nhu mô (tăng tín hiệu trên xung DWI và FLAIR), chảy máu chuyển dạng (giảm tín hiệu trên T2*) 
-Đánh giá mạch nội sọ qua xung TOF: vị trí hẹp/tắc/lóc tách
-3.2.2 Chẩn đoán chức năng
-Siêu âm tim qua thành ngực và qua thực quản giúp xác định: hẹp hai lá, bệnh lý van tim khác, suy tim, huyết khối buồng tim, còn lỗ bầu dục…
-Điện tim và Holter điện tim xác định rung nhĩ.
-Siêu âm Doppler xuyên sọ xác định tình trạng hẹp mạch nội sọ và phát hiện luồng thông phải - trái bằng test bóng khí.
-Siêu âm Doppler mạch cảnh, động mạch đốt sống xác định tình trạng vữa xơ, hẹp động mạch cảnh ngoài sọ.
-3.2.3 Các xét nghiệm máu
-Đánh giá công thức máu, CRP, PT, APTT, điện giải đồ, creatinine, glucose, HbA1c, lipid máu (Cholesterol toàn phần; LDL – Cholesterol; HDL – Cholesterol; ApoA; ApoB và Triglyceride máu), tốc độ máu lắng…
-Các xét nghiệm bệnh tự miễn như lupus, viêm mạch tự miễn, các yếu tố liên quan đến quá trình tăng đông như protein S, protein C, AT III…
-3.3 Chẩn đoán xác định
-3.3.1 Cơn thiếu máu não thoáng qua
-Có triệu chứng tổn thương thần kinh khu trú, triệu chứng kéo dài <24 giờ và không có hình ảnh tổn thương trên xung DWI của cộng hưởng từ não. 3
-
-3.3.2 Đột quỵ nhẹ
-Có triệu chứng tổn thương thần kinh khu trú, có hình ảnh tổn thương trên xung DWI của cộng hưởng từ não và điểm NIHSS ≤ 5 điểm. 3
-
-3.4 Chẩn đoán phân biệt
-Cần chẩn đoán phân biệt với một số bệnh có triệu chứng tương tự như đau nửa đầu, ngất, động kinh, cơn mất trí nhớ thoáng qua, cơn hạ Glucose máu…
-
-4 ĐIỀU TRỊ
-4.1 Nguyên tắc chung
-Điều trị dự phòng tái phát sớm nhất có thể.
-Điều trị căn nguyên và kiểm soát các yếu tố nguy cơ.
-4.2 Mục tiêu điều trị
-CTMNTQ và đột quỵ nhẹ có nguy cơ tái phát sớm rất cao. Do vậy, mục tiêu điều trị CTMNTQ và đột quỵ nhẹ là làm giảm nguy cơ tái phát và tiến triển của bệnh.
-
-4.3 Điều trị cụ thể
-4.3.1 Chống kết tập tiểu cầu
-- Chỉ định: CTMNTQ hay đột quỵ nhẹ do xơ vữa mạch lớn, tắc mạch nhỏ hay chưa xác định rõ căn nguyên.
-
-+ CTMNTQ nguy cơ thấp (ABCD2 < 4):
-
-Aspirin liều 81-325mg/ngày, sau đó duy trì liều 81-100mg/ngày.
-
-Nếu tăng mẫn cảm với Aspirin hoặc viêm loét dạ dày thì chuyển sang:
-
-Clopidogrel 75mg/ngày hoặc
-Aspirin 25mg kết hợp với Dipyridamole 200mg x 2 lần/ngày.
-Cilostazol 100mg x 2 lần/ngày 
-+ Đối với CTMNTQ nguy cơ cao (ABCD2 ≥ 4) và đột quỵ nhẹ (NIHSS ≤ 3), điều trị ngay lập tức, tối ưu trong 24 giờ đầu, có thể tối đa 7 ngày đầu:
-
-Aspirin: liều 81-325mg, sau đó duy trì liều 81-100mg/ngày; kết hợp
-Clopidogrel: liều nạp 300-600mg, sau đó duy trì 75mg/ngày trong 21-90 ngày. Sau đó duy trì chống kết tập tiểu cầu đơn. 
-+ Đối với CTMNTQ nguy cơ cao (ABCD2 ≥ 5) và đột quỵ nhẹ (NIHSS ≤ 5), điều trị sớm, tối ưu trong 24 giờ đầu, có thể mở rộng đến tối đa 7 ngày đầu:
-
-Aspirin liều 81-325mg, sau đó duy trì liều 81-100mg/ngày; kết hợp
-Ticargelor: liều nạp 180mg, sau 12 giờ 90mg. Sau duy trì 90mg x 2 lần/ngày trong 30 ngày.
-Lưu ý: có nguy cơ chảy máu cao
-4.3.2 Chống đông
-- Nhồi máu não hoặc CTMNTQ do rung nhĩ không có bệnh lý van tim: lựa chọn thuốc chống đông trực tiếp đường uống như dabigatran, Rivaroxaban, apixaban, edoxaban ưu tiên hơn kháng vitamin K.
-
-- Nhồi máu não hoặc CTMNTQ do căn nguyên tim: van hai lá cơ học hoặc hẹp van hai lá mức độ trung bình đến nặng sử dụng thuốc kháng vitamin K với mục tiêu INR từ 2,5 đến 3,5.
-
-- Nhồi máu não hoặc CTMNTQ do căn nguyên tim: người bệnh đã phẫu thuật thay van hai lá hoặc van động mạch chủ sinh học:
-
-Thuốc kháng vitamin K: mục tiêu INR 2-3 trong 3-6 tháng sau phẫu thuật đối với người bệnh có nguy cơ chảy máu thấp. Sau phẫu thuật 3-6 tháng, duy trì Aspirin 75-100mg/ngày.
-4.3.3 Điều trị căn nguyên và kiểm soát các yếu tố nguy cơ có thể thay đổi được
-- Tăng huyết áp: 
-
-Mục tiêu: huyết áp < 130/80mmHg. 
-Lựa chọn thuốc huyết áp: ưu tiên chọn phối hợp 2-3 thuốc ức chế thụ thể AT1/ức chế men chuyển và lợi tiểu thiazide hoặc lợi tiểu giống thiazide.
-- Rối loạn lipid máu: 
-
-Mục tiêu LDL-C < 70 mg/dL (1,8 mmol/L). 
-Theo dõi sau 4-12 tuần, điều chỉnh liều mỗi 3-12 tháng. 
-Triglyceride cao phải tìm căn nguyên, thực hiện chế độ giảm glucid và rượu, sử dụng thêm Omega-3.
-- Đái tháo đường: mục tiêu HbA1c < 7%. Lựa chọn kết hợp các nhóm thuốc đái tháo đường phù hợp với nguy cơ bệnh lý tim mạch của người bệnh.
-
-- Béo phì: giảm cân và duy trì cân nặng mục tiêu BMI < 23.
-
-- Ngưng thở khi ngủ: đeo máy CPAP hỗ trợ.
-
-- Hẹp xơ vữa mạch cảnh ngoại sọ: Hẹp 50-99% có triệu chứng cân nhắc chỉ định đặt stent hoặc phẫu thuật bóc nội mạc kết hợp điều trị nội khoa tích cực. Cần tham vấn thêm chuyên gia.
-
-- Hẹp mạch nội sọ do lóc tách nội mạc: sử dụng aspirin hoặc kháng vitamin K ít nhất 3 tháng. Cần tham vấn thêm chuyên gia.
-
-- Moyamoya: cân nhắc phẫu thuật bắc cầu nối hoặc sử dụng kháng kết tập tiểu cầu. Cần tham vấn thêm chuyên gia.
-
-- Rung nhĩ: 
-
-Nếu có bệnh van tim: dùng kháng vitamin K với mục tiêu INR 2,5-3,5. 
-Nếu không có bệnh van tim: dùng kháng vitamin K hoặc kháng đông đường uống thế hệ mới: apixaban, dabigatran, edoxaban, rivaroxaban.
-- Bệnh van tim: hẹp hở nặng van 2 lá hoặc có van cơ học: Xem xét chỉ định phẫu thuật van và dùng kháng vitamin K mục tiêu INR 2,5-3,5.
-
-- Huyết khối nhĩ trái: dùng kháng vitamin K ít nhất 3 tháng.
-
-- Còn lỗ bầu dục: cân nhắc can thiệp đóng lỗ thông. Cần tham vấn thêm chuyên gia.
-
-4.3.4 Thay đổi lối sống
-- Tuân thủ điều trị, tái khám định kỳ, theo dõi, phát hiện sớm và kiểm soát tốt các yếu tố nguy cơ
-
-- Tập luyện thể dục thể thao thường xuyên.
-
-- Tránh căng thẳng và sử dụng các chất kích thích như rượu, bia, thuốc lá (kể cả thuốc lá điện tử).
-
-4.4 Quản lý bệnh (tái khám)
-Tái khám để ghi nhận những cơn tương tự tại nhà, phát hiện những tác dụng phụ, biến chứng của thuốc để xử trí, điều chỉnh liều thuốc hoặc thay thế thuốc.
+5. Phát hiện và chẩn đoán đái tháo đường thai kỳ
+a) Khái niệm: là ĐTĐ được chẩn đoán trong 3 tháng giữa hoặc 3 tháng cuối của thai kỳ
+và không có bằng chứng ĐTĐ típ 1, típ 2 trước đó. Nếu phụ nữ có thai 3 tháng đầu
+được phát hiện tăng glucose huyết: chẩn đoán là ĐTĐ chưa được chẩn đoán hoặc chưa
+được phát hiện và dùng tiêu chuẩn chẩn đoán ĐTĐ như ở người không có thai.
+b) Thời điểm tầm soát đái tháo đường thai kỳ
+- Thực hiện xét nghiệm chẩn đoán ĐTĐ (đối với ĐTĐ chưa được chẩn đoán trước đây)
+tại lần khám thai đầu tiên đối với những người có các yếu tố nguy cơ của ĐTĐ, sử
+dụng các tiêu chuẩn chẩn đoán ĐTĐ tại Điểm a, b, d của mục 1, phần II (không áp
+dụng tiêu chuẩn về HbA1c).
+4
+- Thực hiện xét nghiệm chẩn đoán ĐTĐ thai kỳ ở tuần thứ 24 đến 28 của thai kỳ đối với
+những thai phụ không được chẩn đoán ĐTĐ trước đó.
+- Thực hiện xét nghiệm để chẩn đoán ĐTĐ thật sự (bền vững): ở phụ nữ có ĐTĐ thai kỳ
+sau khi sinh từ 4 đến 12 tuần. Dùng nghiệm pháp dung nạp glucose đường uống và các
+tiêu chuẩn chẩn đoán không mang thai phù hợp trên lâm sàng. Sử dụng các tiêu chuẩn
+chẩn đoán đái tháo đường tại Điểm a, b, d của mục 1, phần II (không áp dụng tiêu
+chuẩn về HbA1c).
+- Ở phụ nữ có tiền sử ĐTĐ thai kỳ nên thực hiện xét nghiệm để phát hiện sự phát triển
+ĐTĐ hay tiền ĐTĐ ít nhất mỗi 3 năm một lần.
+- Phụ nữ có tiền sử ĐTĐ thai kỳ, sau đó được phát hiện có tiền ĐTĐ: cần được điều trị
+can thiệp lối sống tích cực hay metformin để phòng ngừa ĐTĐ.
+c) Tầm soát và chẩn đoán ĐTĐ thai kỳ: có thể thực hiện một trong 2 phương pháp sau:
+Phương pháp 1 bước (one-step strategy):
+Thực hiện nghiệm pháp dung nạp glucose đường uống 75g (75-g OGTT): đo nồng độ
+glucose huyết tương lúc đói và tại thời điểm 1 giờ, 2 giờ, ở tuần thứ 24 đến 28 của thai kỳ
+đối với những thai phụ không được chẩn đoán ĐTĐ trước đó. Nghiệm pháp dung nạp
+glucose đường uống phải được thực hiện vào buổi sáng sau khi nhịn đói qua đêm ít nhất 8
+giờ. Chẩn đoán ĐTĐ thai kỳ khi bất kỳ giá trị glucose huyết thoả mãn tiêu chuẩn sau đây:
+-­ Lúc đói ≥ 92 mg/dL (5,1 mmol/L)
+-­ Ở thời điểm 1 giờ ≥ 180 mg/dL (10,0 mmol/L)
+-­ Ở thời điểm 2 giờ ≥ 153 mg/dL (8,5 mmol/L)
+Phương pháp 2 bước (two-step strategy)
+-­ Bước 1: Thực hiện nghiệm pháp uống glucose 50g hoặc uống tải glucose 50 gam
+(glucose loading test: GLT): Uống 50 gam glucose (trước đó không nhịn đói), đo
+glucose huyết tương tại thời điểm 1 giờ, ở tuần thứ 24 đến 28 của thai kỳ đối với những
+thai phụ không được chẩn đoán ĐTĐ trước đó. Nếu mức glucose huyết tương được đo
+lường tại thời điểm 1 giờ sau uống là 130 mg/dL, 135 mg/dL, hoặc 140 mg/dL (7,2
+mmol/L, 7,5 mmol/L, 7,8 mmol/L) tiếp tục với nghiệm pháp dung nạp glucose đường
+uống 100g
+IV. ĐIỀU TRỊ
+Các chiến lược điều trị insulin ở bệnh nhân đái tháo đường típ 2.
+* Điều trị với insulin nền:
+-­ Khởi đầu điều trị với insulin nền khi không đạt được mục tiêu glucose huyết với thuốc
+uống. Liều khởi đầu khuyên dùng là 0,1 – 0,2 đơn vị/kg cân nặng, phụ thuộc vào mức
+độ tăng glucose huyết, dùng phối hợp với 1 hoặc 2 thuốc uống.
+-­ Khi đã điều chỉnh liều insulin nền đạt được mục tiêu glucose huyết đói nhưng HbA1c
+vẫn chưa đạt mục tiêu, xem xét thêm insulin nhanh trước bữa ăn. Một cách khác có thể
+xem xét là chuyển sang insulin trộn sẵn/2 pha/hỗn hợp tiêm dưới da 2 lần mỗi ngày.
+Nếu vẫn không đạt được mục tiêu, có thể xem xét chuyển sang insulin nền – insulin
+nhanh trước mỗi bữa ăn (basal-bolus).
+-­ Liều khởi trị với insulin nền: insulin người như NPH (tiêm 1-2 lần/ ngày) hay insulin
+analog như glargine, detemir (tiêm 1 lần/ngày), degludec (tiêm 1 lần/ngày liều khởi
+đầu 0,1 -0,2 đơn vị/kg/ngày.
+-­ Nếu tiêm Insulin NPH, 2 mũi tiêm nên cách nhau 11-12 giờ để tránh hiện tượng chồng
+liều. Nếu tiêm glargine hoặc detemir nên tiêm vào giờ cố định mỗi ngày hoặc buổi
+sáng, hoặc buổi tối
+-­ Điều trị insulin nền- trước ăn (hoặc nền-nhanh) (basal-bolus)
++ Thêm 01 mũi insulin tác dụng nhanh trước bữa ăn, khởi đầu 04 đơn vị, hoặc 0,1 đơn
+vị/kg cân nặng hay 10% liều insulin nền.
++ Điều chỉnh liều: tăng liều 10 – 15% hay tăng 1 – 2 đơn vị mỗi một hoặc 2 lần mỗi tuần
+cho đến khi đạt mục tiêu đường huyết.
++ Hạ đường huyết: xác định nguyên nhân hạ đường huyết, nếu không có nguyên nhân rõ
+ràng, giảm liều insulin 2 – 4 đơn vị hay giảm 10 – 20%.
+* Điều trị với insulin trộn, hỗn hợp:
+-­ Bệnh nhân cũng có thể khởi đầu điều trị với insulin trộn, hỗn hợp:
++ Đối với bệnh nhân đái tháo đường típ 2 chưa sử dụng insulin: Bệnh nhân có thể khởi
+trị với insulin trộn, hỗn hợp, liều dùng theo thông tin kê đơn được Bộ Y tế phê duyệt,
+ví dụ insulin gồm 70% Insulin Aspart Protamine/30% Insulin Aspart hòa tan 1 lần hoặc
+2 lần mỗi ngày. Nếu khởi trị 1 lần/ngày: liều dùng là 12 đơn vị vào bữa ăn tối (bữa ăn
+chiều). Nếu khởi trị 2 lần/ngày: liều khởi đầu khuyến cáo là 6 đơn vị vào bữa sáng và
+6 đơn vị vào bữa tối (bữa ăn chiều).
++ Điều chỉnh liều: tăng liều 10 – 15% hay tăng 2 – 4 đơn vị mỗi 1 hoặc 2 lần mỗi tuần cho đến khi đạt mục tiêu đường huyết.
++ Hạ đường huyết: xác định nguyên nhân hạ đường huyết, nếu không có nguyên nhân rõ
+ràng, giảm liều insulin 2 – 4 đơn vị hay giảm 10 – 20%.
+* Điều trị với insulin trộn, hỗn hợp:
+-­ Bệnh nhân cũng có thể khởi đầu điều trị với insulin trộn, hỗn hợp:
++ Đối với bệnh nhân đái tháo đường típ 2 chưa sử dụng insulin: Bệnh nhân có thể khởi
+trị với insulin trộn, hỗn hợp, liều dùng theo thông tin kê đơn được Bộ Y tế phê duyệt,
+ví dụ insulin gồm 70% Insulin Aspart Protamine/30% Insulin Aspart hòa tan 1 lần hoặc
+2 lần mỗi ngày. Nếu khởi trị 1 lần/ngày: liều dùng là 12 đơn vị vào bữa ăn tối (bữa ăn
+chiều). Nếu khởi trị 2 lần/ngày: liều khởi đầu khuyến cáo là 6 đơn vị vào bữa sáng và
+6 đơn vị vào bữa tối (bữa ăn chiều).
++ Điều chỉnh liều: tăng liều 10 – 15% hay tăng 2 – 4 đơn vị mỗi 1 hoặc 2 lần mỗi tuần
+cho đến khi đạt mục tiêu đường huyết lúc đói.
++ Hạ đường huyết: xác định nguyên nhân hạ đường huyết, nếu không có nguyên nhân rõ
+ràng, giảm liều insulin 2 – 4 đơn vị hay giảm 10 – 20%.
+-­ Bệnh nhân đang điều trị insulin nền trước đó: liều khởi đầu bằng liều insulin nền trước
+đó, chia thành 2/3 buổi sáng, 1/3 buổi chiều (đối với insulin người) HOẶC 1/2 buổi
+sáng, 1/2 buổi chiều (đối với insulin analog)
+12
+-­ Bệnh nhân chưa điều trị liều insulin nền: liều khởi đầu 0,25 – 0,5 đơn vị/kg/ngày, chia
+thành 2/3 buổi sáng, 1/3 buổi chiều (đối với insulin người) HOẶC 1/2 buổi sáng, 1/2
+buổi chiều tiêm ngay trước hoặc ngay sau khi ăn (đối với insulin analog).
+Khi sử dụng insulin trộn, hỗn hợp gồm 70% Insulin Aspart Protamine/30% Insulin
+Aspart hòa tan ngày 1 lần mà liều đã lên đến 30 đơn vị thì có thể chia thành 2 lần/ngày
+bằng cách chia liều bằng nhau vào bữa sáng và bữa tối (50/50)
+-­ Liều insulin trộn, hỗn hợp gồm 70% Insulin Aspart Protamine/ 30% Insulin Aspart hòa
+tan 2 lần/ ngày chuyển sang 3 lần/ngày: liều buổi sáng có thể chia thành liều buổi sáng
+và giờ ăn trưa (sử dụng 3 lần/ ngày)
+-­ Điều chỉnh liều: tăng liều 10 – 15% hay tăng 1 – 2 đơn vị mỗi một hoặc 2 lần mỗi tuần
+cho đến khi đạt mục tiêu đường huyết
+-­ Hạ đường huyết: xác định nguyên nhân hạ đường huyết, nếu không có nguyên nhân rõ
+ràng, giảm liều insulin 2 – 4 đơn vị hay giảm 10 – 20%.
+-­ Insulin trộn, hỗn hợp cần tiêm trước bữa ăn, thời gian tiêm trước ăn tùy thuộc loại
+insulin nhanh trong hỗn hợp (xem phụ lục 04).
+* Kiểm tra hiệu quả điều trị:
+-­ Glucose huyết sáng lúc đói phản ảnh hiệu quả của insulin nền (đối với loại insulin tác
+dụng dài).
+-­ Glucose huyết sau ăn phản ánh hiệu quả của insulin nhanh tiêm trước khi ăn.
+-­ Glucose huyết trước khi đi ngủ cho phép tiên đoán nguy cơ hạ glucose huyết xảy ra
+ban đêm.
+-­ Tuy nhiên, nồng độ glucose huyết trong máu còn tùy thuộc số lượng và loại thức ăn
+trước đó, tình trạng vận động của bệnh nhân, thuốc điều trị các bệnh lý đi kèm.
+3. Điều trị cụ thể
+3.1. Thay đổi lối sống
+Thay đổi lối sống hay điều trị không dùng thuốc bao gồm luyện tập thể lực, dinh dưỡng
+và thay đổi lối sống.
+a) Luyện tập thể lực
+-­ Cần kiểm tra biến chứng tim mạch, mắt, thần kinh, biến dạng chân trước khi luyện tập
+và đo huyết áp, tần số tim. Không luyện tập gắng sức khi glucose huyết > 250-270
+mg/dL và ceton dương tính.
+-­ Loại hình luyện tập thông dụng và dễ áp dụng nhất: đi bộ tổng cộng 150 phút mỗi tuần
+(hoặc 30 phút mỗi ngày), không nên ngưng luyện tập 2 ngày liên tiếp. Mỗi tuần nên
+tập kháng lực 2-3 lần (kéo dây, nâng tạ)
+Người già, đau khớp có thể chia tập nhiều lần trong ngày, thí dụ đi bộ sau 3 bữa ăn,
+mỗi lần 10-15 phút. Người còn trẻ nên tập khoảng khoảng 60 phút mỗi ngày, tập kháng
+lực ít nhất 3 lần mỗi tuần.
+13
+b) Dinh dưỡng
+Dinh dưỡng cần được áp dụng mềm dẻo theo thói quen ăn uống của bệnh nhân, các thức
+ăn sẵn có tại từng vùng miền. Tốt nhất nên có sự tư vấn của bác sĩ chuyên khoa dinh
+dưỡng.
+Chi tiết về dinh dưỡng sẽ được thiết lập cho từng bệnh nhân tùy tình trạng bệnh, loại hình
+hoạt động, các bệnh lý, biến chứng đi kèm.
+Các nguyên tắc chung về dinh dưỡng nên được khuyến cáo cho mọi bệnh nhân:
+-­ Bệnh nhân béo phì, thừa cân cần giảm cân, ít nhất 3-7% so với cân nặng nền.
+-­ Nên dùng các loại carbohydrat hấp thu chậm có nhiều chất xơ, không chà xát kỹ như
+gạo lứt, bánh mì đen, nui còn chứa nhiều chất xơ…
+-­ Đạm khoảng 1-1,5 gam/kg cân nặng/ngày ở người không suy chức năng thận. Nên ăn
+cá ít nhất 3 lần/tuần. Người ăn chay trường có thể bổ sung nguồn đạm từ các loại đậu
+(đậu phụ, đậu đen, đậu đỏ)
+-­ Nên chú trọng dùng các loại mỡ có chứa acid béo không no một nối đôi hoặc nhiều nối
+đôi như dầu ô liu, dầu mè, dầu lạc, mỡ cá. Cần tránh các loại mỡ trung chuyển (mỡ
+trans), phát sinh khi ăn thức ăn rán, chiên ngập dầu mỡ.
+-­ Giảm muối trong bữa ăn, còn khoảng 2300 mg Natri mỗi ngày.
+-­ Chất xơ ít nhất 15 gam mỗi ngày.
+-­ Các yếu tố vi lượng: nên chú ý bổ xung các yếu tố vi lượng nếu thiếu, thí dụ sắt ở bệnh
+nhân ăn chay trường. Dùng Metformin lâu ngày có thể gây thiếu sinh tố B12, nên chú
+ý đến tình trạng này nếu bệnh nhân có thiếu máu hoặc triệu chứng bệnh lý thần kinh
+ngoại vi.
+-­ Uống rượu điều độ: một lon bia (330 ml)/ngày, rượu vang đỏ khoảng 150-200ml/ngày.
+-­ Ngưng hút thuốc.
+-­ Các chất tạo vị ngọt: như đường bắp, aspartame, saccharin có nhiều bằng chứng trái
+ngược. Do đó nếu sử dụng cũng cần hạn chế đến mức tối thiểu
+3.2. Điều trị đái tháo đường bằng thuốc
+a) Các nhóm thuốc hạ glucose huyết đường uống và thuốc dạng tiêm không thuộc nhóm
+insulin theo Phụ lục 03 được ban hành kèm theo Quyết định này.
+b) Insulin: Insulin được sử dụng ở bệnh nhân ĐTĐ típ 1 và cả ĐTĐ típ 2 khi có triệu
+chứng thiếu insulin hoặc không kiểm soát được glucose huyết dù đã ăn uống luyện tập
+và phối hợp nhiều loại thuốc viên theo đúng chỉ dẫn. Ngoài ra ĐTĐ típ 2 khi mới chẩn
+đoán nếu glucose huyết tăng rất cao cũng có thể dùng insulin để ổn định glucose huyết,
+sau đó sẽ dùng các loại thuốc điều trị tăng glucose huyết khác

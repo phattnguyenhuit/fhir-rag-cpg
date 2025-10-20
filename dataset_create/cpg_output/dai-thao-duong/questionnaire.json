@@ -1,0 +1,91 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "questionnaire-h--ng-d-n-ch-n--o-n-v---i-u-tr----i-th-o----ng-t-p-2",
+  "url": "http://example.org/fhir/Questionnaire/questionnaire-h--ng-d-n-ch-n--o-n-v---i-u-tr----i-th-o----ng-t-p-2",
+  "name": "Questionnaire_h__ng_d_n_ch_n__o_n_v___i_u_tr____i_th_o____ng_t_p_2",
+  "title": "Clinical Assessment: Hướng dẫn chẩn đoán và điều trị đái tháo đường típ 2",
+  "status": "draft",
+  "date": "2025-10-20T23:42:17.368452",
+  "publisher": "Bộ Y tế Việt Nam",
+  "description": "Clinical assessment questionnaire for Hướng dẫn chẩn đoán và điều trị đái tháo đường típ 2",
+  "purpose": "Structured data collection for clinical decision support",
+  "item": [
+    {
+      "linkId": "inclusion",
+      "text": "Inclusion Criteria",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "inclusion-0",
+          "text": "Người lớn có BMI ≥ 23 kg/m2",
+          "type": "boolean",
+          "required": true
+        },
+        {
+          "linkId": "inclusion-1",
+          "text": "Có yếu tố nguy cơ như tiền sử gia đình, tăng huyết áp, rối loạn lipid máu",
+          "type": "boolean",
+          "required": true
+        }
+      ]
+    },
+    {
+      "linkId": "question1",
+      "text": "Có triệu chứng kinh điển của tăng glucose huyết không?",
+      "type": "boolean",
+      "required": true,
+      "answerOption": [
+        {
+          "valueString": "Có"
+        },
+        {
+          "valueString": "Không"
+        }
+      ]
+    },
+    {
+      "linkId": "question2",
+      "text": "Có yếu tố nguy cơ nào không?",
+      "type": "boolean",
+      "required": true,
+      "answerOption": [
+        {
+          "valueString": "Có"
+        },
+        {
+          "valueString": "Không"
+        }
+      ]
+    },
+    {
+      "linkId": "node1",
+      "text": "Có triệu chứng kinh điển của tăng glucose huyết không?",
+      "type": "boolean",
+      "required": false
+    },
+    {
+      "linkId": "node2",
+      "text": "Chẩn đoán đái tháo đường",
+      "type": "boolean",
+      "required": false
+    },
+    {
+      "linkId": "node3",
+      "text": "Thực hiện xét nghiệm glucose huyết tương lúc đói?",
+      "type": "boolean",
+      "required": false
+    },
+    {
+      "linkId": "node4",
+      "text": "Bắt đầu điều trị đái tháo đường típ 2",
+      "type": "boolean",
+      "required": false
+    },
+    {
+      "linkId": "node5",
+      "text": "Có cần xét nghiệm lại không?",
+      "type": "boolean",
+      "required": false
+    }
+  ]
+}

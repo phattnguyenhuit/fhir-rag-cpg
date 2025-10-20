@@ -266,3 +266,5 @@ chứng thiếu insulin hoặc không kiểm soát được glucose huyết dù 
 và phối hợp nhiều loại thuốc viên theo đúng chỉ dẫn. Ngoài ra ĐTĐ típ 2 khi mới chẩn
 đoán nếu glucose huyết tăng rất cao cũng có thể dùng insulin để ổn định glucose huyết,
 sau đó sẽ dùng các loại thuốc điều trị tăng glucose huyết khác
+
+
