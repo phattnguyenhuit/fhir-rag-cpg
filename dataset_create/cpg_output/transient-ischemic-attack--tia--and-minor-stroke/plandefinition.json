@@ -1,0 +1,99 @@
+{
+  "resourceType": "PlanDefinition",
+  "id": "guideline-for-diagnosis-and-treatment-of-transient-ischemic-atta",
+  "url": "http://example.org/fhir/PlanDefinition/guideline-for-diagnosis-and-treatment-of-transient-ischemic-atta",
+  "identifier": [
+    {
+      "system": "http://example.org/fhir/identifiers",
+      "value": "guideline-for-diagnosis-and-treatment-of-transient-ischemic-atta"
+    }
+  ],
+  "version": "1.0.0",
+  "name": "guideline_for_diagnosis_and_treatment_of_transient_ischemic_atta",
+  "title": "Guideline for Diagnosis and Treatment of Transient Ischemic Attack and Minor Stroke",
+  "type": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/plan-definition-type",
+        "code": "clinical-protocol",
+        "display": "Clinical Protocol"
+      }
+    ]
+  },
+  "status": "draft",
+  "experimental": true,
+  "date": "2025-10-20T22:58:01.094013",
+  "publisher": "Vietnamese Neurology Association",
+  "description": "To provide clinical guidance for the diagnosis and treatment of TIA and minor stroke.",
+  "useContext": [
+    {
+      "code": {
+        "system": "http://terminology.hl7.org/CodeSystem/usage-context-type",
+        "code": "focus",
+        "display": "Clinical Focus"
+      },
+      "valueCodeableConcept": {
+        "text": "Neurology"
+      }
+    }
+  ],
+  "purpose": "To provide clinical guidance for the diagnosis and treatment of TIA and minor stroke.",
+  "usage": "Target Population: Patients presenting with symptoms of TIA or minor stroke.",
+  "topic": [
+    {
+      "text": "Transient Ischemic Attack (TIA) and Minor Stroke"
+    }
+  ],
+  "action": [
+    {
+      "id": "node1",
+      "title": "Assessment of Neurological Symptoms",
+      "description": "Are there focal neurological signs?",
+      "condition": [
+        {
+          "kind": "applicability",
+          "expression": {
+            "language": "text/cql",
+            "expression": "Focal neurological signs present",
+            "description": "Are there focal neurological signs?"
+          }
+        }
+      ],
+      "timingDuration": {
+        "value": "Immediate"
+      },
+      "priority": "urgent",
+      "documentation": [
+        {
+          "type": "documentation",
+          "display": "Evidence Quality: high, Recommendation: strong"
+        }
+      ]
+    },
+    {
+      "id": "node2",
+      "title": "Imaging Studies",
+      "description": "Is there evidence of ischemia on imaging?",
+      "condition": [
+        {
+          "kind": "applicability",
+          "expression": {
+            "language": "text/cql",
+            "expression": "Imaging shows ischemic changes",
+            "description": "Is there evidence of ischemia on imaging?"
+          }
+        }
+      ],
+      "timingDuration": {
+        "value": "Within 24 hours"
+      },
+      "priority": "urgent",
+      "documentation": [
+        {
+          "type": "documentation",
+          "display": "Evidence Quality: high, Recommendation: strong"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "resourceType": "Evidence",
+  "id": "evidence-node2",
+  "url": "http://example.org/fhir/Evidence/evidence-node2",
+  "title": "Evidence for Imaging Studies",
+  "status": "draft",
+  "description": "Is there evidence of ischemia on imaging?",
+  "certainty": [
+    {
+      "rating": {
+        "text": "high"
+      },
+      "note": [
+        {
+          "text": "Recommendation strength: strong"
+        }
+      ]
+    }
+  ]
+}

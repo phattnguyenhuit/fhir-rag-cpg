@@ -1,0 +1,14 @@
+{
+  "resourceType": "EvidenceVariable",
+  "id": "var-node1",
+  "url": "http://example.org/fhir/EvidenceVariable/var-node1",
+  "name": "duration_of_symptoms",
+  "title": "Duration of symptoms",
+  "status": "draft",
+  "description": "Measurement: Duration of symptoms (Unit: hours)",
+  "note": [
+    {
+      "text": "Normal range: < 24, Threshold: 24"
+    }
+  ]
+}

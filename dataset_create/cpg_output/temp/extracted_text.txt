@@ -1,0 +1,113 @@
+3 CHẨN ĐOÁN
+3.1 Lâm sàng
+Một số dấu hiệu thần kinh khu trú điển hình có thể gặp và dễ bị bỏ qua như: méo miệng nhẹ, chóng mặt, thất điều, nói khó, rung giật nhãn cầu, rối loạn cảm giác một bên hoặc liệt nhẹ khu trú nửa người, liệt một tay hoặc chân, các triệu chứng có thể tiến triển nặng dần lên hoặc tiến triển nặng lên thành từng bậc.
+
+Triệu chứng thần kinh khu trú gây khuyết tật được định nghĩa là khiếm khuyết thần kinh, nếu không cải thiện, sẽ ngăn cản người bệnh thực hiện các hoạt động cơ bản của cuộc sống hàng ngày (ví dụ: tắm/mặc quần áo, đi lại, vệ sinh và ăn uống) hoặc quay trở lại làm việc như thường ngày.
+
+3.2 Cận lâm sàng
+3.2.1 Chẩn đoán hình ảnh
+Cắt lớp vi tính sọ não không tiêm thuốc cản quang: một số dấu hiệu sớm của nhồi máu não 
+
+Mất phân biệt chất xám chất trắng
+Giảm tỷ trọng nhân xám 
+Giảm tỷ trọng vùng vỏ não, mất phân biệt rãnh cuộn não
+Cộng hưởng từ não-mạch não: 
+
+Xác định vị trí và hình thái tổn thương nhu mô (tăng tín hiệu trên xung DWI và FLAIR), chảy máu chuyển dạng (giảm tín hiệu trên T2*) 
+Đánh giá mạch nội sọ qua xung TOF: vị trí hẹp/tắc/lóc tách
+3.2.2 Chẩn đoán chức năng
+Siêu âm tim qua thành ngực và qua thực quản giúp xác định: hẹp hai lá, bệnh lý van tim khác, suy tim, huyết khối buồng tim, còn lỗ bầu dục…
+Điện tim và Holter điện tim xác định rung nhĩ.
+Siêu âm Doppler xuyên sọ xác định tình trạng hẹp mạch nội sọ và phát hiện luồng thông phải - trái bằng test bóng khí.
+Siêu âm Doppler mạch cảnh, động mạch đốt sống xác định tình trạng vữa xơ, hẹp động mạch cảnh ngoài sọ.
+3.2.3 Các xét nghiệm máu
+Đánh giá công thức máu, CRP, PT, APTT, điện giải đồ, creatinine, glucose, HbA1c, lipid máu (Cholesterol toàn phần; LDL – Cholesterol; HDL – Cholesterol; ApoA; ApoB và Triglyceride máu), tốc độ máu lắng…
+Các xét nghiệm bệnh tự miễn như lupus, viêm mạch tự miễn, các yếu tố liên quan đến quá trình tăng đông như protein S, protein C, AT III…
+3.3 Chẩn đoán xác định
+3.3.1 Cơn thiếu máu não thoáng qua
+Có triệu chứng tổn thương thần kinh khu trú, triệu chứng kéo dài <24 giờ và không có hình ảnh tổn thương trên xung DWI của cộng hưởng từ não. 3
+
+3.3.2 Đột quỵ nhẹ
+Có triệu chứng tổn thương thần kinh khu trú, có hình ảnh tổn thương trên xung DWI của cộng hưởng từ não và điểm NIHSS ≤ 5 điểm. 3
+
+3.4 Chẩn đoán phân biệt
+Cần chẩn đoán phân biệt với một số bệnh có triệu chứng tương tự như đau nửa đầu, ngất, động kinh, cơn mất trí nhớ thoáng qua, cơn hạ Glucose máu…
+
+4 ĐIỀU TRỊ
+4.1 Nguyên tắc chung
+Điều trị dự phòng tái phát sớm nhất có thể.
+Điều trị căn nguyên và kiểm soát các yếu tố nguy cơ.
+4.2 Mục tiêu điều trị
+CTMNTQ và đột quỵ nhẹ có nguy cơ tái phát sớm rất cao. Do vậy, mục tiêu điều trị CTMNTQ và đột quỵ nhẹ là làm giảm nguy cơ tái phát và tiến triển của bệnh.
+
+4.3 Điều trị cụ thể
+4.3.1 Chống kết tập tiểu cầu
+- Chỉ định: CTMNTQ hay đột quỵ nhẹ do xơ vữa mạch lớn, tắc mạch nhỏ hay chưa xác định rõ căn nguyên.
+
++ CTMNTQ nguy cơ thấp (ABCD2 < 4):
+
+Aspirin liều 81-325mg/ngày, sau đó duy trì liều 81-100mg/ngày.
+
+Nếu tăng mẫn cảm với Aspirin hoặc viêm loét dạ dày thì chuyển sang:
+
+Clopidogrel 75mg/ngày hoặc
+Aspirin 25mg kết hợp với Dipyridamole 200mg x 2 lần/ngày.
+Cilostazol 100mg x 2 lần/ngày 
++ Đối với CTMNTQ nguy cơ cao (ABCD2 ≥ 4) và đột quỵ nhẹ (NIHSS ≤ 3), điều trị ngay lập tức, tối ưu trong 24 giờ đầu, có thể tối đa 7 ngày đầu:
+
+Aspirin: liều 81-325mg, sau đó duy trì liều 81-100mg/ngày; kết hợp
+Clopidogrel: liều nạp 300-600mg, sau đó duy trì 75mg/ngày trong 21-90 ngày. Sau đó duy trì chống kết tập tiểu cầu đơn. 
++ Đối với CTMNTQ nguy cơ cao (ABCD2 ≥ 5) và đột quỵ nhẹ (NIHSS ≤ 5), điều trị sớm, tối ưu trong 24 giờ đầu, có thể mở rộng đến tối đa 7 ngày đầu:
+
+Aspirin liều 81-325mg, sau đó duy trì liều 81-100mg/ngày; kết hợp
+Ticargelor: liều nạp 180mg, sau 12 giờ 90mg. Sau duy trì 90mg x 2 lần/ngày trong 30 ngày.
+Lưu ý: có nguy cơ chảy máu cao
+4.3.2 Chống đông
+- Nhồi máu não hoặc CTMNTQ do rung nhĩ không có bệnh lý van tim: lựa chọn thuốc chống đông trực tiếp đường uống như dabigatran, Rivaroxaban, apixaban, edoxaban ưu tiên hơn kháng vitamin K.
+
+- Nhồi máu não hoặc CTMNTQ do căn nguyên tim: van hai lá cơ học hoặc hẹp van hai lá mức độ trung bình đến nặng sử dụng thuốc kháng vitamin K với mục tiêu INR từ 2,5 đến 3,5.
+
+- Nhồi máu não hoặc CTMNTQ do căn nguyên tim: người bệnh đã phẫu thuật thay van hai lá hoặc van động mạch chủ sinh học:
+
+Thuốc kháng vitamin K: mục tiêu INR 2-3 trong 3-6 tháng sau phẫu thuật đối với người bệnh có nguy cơ chảy máu thấp. Sau phẫu thuật 3-6 tháng, duy trì Aspirin 75-100mg/ngày.
+4.3.3 Điều trị căn nguyên và kiểm soát các yếu tố nguy cơ có thể thay đổi được
+- Tăng huyết áp: 
+
+Mục tiêu: huyết áp < 130/80mmHg. 
+Lựa chọn thuốc huyết áp: ưu tiên chọn phối hợp 2-3 thuốc ức chế thụ thể AT1/ức chế men chuyển và lợi tiểu thiazide hoặc lợi tiểu giống thiazide.
+- Rối loạn lipid máu: 
+
+Mục tiêu LDL-C < 70 mg/dL (1,8 mmol/L). 
+Theo dõi sau 4-12 tuần, điều chỉnh liều mỗi 3-12 tháng. 
+Triglyceride cao phải tìm căn nguyên, thực hiện chế độ giảm glucid và rượu, sử dụng thêm Omega-3.
+- Đái tháo đường: mục tiêu HbA1c < 7%. Lựa chọn kết hợp các nhóm thuốc đái tháo đường phù hợp với nguy cơ bệnh lý tim mạch của người bệnh.
+
+- Béo phì: giảm cân và duy trì cân nặng mục tiêu BMI < 23.
+
+- Ngưng thở khi ngủ: đeo máy CPAP hỗ trợ.
+
+- Hẹp xơ vữa mạch cảnh ngoại sọ: Hẹp 50-99% có triệu chứng cân nhắc chỉ định đặt stent hoặc phẫu thuật bóc nội mạc kết hợp điều trị nội khoa tích cực. Cần tham vấn thêm chuyên gia.
+
+- Hẹp mạch nội sọ do lóc tách nội mạc: sử dụng aspirin hoặc kháng vitamin K ít nhất 3 tháng. Cần tham vấn thêm chuyên gia.
+
+- Moyamoya: cân nhắc phẫu thuật bắc cầu nối hoặc sử dụng kháng kết tập tiểu cầu. Cần tham vấn thêm chuyên gia.
+
+- Rung nhĩ: 
+
+Nếu có bệnh van tim: dùng kháng vitamin K với mục tiêu INR 2,5-3,5. 
+Nếu không có bệnh van tim: dùng kháng vitamin K hoặc kháng đông đường uống thế hệ mới: apixaban, dabigatran, edoxaban, rivaroxaban.
+- Bệnh van tim: hẹp hở nặng van 2 lá hoặc có van cơ học: Xem xét chỉ định phẫu thuật van và dùng kháng vitamin K mục tiêu INR 2,5-3,5.
+
+- Huyết khối nhĩ trái: dùng kháng vitamin K ít nhất 3 tháng.
+
+- Còn lỗ bầu dục: cân nhắc can thiệp đóng lỗ thông. Cần tham vấn thêm chuyên gia.
+
+4.3.4 Thay đổi lối sống
+- Tuân thủ điều trị, tái khám định kỳ, theo dõi, phát hiện sớm và kiểm soát tốt các yếu tố nguy cơ
+
+- Tập luyện thể dục thể thao thường xuyên.
+
+- Tránh căng thẳng và sử dụng các chất kích thích như rượu, bia, thuốc lá (kể cả thuốc lá điện tử).
+
+4.4 Quản lý bệnh (tái khám)
+Tái khám để ghi nhận những cơn tương tự tại nhà, phát hiện những tác dụng phụ, biến chứng của thuốc để xử trí, điều chỉnh liều thuốc hoặc thay thế thuốc.

@@ -1,0 +1,238 @@
+{
+  "metadata": {
+    "title": "Guideline for Diagnosis and Treatment of Transient Ischemic Attack and Minor Stroke",
+    "disease": "Transient Ischemic Attack (TIA) and Minor Stroke",
+    "domain": "Neurology",
+    "purpose": "To provide clinical guidance for the diagnosis and treatment of TIA and minor stroke.",
+    "target_population": "Patients presenting with symptoms of TIA or minor stroke.",
+    "evidence_level": "A",
+    "guideline_source": "Vietnamese Neurology Association"
+  },
+  "entry_point": {
+    "id": "entry",
+    "condition": "Neurological symptoms suggestive of TIA or minor stroke",
+    "inclusion_criteria": [
+      "Presence of focal neurological signs",
+      "Symptoms lasting less than 24 hours"
+    ],
+    "exclusion_criteria": [
+      "Symptoms due to other causes such as migraine or seizures",
+      "Symptoms lasting more than 24 hours"
+    ]
+  },
+  "decision_nodes": [
+    {
+      "id": "node1",
+      "type": "condition",
+      "label": "Assessment of Neurological Symptoms",
+      "question": "Are there focal neurological signs?",
+      "condition_expression": "Focal neurological signs present",
+      "measurement": {
+        "parameter": "Duration of symptoms",
+        "unit": "hours",
+        "normal_range": "< 24",
+        "threshold": "24"
+      },
+      "branches": {
+        "yes": {
+          "next_node": "node2",
+          "actions": [],
+          "description": "Proceed to imaging studies."
+        },
+        "no": {
+          "next_node": "node3",
+          "actions": [],
+          "description": "Consider alternative diagnoses."
+        }
+      },
+      "timing": "Immediate",
+      "priority": "urgent",
+      "clinical_codes": {
+        "snomed": [
+          "431855005"
+        ],
+        "icd10": [
+          "G45.9"
+        ],
+        "loinc": []
+      },
+      "evidence": {
+        "quality": "high",
+        "recommendation_strength": "strong",
+        "references": [
+          "ref1"
+        ]
+      }
+    },
+    {
+      "id": "node2",
+      "type": "assessment",
+      "label": "Imaging Studies",
+      "question": "Is there evidence of ischemia on imaging?",
+      "condition_expression": "Imaging shows ischemic changes",
+      "measurement": {
+        "parameter": "Imaging results",
+        "unit": "N/A",
+        "normal_range": "No ischemic changes",
+        "threshold": "Ischemic changes present"
+      },
+      "branches": {
+        "yes": {
+          "next_node": "node4",
+          "actions": [],
+          "description": "Diagnose minor stroke."
+        },
+        "no": {
+          "next_node": "node5",
+          "actions": [],
+          "description": "Diagnose TIA."
+        }
+      },
+      "timing": "Within 24 hours",
+      "priority": "urgent",
+      "clinical_codes": {
+        "snomed": [
+          "431855005"
+        ],
+        "icd10": [
+          "G45.0"
+        ],
+        "loinc": []
+      },
+      "evidence": {
+        "quality": "high",
+        "recommendation_strength": "strong",
+        "references": [
+          "ref2"
+        ]
+      }
+    }
+  ],
+  "action_nodes": [
+    {
+      "id": "action1",
+      "type": "medication",
+      "title": "Aspirin Therapy",
+      "description": "Initiate aspirin therapy for prevention.",
+      "instructions": "Start with 81-325 mg/day, maintain at 81-100 mg/day.",
+      "dosage": "81-325 mg",
+      "route": "Oral",
+      "frequency": "Daily",
+      "duration": "Indefinite",
+      "contraindications": [
+        "History of gastrointestinal bleeding"
+      ],
+      "precautions": [
+        "Monitor for signs of bleeding"
+      ],
+      "monitoring": [
+        "Check for gastrointestinal side effects"
+      ],
+      "clinical_codes": {
+        "rxnorm": [
+          "123456"
+        ],
+        "cpt": [
+          "12345"
+        ],
+        "snomed": [
+          "431855005"
+        ]
+      }
+    },
+    {
+      "id": "action2",
+      "type": "medication",
+      "title": "Clopidogrel Therapy",
+      "description": "Use clopidogrel if aspirin is contraindicated.",
+      "instructions": "Administer 75 mg/day.",
+      "dosage": "75 mg",
+      "route": "Oral",
+      "frequency": "Daily",
+      "duration": "Indefinite",
+      "contraindications": [
+        "Active bleeding"
+      ],
+      "precautions": [
+        "Monitor for bleeding risks"
+      ],
+      "monitoring": [
+        "Check platelet counts"
+      ],
+      "clinical_codes": {
+        "rxnorm": [
+          "654321"
+        ],
+        "cpt": [
+          "54321"
+        ],
+        "snomed": [
+          "431855005"
+        ]
+      }
+    }
+  ],
+  "assessment_questions": [
+    {
+      "id": "question1",
+      "text": "Did the patient experience focal neurological signs?",
+      "type": "boolean",
+      "required": true,
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "linked_node": "node1"
+    },
+    {
+      "id": "question2",
+      "text": "Was there evidence of ischemia on imaging?",
+      "type": "boolean",
+      "required": true,
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "linked_node": "node2"
+    }
+  ],
+  "quality_measures": [
+    {
+      "id": "measure1",
+      "title": "Rate of TIA and Minor Stroke Diagnosis",
+      "description": "Percentage of patients diagnosed with TIA or minor stroke within 24 hours of presentation.",
+      "type": "process",
+      "numerator": "Patients diagnosed within 24 hours",
+      "denominator": "Total patients presenting with symptoms",
+      "improvement_notation": "increase"
+    }
+  ],
+  "endpoints": [
+    {
+      "id": "endpoint1",
+      "category": "treatment",
+      "diagnosis": "Transient Ischemic Attack",
+      "recommendations": [
+        "Aspirin therapy",
+        "Clopidogrel if contraindicated"
+      ],
+      "follow_up": "Reassess in 1 month for symptom recurrence.",
+      "expected_outcome": "Reduction in risk of stroke."
+    },
+    {
+      "id": "endpoint2",
+      "category": "treatment",
+      "diagnosis": "Minor Stroke",
+      "recommendations": [
+        "Aspirin therapy",
+        "Clopidogrel if contraindicated"
+      ],
+      "follow_up": "Reassess in 1 month for symptom recurrence.",
+      "expected_outcome": "Reduction in risk of stroke."
+    }
+  ],
+  "language": {
+    "detected": "vi",
+    "translated": false
+  }
+}

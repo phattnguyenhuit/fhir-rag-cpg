@@ -1,0 +1,73 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "questionnaire-guideline-for-diagnosis-and-treatment-of-transient-ischemic-atta",
+  "url": "http://example.org/fhir/Questionnaire/questionnaire-guideline-for-diagnosis-and-treatment-of-transient-ischemic-atta",
+  "name": "Questionnaire_guideline_for_diagnosis_and_treatment_of_transient_ischemic_atta",
+  "title": "Clinical Assessment: Guideline for Diagnosis and Treatment of Transient Ischemic Attack and Minor Stroke",
+  "status": "draft",
+  "date": "2025-10-20T22:58:12.481851",
+  "publisher": "Vietnamese Neurology Association",
+  "description": "Clinical assessment questionnaire for Guideline for Diagnosis and Treatment of Transient Ischemic Attack and Minor Stroke",
+  "purpose": "Structured data collection for clinical decision support",
+  "item": [
+    {
+      "linkId": "inclusion",
+      "text": "Inclusion Criteria",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "inclusion-0",
+          "text": "Presence of focal neurological signs",
+          "type": "boolean",
+          "required": true
+        },
+        {
+          "linkId": "inclusion-1",
+          "text": "Symptoms lasting less than 24 hours",
+          "type": "boolean",
+          "required": true
+        }
+      ]
+    },
+    {
+      "linkId": "question1",
+      "text": "Did the patient experience focal neurological signs?",
+      "type": "boolean",
+      "required": true,
+      "answerOption": [
+        {
+          "valueString": "Yes"
+        },
+        {
+          "valueString": "No"
+        }
+      ]
+    },
+    {
+      "linkId": "question2",
+      "text": "Was there evidence of ischemia on imaging?",
+      "type": "boolean",
+      "required": true,
+      "answerOption": [
+        {
+          "valueString": "Yes"
+        },
+        {
+          "valueString": "No"
+        }
+      ]
+    },
+    {
+      "linkId": "node1",
+      "text": "Are there focal neurological signs?",
+      "type": "boolean",
+      "required": false
+    },
+    {
+      "linkId": "node2",
+      "text": "Is there evidence of ischemia on imaging?",
+      "type": "boolean",
+      "required": false
+    }
+  ]
+}

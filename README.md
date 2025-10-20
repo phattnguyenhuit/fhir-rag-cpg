@@ -20,8 +20,13 @@ OPENAI_API_KEY=your_key_here
 
 ```
 Set-Location D:/HealthCare_ChatBot/fhir-rag-cpg/dataset_create
+Set-Location D:\Work_LacViet\LacViet_AI\fhir-rag-cpg\dataset_create
 ```
 Run dataset with create dataset.
 ```
 D:/HealthCare_ChatBot/fhir-rag-cpg/venv/Scripts/python.exe .\data_genimg.py D:\HealthCare_ChatBot\fhir-rag-cpg\data\stroke_guideline.jpg
+D:/Work_LacViet/LacViet_AI/fhir-rag-cpg/venv/Scripts/python.exe .\data_genimg.py  D:\Work_LacViet\LacViet_AI\fhir-rag-cpg\data\stroke_guideline.jpg
+
+D:/Work_LacViet/LacViet_AI/fhir-rag-cpg/venv/Scripts/python.exe .\data_gentxt.py D:\Work_LacViet\LacViet_AI\fhir-rag-cpg\data\dieu-tri-chan-doan-dot-quy.txt
+
 ```

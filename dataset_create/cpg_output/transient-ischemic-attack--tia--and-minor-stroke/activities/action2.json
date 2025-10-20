@@ -1,0 +1,18 @@
+{
+  "resourceType": "ActivityDefinition",
+  "id": "action2",
+  "url": "http://example.org/fhir/ActivityDefinition/action2",
+  "name": "clopidogrel_therapy",
+  "title": "Clopidogrel Therapy",
+  "status": "draft",
+  "description": "Use clopidogrel if aspirin is contraindicated.",
+  "kind": "MedicationRequest",
+  "intent": "proposal",
+  "priority": "routine",
+  "doNotPerform": false,
+  "dosage": [
+    {
+      "text": "75 mg Oral Daily"
+    }
+  ]
+}

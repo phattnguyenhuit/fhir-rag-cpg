@@ -1,0 +1,454 @@
+{
+  "resourceType": "Bó",
+  "id": "bó-hướng dẫn-chẩn đoán-và-điều trị-thiếu máu cục bộ thoáng qua",
+  "type": "bộ sưu tập",
+  "timestamp": "2025-10-20T22:58:12.523908",
+  "entry": [
+    {
+      "fullUrl": "http://example.org/fhir/PlanDefinition/guideline-for-diagnosis-and- Treatment-of-transient-ischemia-atta",
+      "resource": {
+        "resourceType": "Kế hoạchĐịnh nghĩa",
+        "id": "hướng dẫn chẩn đoán và điều trị thiếu máu cục bộ thoáng qua",
+        "url": "http://example.org/fhir/PlanDefinition/guideline-for-diagnosis-and- Treatment-of-transient-ischemia-atta",
+        "identifier": [
+          {
+            "system": "http://example.org/fhir/identifiers",
+            "value": "hướng dẫn chẩn đoán và điều trị thiếu máu cục bộ thoáng qua"
+          }
+        ],
+        "version": "1.0.0",
+        "name": "hướng dẫn_for_diagnosis_and_ Treatment_of_transient_ischemia_atta",
+        "title": "Hướng dẫn chẩn đoán và điều trị cơn thiếu máu cục bộ thoáng qua và đột quỵ nhẹ",
+        "type": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/plan-def định-type",
+              "code": "giao thức lâm sàng",
+              "display": "Giao thức lâm sàng"
+            }
+          ]
+        },
+        "status": "bản nháp",
+        "experimental": true,
+        "date": "2025-10-20T22:58:01.094013",
+        "publisher": "Hội Thần Kinh Học Việt Nam",
+        "description": "Cung cấp hướng dẫn lâm sàng để chẩn đoán và điều trị TIA và đột quỵ nhẹ.",
+        "useContext": [
+          {
+            "code": {
+              "system": "http://terminology.hl7.org/CodeSystem/usage-context-type",
+              "code": "tập trung",
+              "display": "Trọng tâm lâm sàng"
+            },
+            "valueCodeableConcept": {
+              "text": "Thần kinh học"
+            }
+          }
+        ],
+        "purpose": "Cung cấp hướng dẫn lâm sàng để chẩn đoán và điều trị TIA và đột quỵ nhẹ.",
+        "usage": "Đối tượng: Bệnh nhân có triệu chứng TIA hoặc đột quỵ nhẹ.",
+        "topic": [
+          {
+            "text": "Cơn thiếu máu não thoáng qua (TIA) và Đột quỵ nhẹ"
+          }
+        ],
+        "action": [
+          {
+            "id": "nút 1",
+            "title": "Đánh giá các triệu chứng thần kinh",
+            "description": "Có dấu hiệu thần kinh khu trú không?",
+            "condition": [
+              {
+                "kind": "khả năng áp dụng",
+                "expression": {
+                  "language": "văn bản/cql",
+                  "expression": "Có dấu hiệu thần kinh khu trú",
+                  "description": "Có dấu hiệu thần kinh khu trú không?"
+                }
+              }
+            ],
+            "timingDuration": {
+              "value": "ngay lập tức"
+            },
+            "priority": "cấp bách",
+            "documentation": [
+              {
+                "type": "tài liệu",
+                "display": "Chất lượng bằng chứng: cao, Khuyến nghị: mạnh"
+              }
+            ]
+          },
+          {
+            "id": "nút 2",
+            "title": "Nghiên cứu hình ảnh",
+            "description": "Có bằng chứng thiếu máu cục bộ trên hình ảnh không?",
+            "condition": [
+              {
+                "kind": "khả năng áp dụng",
+                "expression": {
+                  "language": "text/cql",
+                  "expression": "Hình ảnh cho thấy những thay đổi do thiếu máu cục bộ",
+                  "description": "Có bằng chứng thiếu máu cục bộ trên hình ảnh không?"
+                }
+              }
+            ],
+            "timingDuration": {
+              "value": "Trong vòng 24 giờ"
+            },
+            "priority": "cấp bách",
+            "documentation": [
+              {
+                "type": "tài liệu",
+                "display": "Chất lượng bằng chứng: cao, Khuyến nghị: mạnh"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Questionnaire/questionnaire-guideline-for-diagnosis-and- Treatment-of-transient-ischemia-atta",
+      "resource": {
+        "resourceType": "Bảng câu hỏi",
+        "id": "bảng câu hỏi-hướng dẫn-chẩn đoán-và-điều trị-thiếu máu cục bộ thoáng qua",
+        "url": "http://example.org/fhir/Questionnaire/questionnaire-guideline-for-diagnosis-and- Treatment-of-transient-ischemia-atta",
+        "name": "Bảng câu hỏi_hướng dẫn_cho_chẩn đoán_và_điều trị_of_tạm thời_thiếu máu cục bộ_atta",
+        "title": "Đánh giá lâm sàng: Hướng dẫn chẩn đoán và điều trị cơn thiếu máu cục bộ thoáng qua và đột quỵ nhẹ",
+        "status": "bản nháp",
+        "date": "2025-10-20T22:58:12.481851",
+        "publisher": "Hội Thần Kinh Học Việt Nam",
+        "description": "Bảng câu hỏi đánh giá lâm sàng cho Hướng dẫn chẩn đoán và điều trị cơn thiếu máu cục bộ thoáng qua và đột quỵ nhẹ",
+        "purpose": "Thu thập dữ liệu có cấu trúc để hỗ trợ quyết định lâm sàng",
+        "item": [
+          {
+            "linkId": "bao gồm",
+            "text": "Tiêu chí hòa nhập",
+            "type": "nhóm",
+            "item": [
+              {
+                "linkId": "bao gồm-0",
+                "text": "Sự hiện diện của các dấu hiệu thần kinh khu trú",
+                "type": "boolean",
+                "required": true
+              },
+              {
+                "linkId": "bao gồm-1",
+                "text": "Các triệu chứng kéo dài dưới 24 giờ",
+                "type": "boolean",
+                "required": true
+              }
+            ]
+          },
+          {
+            "linkId": "câu hỏi 1",
+            "text": "Bệnh nhân có xuất hiện dấu hiệu thần kinh khu trú không?",
+            "type": "boolean",
+            "required": true,
+            "answerOption": [
+              {
+                "valueString": "Đúng"
+              },
+              {
+                "valueString": "KHÔNG"
+              }
+            ]
+          },
+          {
+            "linkId": "câu hỏi2",
+            "text": "Có bằng chứng thiếu máu cục bộ trên hình ảnh không?",
+            "type": "boolean",
+            "required": true,
+            "answerOption": [
+              {
+                "valueString": "Đúng"
+              },
+              {
+                "valueString": "KHÔNG"
+              }
+            ]
+          },
+          {
+            "linkId": "nút 1",
+            "text": "Có dấu hiệu thần kinh khu trú không?",
+            "type": "boolean",
+            "required": false
+          },
+          {
+            "linkId": "nút 2",
+            "text": "Có bằng chứng thiếu máu cục bộ trên hình ảnh không?",
+            "type": "boolean",
+            "required": false
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Library/library-guideline-for-diagnosis-and- Treatment-of-transient-ischemia-atta",
+      "resource": {
+        "resourceType": "Thư viện",
+        "id": "thư viện-hướng dẫn-chẩn đoán-và-điều trị-thiếu máu cục bộ thoáng qua",
+        "url": "http://example.org/fhir/Library/library-guideline-for-diagnosis-and- Treatment-of-transient-ischemia-atta",
+        "name": "Thư viện_guideline_for_diagnosis_and_ Treatment_of_transient_ischemia_atta",
+        "title": "Logic lâm sàng cho hướng dẫn chẩn đoán và điều trị cơn thiếu máu cục bộ thoáng qua và đột quỵ nhẹ",
+        "status": "bản nháp",
+        "type": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/library-type",
+              "code": "thư viện logic",
+              "display": "Thư viện logic"
+            }
+          ]
+        },
+        "description": "Chứa logic quyết định lâm sàng được trích xuất từ ​​​​tài liệu y tế",
+        "purpose": "Cung cấp logic thực thi để hỗ trợ quyết định lâm sàng",
+        "content": [
+          {
+            "contentType": "văn bản/cql",
+            "data": "bGlicmFyeSBHdWlkZWxpbmVfZm9yX0RpYWdub3Npc19hbmRfVHJlYXRtZW50X29mX1RyYW5zaWVudF9J c2NoZW1pY19BdHRhY2tfYW5kX01pbm9yX1N0cm9rZSB2ZXJzaW9uICcxLjAuMCcKCnVzaW5nIEZISVIg dmVyc2lvbiAnNC4wLjEnCmluY2x1ZGUgRkhJUkhlbHBlcnMgdmVyc2lvbiAnMS4wLjAnCgpjb250ZXh0 IFBhdGllbnQKCi8vIFZhbHVlIFNldHMKdmFsdWVzZXQgIkZvY2FsIE5ldXJvbG9naWNhbCBTaWducyIg OiAnaHR0cDovL2V4YW1wbGUub3JnL2ZoaXIvVmFsdWVTZXQvZm9jYWwtbmV1cm9sb2dpY2FsLXNpZ25z Jwp2YWx1ZXNldCAiSW1hZ2luZyBGaW5kaW5ncyIgOiAnaHR0cDovL2V4YW1wbGUub3JnL2ZoaXIvVmFs dWVTZXQvaW1hZ2luZy1maW5kaW5ncycKCi8vIERlZmluaXRpb25zCmRlZmluZSAiRm9jYWxOZXVyb2xv Z2ljYWxTaWduc1ByZXNlbnQiOgogICAgZXhpc3RzIChPYnNlcnZhdGlvbiBPIHdoZXJlIE8uY29kZSBpb iAiRm9jYWwgTmV1cm9sb2dpY2FsIFNpZ25zIiBhbmQgTy5zdGF0dXMgPSAnZmluYWwnIGFuZCBPLnN1Y mplY3QgPSBQYXRpZW50KQoKZGVmaW5lICJJbWFnaW5nU2hvd3NJc2NoZW1pY0NoYW5nZXMiOgogICAgZ Xhpc3RzIChPYnNlcnZhdGlvbiBPIHdoZXJlIE8uY29kZSBpbiAiSW1hZ2luZyBGaW5kaW5ncyIgYW5kI E8uc3RhdHVzID0gJ2ZpbmFsJyBhbmQgTy5zdWJqZWN0ID0gUGF0aWVudCkKCi8vIERlY2lzaW9uIExvZ 2ljCmRlZmluZSAiUmVjb21tZW5kYXRpb25zIjoKICAgIGlmICJGb2NhbE5ldXJvbG9naWNhbFNpZ25zU HJlc2VudCIgdGhlbgogICAgICAgIGlmICJJbWFnaW5nU2hvd3NJc2NoZW1pY0NoYW5nZXMiIHRoZW4KI CAgICAgICAgICAgcmV0dXJuIFsiQ29uc2lkZXIgaG9zcGl0YWxpemF0aW9uIGZvciBmdXJ0aGVyIGV2Y Wx1YXRpb24gYW5kIG1hbmFnZW1lbnQgb2YgVElBLiJdCiAgICAgICAgZWxzZQogICAgICAgICByZX R1cm4gWyJDb25zaWRlciBvdXRwYXRpZW50IGZvbGxvdy11cCBhbmQgcmlzayBmYWN0b3IgbW9kaWZpY2 F0aW9uLiJdCiAgICAgICAgZW5kaWYKICAgIGVsc2UKICAgICAgICByZXR1cm4gW10KICAgIGVuZGlmCg ovLyBBbGVydCBMb2dpYwpkZWZpbmUgIkFsZXJ0TmVlZGVkIjoKICAgIGNvdW50KCJSZWNvbW1lbmRhdG lvbnMiKSA+IDAKCmRlZmluZSAiQWxlcnRNZXNzYWdlIjoKICAgIGlmICJBbGVydE5lZWRlZCIgdGhlbg ogICAgICAgICJDbGluaWNhbCBEZWNpc2lvbiBTdXBwb3J0OiAiICsgY291bnQoIlJlY29tbWVuZGF0aW 9ucyIpICsgIiByZWNvbW1lbmRhdGlvbnMiCiAgICBlbHNlCiAgICAgICAgIk5vIHNwZWNpZmljIHJlY2 9tbWVuZGF0aW9ucyBhdCB0aGlzIHRpbWUiCiAgICBlbmRpZgoKLy8gTWFpbiBPdXRwdXQKZGVmaW5lIC JEZWNpc2lvblBhdGgiOgogICAgaWYgIkFsZXJ0TmVlZGVkIiB0aGVuCiAgICAgICAgIlJlY29tbWVuZGF 0aW9ucyBhdmFpbGFibGUgYmFzZWQgb24gY2xpbmljYWwgZmluZGluZ3MuIgogICAgZWxzZQogICAgICA gICJObyByZWNvbW1lbmRhdGlvbnMgYXZhaWxhYmxlLiIKICAgIGVuZGlmCgovLyBPdXRwdXQKZGVmaW5 lICJPdXRwdXQiOgogICAgaWYgIkFsZXJ0TmVlZGVkIiB0aGVuCiAgICAgICagewogICAgICAgICAgICA iYWxlcnRfbWVzc2FnZSI6ICJBbGVydE1lc3NhZ2UiLAogICAgICAgICAgICAiZGVjaXNpb25fcGF0aCI 6ICJEZWNpc2lvblBhdGgiLAogICAgICAgICAgICAicmVjb21tZW5kYXRpb25zIjogIlJlY29tbWVuZGF0aW9ucyIKICAgICAgICB9CiAgICBlbHNlCiAgICAgICAgewogICAgICAgICAgICAiYWxlcnRfbWVzc2F nZSI6ICJBbGVydE1lc3NhZ2UiLAogICAgICAgICAgICAiZGVjaXNpb25fcGF0aCI6ICJEZWNpc2lvblB hdGgiLAogICAgICAgICAgICAicmVjb21tZW5kYXRpb25zIjogW10KICAgICAgICB9CiAgICBlbmRpZg=="
+          },
+          {
+            "contentType": "văn bản/đồng bằng",
+            "data": "bWFpbnRlbmFuY2U6CiAgICB0aXRsZTogR3VpZGVsaW5lX2Zvcl9EaWFnbm9zaXNfYW5kX1RyZWF0bWVudF9vZl9UcmFuc2llbnRf SXNjaGVtaWNfQXR0YWNrX2FuZF9NaW5vcl9TdHJva2U7OwogICAgbWxtbmFtZTogZ3VpZGVsaW5lLWZvci1kaWFnbm9zaXMtYW5k LXRyZWF0bWVudC1vZi10cmFuc2llbnQtaXNjaGVtaWMtYXR0YTs7CiAgICBhcmRlbjogVmVyc2lvbiAyLjEwOzsKICAgIHZlcnNp b246IDEuMC4wOzsKICAgIGluc3RpdHV0aW9uOiBHZW5lcmF0ZWQgZnJvbSBNZWRpY2FsIERvY3VtZW50OzsKICAgIGF1dGhvcjogQ XV0b21hdGVkIENvbnZlcnNpb24gU3lzdGVtOzsKICAgIHNwZWNpYWxpc3Q6IDs7CiAgICBkYXRlOiAyMDI1LTEwLTIwOzsKICAgI HZhbGlkYXRpb246IHRlc3Rpbmc7OwoKbGlicmFyeToKICAgIHB1cnBvc2U6IFRvIHByb3ZpZGUgY2xpbmljYWwgZ3VpZGFuY2UgZm 9yIHRoZSBkaWFnbm9zaXMgYW5kIHRyZWF0bWVudCBvZiBUSUEgYW5kIG1pbm9yIHN0cm9rZS47OwogICAgZXhwbGFuYXRpb246IF RoaXMgTUxNIGltcGxlbWVudHMgY2xpbmljYWwgZGVjaXNpb24gbG9naWMgZXh0cmFjdGVkIGZyb20KICAgICAgICAgICAgICB hIG1lZGljYWwgZ3VpZGVsaW5lIGRvY3VtZW50IHVzaW5nIEFJIHRleHQgYW5hbHlzaXMgYW5kCiAgICAgICAgICAgICAgY29 udmVydGVkIHRvIEZISVIgUGxhbkRlZmluaXRpb24gZm9ybWF0Ljs7CiAgICBrZXl3b3JkczogVHJhbnNpZW50IElzY2hlbWljIEF 0dGFjayAoVElBKSBhbmQgTWlub3IgU3Ryb2tlOzsKICAgIGNpdGF0aW9uczogOzsKCmtub3dsZWRnZToKICAgIHR5cGU6IGRhdGE tZHJpdmVuOzsKICAgIAogICAgZGF0YToKICAgICAgICAvKiBQYXRpZW50IGlkZW50aWZpZXJzICovCiAgICAgICAgcGF0aWVudF9p ZCA6PSByZWFkIHtwYXRpZW50X2lkZW50aWZpZXJ9OwogICAgICAgIGVuY291bnRlcl9pZCA6PSByZWFkIHtlbmNvdW50ZXJfaWR9 OwogICAgICAgIAogICAgICAgIC8qIENsaW5pY2FsIGRhdGEgZWxlbWVudHMgZnJvbSBkb2N1bWVudCAqLwogICAgICAgIG5vZGUxI Do9IHJlYWQge0ZvY2FsIG5ldXJvbG9naWNhbCBzaWducyBwcmVzZW50fTsKICAgICAgICBub2RlMiA6PSByZWFkIHtJbWFnaW5nI HNob3dzIGlzY2hlbWljIGNoYW5nZXN9OwogICAgOzsKICAgIAogICAgZXZva2U6CiAgICAgICAgLyogVHJpZ2dlciBjb25kaXRpb2 5zICovCiAgICAgICAgTmV1cm9sb2dpY2FsIHN5bXB0b21zIHN1Z2dlc3RpdmUgb2YgVElBIG9yIG1pbm9yIHN0cm9rZSBPUgogIC AgICAgIGNsaW5pY2FsX2RlY2lzaW9uX3N1cHBvcnRfcmVxdWVzdGVkCiAgICA7OwogICAgCiAgICBsb2dpYzoKICAgICAgICAvKi BJbml0aWFsaXplICovCiAgICAgICAgcmVjb21tZW5kYXRpb25zIDo9IFtdOwogICAgICAgIGRlY2lzaW9uX3BhdGggOj0gIiI7Ci AgICAgICAgCiAgICAgICAgLyogSW1wbGVtZW50IGRlY2lzaW9uIHRyZWUgbG9naWMgKi8KCiAgICAgICAgLyogQXNzZXNzbWVudCB vZiBOZXVyb2xvZ2ljYWwgU3ltcHRvbXMgKi8KICAgICAgICBpZiBub2RlMSB0aGVuCiAgICAgICAgZWxzZQogICAgICAgIGVuZGl mOwoKICAgICAgICAvKiBJbWFnaW5nIFN0dWRpZXMgKi8KICAgICAgICBpZiBub2RlMiB0aGVuCiAgICAgICAgZWxzZQogICAgICAg IGVuZGlmOwoKICAgICAgICAvKiBQcmVwYXJlIG91dHB1dCAqLwogICAgICAgIGlmIGNvdW50KHJlY29tbWVuZGF0aW9ucykgPiAw IHRoZW4KICAgICAgICAgICAgYWxlcnRfbmVlZGVkIDo9IHRydWU7CiAgICAgICAgICAgIGFsZXJ0X21lc3NhZ2UgOj0gIkNsaW5pY 2FsIERlY2lzaW9uIFN1cHBvcnQ6ICIgfHwgCiAgICAgICAgICAgICAgICAgICAgICAgICAgY291bnQocmVjb21tZW5kYXRpb25zK SB8fCAiIHJlY29tbWVuZGF0aW9ucyI7CiAgICAgICAgZWxzZQogICAgICAgICAgICBhbGVydF9uZWVkZWQgOj0gZmFsc2U7CiAgI CAgICAgICAgIGFsZXJ0X21lc3NhZ2UgOj0gIk5vIHNwZWNpZmljIHJlY29tbWVuZGF0aW9ucyBhdCB0aGlzIHRpbWUiOwogICAgI CAgIGVuZGlmOwogICAgOzsKICAgIAogICAgYWN0aW9uOgogICAgICAgIC8qIEV4ZWN1dGUgcmVjb21tZW5kYXRpb25zICovCiAgIC AgICAgaWYgYWxlcnRfbmVlZGVkIHRoZW4KICAgICAgICAgICAgd3JpdGUgYWxlcnRfbWVzc2FnZTsKICAgICAgICAgICAgd3JpdG UgIkRlY2lzaW9uIFBhdGg6ICIgfHwgZGVjaXNpb25fcGF0aDsKICAgICAgICAgICAgCiAgICAgICAgICAgIGZvciByZWMgaW4gcmV jb21tZW5kYXRpb25zIGRvCiAgICAgICAgICAgICB3cml0ZSAiICAtICIgfHwgcmVjOwogICAgICAgICAgICBlbmRkbzsKICA gICAgICAgICAgCiAgICAgICAgICAgIHJldHVybiByZWNvbW1lbmRhdGlvbnM7CiAgICAgICAgZW5kaWY7CiAgICA7OwoKZW5kOgo=",
+            "title": "Cú pháp Arden MLM"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/ActivityDefinition/action1",
+      "resource": {
+        "resourceType": "Hoạt độngĐịnh nghĩa",
+        "id": "hành động1",
+        "url": "http://example.org/fhir/ActivityDefinition/action1",
+        "name": "liệu pháp aspirin",
+        "title": "Liệu pháp aspirin",
+        "status": "bản nháp",
+        "description": "Bắt đầu điều trị bằng aspirin để phòng ngừa.",
+        "kind": "Yêu cầu thuốc",
+        "intent": "đề xuất",
+        "priority": "lịch trình",
+        "doNotPerform": false,
+        "dosage": [
+          {
+            "text": "81-325 mg uống hàng ngày"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/ActivityDefinition/action2",
+      "resource": {
+        "resourceType": "Hoạt độngĐịnh nghĩa",
+        "id": "hành động2",
+        "url": "http://example.org/fhir/ActivityDefinition/action2",
+        "name": "clopidogrel_therapy",
+        "title": "Liệu pháp clopidogrel",
+        "status": "bản nháp",
+        "description": "Sử dụng clopidogrel nếu chống chỉ định dùng aspirin.",
+        "kind": "Yêu cầu thuốc",
+        "intent": "đề xuất",
+        "priority": "lịch trình",
+        "doNotPerform": false,
+        "dosage": [
+          {
+            "text": "75 mg uống hàng ngày"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Measure/measure1",
+      "resource": {
+        "resourceType": "Đo lường",
+        "id": "thước đo1",
+        "url": "http://example.org/fhir/Measure/measure1",
+        "name": "tỷ lệ_of_tia_and_minor_đột quỵ_chẩn đoán",
+        "title": "Tỷ lệ chẩn đoán TIA và đột quỵ nhẹ",
+        "status": "bản nháp",
+        "description": "Tỷ lệ bệnh nhân được chẩn đoán mắc TIA hoặc đột quỵ nhẹ trong vòng 24 giờ kể từ khi xuất hiện.",
+        "scoring": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/measure-scoring",
+              "code": "tỷ lệ",
+              "display": "Tỷ lệ"
+            }
+          ]
+        },
+        "improvementNotation": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/measure-improvement-notation",
+              "code": "tăng",
+              "display": "Tăng"
+            }
+          ]
+        },
+        "group": [
+          {
+            "id": "nhóm chính",
+            "population": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                      "code": "tử số",
+                      "display": "tử số"
+                    }
+                  ]
+                },
+                "description": "Bệnh nhân được chẩn đoán trong vòng 24 giờ",
+                "criteria": {
+                  "language": "văn bản/cql",
+                  "expression": "Bệnh nhân được chẩn đoán trong vòng 24 giờ"
+                }
+              },
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                      "code": "mẫu số",
+                      "display": "mẫu số"
+                    }
+                  ]
+                },
+                "description": "Tổng số bệnh nhân có triệu chứng",
+                "criteria": {
+                  "language": "văn bản/cql",
+                  "expression": "Tổng số bệnh nhân có triệu chứng"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/MeasureReport/report-measure1",
+      "resource": {
+        "resourceType": "Đo lườngBáo cáo",
+        "id": "báo cáo-đo lường1",
+        "status": "hoàn thành",
+        "type": "bản tóm tắt",
+        "measure": "http://example.org/fhir/Measure/measure1",
+        "date": "2025-10-20T22:58:12.505014",
+        "period": {
+          "start": "2025-10-20T22:58:12.505014",
+          "end": "2025-10-20T22:58:12.505014"
+        },
+        "group": [
+          {
+            "id": "nhóm chính",
+            "population": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                      "code": "tử số"
+                    }
+                  ]
+                },
+                "count": 0
+              },
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                      "code": "mẫu số"
+                    }
+                  ]
+                },
+                "count": 0
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Evidence/evidence-node1",
+      "resource": {
+        "resourceType": "Chứng cớ",
+        "id": "nút bằng chứng1",
+        "url": "http://example.org/fhir/Evidence/evidence-node1",
+        "title": "Bằng chứng để đánh giá các triệu chứng thần kinh",
+        "status": "bản nháp",
+        "description": "Có dấu hiệu thần kinh khu trú không?",
+        "certainty": [
+          {
+            "rating": {
+              "text": "cao"
+            },
+            "note": [
+              {
+                "text": "Sức mạnh khuyến nghị: mạnh mẽ"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Evidence/evidence-node2",
+      "resource": {
+        "resourceType": "Chứng cớ",
+        "id": "nút bằng chứng2",
+        "url": "http://example.org/fhir/Evidence/evidence-node2",
+        "title": "Bằng chứng cho nghiên cứu hình ảnh",
+        "status": "bản nháp",
+        "description": "Có bằng chứng thiếu máu cục bộ trên hình ảnh không?",
+        "certainty": [
+          {
+            "rating": {
+              "text": "cao"
+            },
+            "note": [
+              {
+                "text": "Sức mạnh khuyến nghị: mạnh mẽ"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/EvidenceVariable/var-node1",
+      "resource": {
+        "resourceType": "Bằng chứngBiến",
+        "id": "var-node1",
+        "url": "http://example.org/fhir/EvidenceVariable/var-node1",
+        "name": "thời lượng_of_triệu chứng",
+        "title": "Thời gian của các triệu chứng",
+        "status": "bản nháp",
+        "description": "Đo lường: Thời gian xuất hiện triệu chứng (Đơn vị: giờ)",
+        "note": [
+          {
+            "text": "Phạm vi bình thường: < 24, Ngưỡng: 24"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/EvidenceVariable/var-node2",
+      "resource": {
+        "resourceType": "Bằng chứngBiến",
+        "id": "var-node2",
+        "url": "http://example.org/fhir/EvidenceVariable/var-node2",
+        "name": "hình ảnh_kết quả",
+        "title": "Kết quả hình ảnh",
+        "status": "bản nháp",
+        "description": "Đo lường: Kết quả hình ảnh (Đơn vị: N/A)",
+        "note": [
+          {
+            "text": "Phạm vi bình thường: Không có thay đổi thiếu máu cục bộ, Ngưỡng: Có thay đổi thiếu máu cục bộ"
+          }
+        ]
+      }
+    }
+  ]
+}

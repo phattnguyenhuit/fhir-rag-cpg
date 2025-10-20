@@ -1,0 +1,81 @@
+maintenance:
+    title: Guideline_for_Diagnosis_and_Treatment_of_Transient_Ischemic_Attack_and_Minor_Stroke;;
+    mlmname: guideline-for-diagnosis-and-treatment-of-transient-ischemic-atta;;
+    arden: Version 2.10;;
+    version: 1.0.0;;
+    institution: Generated from Medical Document;;
+    author: Automated Conversion System;;
+    specialist: ;;
+    date: 2025-10-20;;
+    validation: testing;;
+
+library:
+    purpose: To provide clinical guidance for the diagnosis and treatment of TIA and minor stroke.;;
+    explanation: This MLM implements clinical decision logic extracted from
+                 a medical guideline document using AI text analysis and
+                 converted to FHIR PlanDefinition format.;;
+    keywords: Transient Ischemic Attack (TIA) and Minor Stroke;;
+    citations: ;;
+
+knowledge:
+    type: data-driven;;
+    
+    data:
+        /* Patient identifiers */
+        patient_id := read {patient_identifier};
+        encounter_id := read {encounter_id};
+        
+        /* Clinical data elements from document */
+        node1 := read {Focal neurological signs present};
+        node2 := read {Imaging shows ischemic changes};
+    ;;
+    
+    evoke:
+        /* Trigger conditions */
+        Neurological symptoms suggestive of TIA or minor stroke OR
+        clinical_decision_support_requested
+    ;;
+    
+    logic:
+        /* Initialize */
+        recommendations := [];
+        decision_path := "";
+        
+        /* Implement decision tree logic */
+
+        /* Assessment of Neurological Symptoms */
+        if node1 then
+        else
+        endif;
+
+        /* Imaging Studies */
+        if node2 then
+        else
+        endif;
+
+        /* Prepare output */
+        if count(recommendations) > 0 then
+            alert_needed := true;
+            alert_message := "Clinical Decision Support: " || 
+                          count(recommendations) || " recommendations";
+        else
+            alert_needed := false;
+            alert_message := "No specific recommendations at this time";
+        endif;
+    ;;
+    
+    action:
+        /* Execute recommendations */
+        if alert_needed then
+            write alert_message;
+            write "Decision Path: " || decision_path;
+            
+            for rec in recommendations do
+                write "  - " || rec;
+            enddo;
+            
+            return recommendations;
+        endif;
+    ;;
+
+end:

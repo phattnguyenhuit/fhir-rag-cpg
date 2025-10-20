@@ -1,0 +1,454 @@
+{
+  "resourceType": "Bundle",
+  "id": "bundle-guideline-for-diagnosis-and-treatment-of-transient-ischemic-atta",
+  "type": "collection",
+  "timestamp": "2025-10-20T22:58:12.523908",
+  "entry": [
+    {
+      "fullUrl": "http://example.org/fhir/PlanDefinition/guideline-for-diagnosis-and-treatment-of-transient-ischemic-atta",
+      "resource": {
+        "resourceType": "PlanDefinition",
+        "id": "guideline-for-diagnosis-and-treatment-of-transient-ischemic-atta",
+        "url": "http://example.org/fhir/PlanDefinition/guideline-for-diagnosis-and-treatment-of-transient-ischemic-atta",
+        "identifier": [
+          {
+            "system": "http://example.org/fhir/identifiers",
+            "value": "guideline-for-diagnosis-and-treatment-of-transient-ischemic-atta"
+          }
+        ],
+        "version": "1.0.0",
+        "name": "guideline_for_diagnosis_and_treatment_of_transient_ischemic_atta",
+        "title": "Guideline for Diagnosis and Treatment of Transient Ischemic Attack and Minor Stroke",
+        "type": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/plan-definition-type",
+              "code": "clinical-protocol",
+              "display": "Clinical Protocol"
+            }
+          ]
+        },
+        "status": "draft",
+        "experimental": true,
+        "date": "2025-10-20T22:58:01.094013",
+        "publisher": "Vietnamese Neurology Association",
+        "description": "To provide clinical guidance for the diagnosis and treatment of TIA and minor stroke.",
+        "useContext": [
+          {
+            "code": {
+              "system": "http://terminology.hl7.org/CodeSystem/usage-context-type",
+              "code": "focus",
+              "display": "Clinical Focus"
+            },
+            "valueCodeableConcept": {
+              "text": "Neurology"
+            }
+          }
+        ],
+        "purpose": "To provide clinical guidance for the diagnosis and treatment of TIA and minor stroke.",
+        "usage": "Target Population: Patients presenting with symptoms of TIA or minor stroke.",
+        "topic": [
+          {
+            "text": "Transient Ischemic Attack (TIA) and Minor Stroke"
+          }
+        ],
+        "action": [
+          {
+            "id": "node1",
+            "title": "Assessment of Neurological Symptoms",
+            "description": "Are there focal neurological signs?",
+            "condition": [
+              {
+                "kind": "applicability",
+                "expression": {
+                  "language": "text/cql",
+                  "expression": "Focal neurological signs present",
+                  "description": "Are there focal neurological signs?"
+                }
+              }
+            ],
+            "timingDuration": {
+              "value": "Immediate"
+            },
+            "priority": "urgent",
+            "documentation": [
+              {
+                "type": "documentation",
+                "display": "Evidence Quality: high, Recommendation: strong"
+              }
+            ]
+          },
+          {
+            "id": "node2",
+            "title": "Imaging Studies",
+            "description": "Is there evidence of ischemia on imaging?",
+            "condition": [
+              {
+                "kind": "applicability",
+                "expression": {
+                  "language": "text/cql",
+                  "expression": "Imaging shows ischemic changes",
+                  "description": "Is there evidence of ischemia on imaging?"
+                }
+              }
+            ],
+            "timingDuration": {
+              "value": "Within 24 hours"
+            },
+            "priority": "urgent",
+            "documentation": [
+              {
+                "type": "documentation",
+                "display": "Evidence Quality: high, Recommendation: strong"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Questionnaire/questionnaire-guideline-for-diagnosis-and-treatment-of-transient-ischemic-atta",
+      "resource": {
+        "resourceType": "Questionnaire",
+        "id": "questionnaire-guideline-for-diagnosis-and-treatment-of-transient-ischemic-atta",
+        "url": "http://example.org/fhir/Questionnaire/questionnaire-guideline-for-diagnosis-and-treatment-of-transient-ischemic-atta",
+        "name": "Questionnaire_guideline_for_diagnosis_and_treatment_of_transient_ischemic_atta",
+        "title": "Clinical Assessment: Guideline for Diagnosis and Treatment of Transient Ischemic Attack and Minor Stroke",
+        "status": "draft",
+        "date": "2025-10-20T22:58:12.481851",
+        "publisher": "Vietnamese Neurology Association",
+        "description": "Clinical assessment questionnaire for Guideline for Diagnosis and Treatment of Transient Ischemic Attack and Minor Stroke",
+        "purpose": "Structured data collection for clinical decision support",
+        "item": [
+          {
+            "linkId": "inclusion",
+            "text": "Inclusion Criteria",
+            "type": "group",
+            "item": [
+              {
+                "linkId": "inclusion-0",
+                "text": "Presence of focal neurological signs",
+                "type": "boolean",
+                "required": true
+              },
+              {
+                "linkId": "inclusion-1",
+                "text": "Symptoms lasting less than 24 hours",
+                "type": "boolean",
+                "required": true
+              }
+            ]
+          },
+          {
+            "linkId": "question1",
+            "text": "Did the patient experience focal neurological signs?",
+            "type": "boolean",
+            "required": true,
+            "answerOption": [
+              {
+                "valueString": "Yes"
+              },
+              {
+                "valueString": "No"
+              }
+            ]
+          },
+          {
+            "linkId": "question2",
+            "text": "Was there evidence of ischemia on imaging?",
+            "type": "boolean",
+            "required": true,
+            "answerOption": [
+              {
+                "valueString": "Yes"
+              },
+              {
+                "valueString": "No"
+              }
+            ]
+          },
+          {
+            "linkId": "node1",
+            "text": "Are there focal neurological signs?",
+            "type": "boolean",
+            "required": false
+          },
+          {
+            "linkId": "node2",
+            "text": "Is there evidence of ischemia on imaging?",
+            "type": "boolean",
+            "required": false
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Library/library-guideline-for-diagnosis-and-treatment-of-transient-ischemic-atta",
+      "resource": {
+        "resourceType": "Library",
+        "id": "library-guideline-for-diagnosis-and-treatment-of-transient-ischemic-atta",
+        "url": "http://example.org/fhir/Library/library-guideline-for-diagnosis-and-treatment-of-transient-ischemic-atta",
+        "name": "Library_guideline_for_diagnosis_and_treatment_of_transient_ischemic_atta",
+        "title": "Clinical Logic for Guideline for Diagnosis and Treatment of Transient Ischemic Attack and Minor Stroke",
+        "status": "draft",
+        "type": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/library-type",
+              "code": "logic-library",
+              "display": "Logic Library"
+            }
+          ]
+        },
+        "description": "Contains clinical decision logic extracted from medical document",
+        "purpose": "Provide executable logic for clinical decision support",
+        "content": [
+          {
+            "contentType": "text/cql",
+            "data": "bGlicmFyeSBHdWlkZWxpbmVfZm9yX0RpYWdub3Npc19hbmRfVHJlYXRtZW50X29mX1RyYW5zaWVudF9Jc2NoZW1pY19BdHRhY2tfYW5kX01pbm9yX1N0cm9rZSB2ZXJzaW9uICcxLjAuMCcKCnVzaW5nIEZISVIgdmVyc2lvbiAnNC4wLjEnCmluY2x1ZGUgRkhJUkhlbHBlcnMgdmVyc2lvbiAnMS4wLjAnCgpjb250ZXh0IFBhdGllbnQKCi8vIFZhbHVlIFNldHMKdmFsdWVzZXQgIkZvY2FsIE5ldXJvbG9naWNhbCBTaWducyIgOiAnaHR0cDovL2V4YW1wbGUub3JnL2ZoaXIvVmFsdWVTZXQvZm9jYWwtbmV1cm9sb2dpY2FsLXNpZ25zJwp2YWx1ZXNldCAiSW1hZ2luZyBGaW5kaW5ncyIgOiAnaHR0cDovL2V4YW1wbGUub3JnL2ZoaXIvVmFsdWVTZXQvaW1hZ2luZy1maW5kaW5ncycKCi8vIERlZmluaXRpb25zCmRlZmluZSAiRm9jYWxOZXVyb2xvZ2ljYWxTaWduc1ByZXNlbnQiOgogICAgZXhpc3RzIChPYnNlcnZhdGlvbiBPIHdoZXJlIE8uY29kZSBpbiAiRm9jYWwgTmV1cm9sb2dpY2FsIFNpZ25zIiBhbmQgTy5zdGF0dXMgPSAnZmluYWwnIGFuZCBPLnN1YmplY3QgPSBQYXRpZW50KQoKZGVmaW5lICJJbWFnaW5nU2hvd3NJc2NoZW1pY0NoYW5nZXMiOgogICAgZXhpc3RzIChPYnNlcnZhdGlvbiBPIHdoZXJlIE8uY29kZSBpbiAiSW1hZ2luZyBGaW5kaW5ncyIgYW5kIE8uc3RhdHVzID0gJ2ZpbmFsJyBhbmQgTy5zdWJqZWN0ID0gUGF0aWVudCkKCi8vIERlY2lzaW9uIExvZ2ljCmRlZmluZSAiUmVjb21tZW5kYXRpb25zIjoKICAgIGlmICJGb2NhbE5ldXJvbG9naWNhbFNpZ25zUHJlc2VudCIgdGhlbgogICAgICAgIGlmICJJbWFnaW5nU2hvd3NJc2NoZW1pY0NoYW5nZXMiIHRoZW4KICAgICAgICAgICAgcmV0dXJuIFsiQ29uc2lkZXIgaG9zcGl0YWxpemF0aW9uIGZvciBmdXJ0aGVyIGV2YWx1YXRpb24gYW5kIG1hbmFnZW1lbnQgb2YgVElBLiJdCiAgICAgICAgZWxzZQogICAgICAgICAgICByZXR1cm4gWyJDb25zaWRlciBvdXRwYXRpZW50IGZvbGxvdy11cCBhbmQgcmlzayBmYWN0b3IgbW9kaWZpY2F0aW9uLiJdCiAgICAgICAgZW5kaWYKICAgIGVsc2UKICAgICAgICByZXR1cm4gW10KICAgIGVuZGlmCgovLyBBbGVydCBMb2dpYwpkZWZpbmUgIkFsZXJ0TmVlZGVkIjoKICAgIGNvdW50KCJSZWNvbW1lbmRhdGlvbnMiKSA+IDAKCmRlZmluZSAiQWxlcnRNZXNzYWdlIjoKICAgIGlmICJBbGVydE5lZWRlZCIgdGhlbgogICAgICAgICJDbGluaWNhbCBEZWNpc2lvbiBTdXBwb3J0OiAiICsgY291bnQoIlJlY29tbWVuZGF0aW9ucyIpICsgIiByZWNvbW1lbmRhdGlvbnMiCiAgICBlbHNlCiAgICAgICAgIk5vIHNwZWNpZmljIHJlY29tbWVuZGF0aW9ucyBhdCB0aGlzIHRpbWUiCiAgICBlbmRpZgoKLy8gTWFpbiBPdXRwdXQKZGVmaW5lICJEZWNpc2lvblBhdGgiOgogICAgaWYgIkFsZXJ0TmVlZGVkIiB0aGVuCiAgICAgICAgIlJlY29tbWVuZGF0aW9ucyBhdmFpbGFibGUgYmFzZWQgb24gY2xpbmljYWwgZmluZGluZ3MuIgogICAgZWxzZQogICAgICAgICJObyByZWNvbW1lbmRhdGlvbnMgYXZhaWxhYmxlLiIKICAgIGVuZGlmCgovLyBPdXRwdXQKZGVmaW5lICJPdXRwdXQiOgogICAgaWYgIkFsZXJ0TmVlZGVkIiB0aGVuCiAgICAgICAgewogICAgICAgICAgICAiYWxlcnRfbWVzc2FnZSI6ICJBbGVydE1lc3NhZ2UiLAogICAgICAgICAgICAiZGVjaXNpb25fcGF0aCI6ICJEZWNpc2lvblBhdGgiLAogICAgICAgICAgICAicmVjb21tZW5kYXRpb25zIjogIlJlY29tbWVuZGF0aW9ucyIKICAgICAgICB9CiAgICBlbHNlCiAgICAgICAgewogICAgICAgICAgICAiYWxlcnRfbWVzc2FnZSI6ICJBbGVydE1lc3NhZ2UiLAogICAgICAgICAgICAiZGVjaXNpb25fcGF0aCI6ICJEZWNpc2lvblBhdGgiLAogICAgICAgICAgICAicmVjb21tZW5kYXRpb25zIjogW10KICAgICAgICB9CiAgICBlbmRpZg=="
+          },
+          {
+            "contentType": "text/plain",
+            "data": "bWFpbnRlbmFuY2U6CiAgICB0aXRsZTogR3VpZGVsaW5lX2Zvcl9EaWFnbm9zaXNfYW5kX1RyZWF0bWVudF9vZl9UcmFuc2llbnRfSXNjaGVtaWNfQXR0YWNrX2FuZF9NaW5vcl9TdHJva2U7OwogICAgbWxtbmFtZTogZ3VpZGVsaW5lLWZvci1kaWFnbm9zaXMtYW5kLXRyZWF0bWVudC1vZi10cmFuc2llbnQtaXNjaGVtaWMtYXR0YTs7CiAgICBhcmRlbjogVmVyc2lvbiAyLjEwOzsKICAgIHZlcnNpb246IDEuMC4wOzsKICAgIGluc3RpdHV0aW9uOiBHZW5lcmF0ZWQgZnJvbSBNZWRpY2FsIERvY3VtZW50OzsKICAgIGF1dGhvcjogQXV0b21hdGVkIENvbnZlcnNpb24gU3lzdGVtOzsKICAgIHNwZWNpYWxpc3Q6IDs7CiAgICBkYXRlOiAyMDI1LTEwLTIwOzsKICAgIHZhbGlkYXRpb246IHRlc3Rpbmc7OwoKbGlicmFyeToKICAgIHB1cnBvc2U6IFRvIHByb3ZpZGUgY2xpbmljYWwgZ3VpZGFuY2UgZm9yIHRoZSBkaWFnbm9zaXMgYW5kIHRyZWF0bWVudCBvZiBUSUEgYW5kIG1pbm9yIHN0cm9rZS47OwogICAgZXhwbGFuYXRpb246IFRoaXMgTUxNIGltcGxlbWVudHMgY2xpbmljYWwgZGVjaXNpb24gbG9naWMgZXh0cmFjdGVkIGZyb20KICAgICAgICAgICAgICAgICBhIG1lZGljYWwgZ3VpZGVsaW5lIGRvY3VtZW50IHVzaW5nIEFJIHRleHQgYW5hbHlzaXMgYW5kCiAgICAgICAgICAgICAgICAgY29udmVydGVkIHRvIEZISVIgUGxhbkRlZmluaXRpb24gZm9ybWF0Ljs7CiAgICBrZXl3b3JkczogVHJhbnNpZW50IElzY2hlbWljIEF0dGFjayAoVElBKSBhbmQgTWlub3IgU3Ryb2tlOzsKICAgIGNpdGF0aW9uczogOzsKCmtub3dsZWRnZToKICAgIHR5cGU6IGRhdGEtZHJpdmVuOzsKICAgIAogICAgZGF0YToKICAgICAgICAvKiBQYXRpZW50IGlkZW50aWZpZXJzICovCiAgICAgICAgcGF0aWVudF9pZCA6PSByZWFkIHtwYXRpZW50X2lkZW50aWZpZXJ9OwogICAgICAgIGVuY291bnRlcl9pZCA6PSByZWFkIHtlbmNvdW50ZXJfaWR9OwogICAgICAgIAogICAgICAgIC8qIENsaW5pY2FsIGRhdGEgZWxlbWVudHMgZnJvbSBkb2N1bWVudCAqLwogICAgICAgIG5vZGUxIDo9IHJlYWQge0ZvY2FsIG5ldXJvbG9naWNhbCBzaWducyBwcmVzZW50fTsKICAgICAgICBub2RlMiA6PSByZWFkIHtJbWFnaW5nIHNob3dzIGlzY2hlbWljIGNoYW5nZXN9OwogICAgOzsKICAgIAogICAgZXZva2U6CiAgICAgICAgLyogVHJpZ2dlciBjb25kaXRpb25zICovCiAgICAgICAgTmV1cm9sb2dpY2FsIHN5bXB0b21zIHN1Z2dlc3RpdmUgb2YgVElBIG9yIG1pbm9yIHN0cm9rZSBPUgogICAgICAgIGNsaW5pY2FsX2RlY2lzaW9uX3N1cHBvcnRfcmVxdWVzdGVkCiAgICA7OwogICAgCiAgICBsb2dpYzoKICAgICAgICAvKiBJbml0aWFsaXplICovCiAgICAgICAgcmVjb21tZW5kYXRpb25zIDo9IFtdOwogICAgICAgIGRlY2lzaW9uX3BhdGggOj0gIiI7CiAgICAgICAgCiAgICAgICAgLyogSW1wbGVtZW50IGRlY2lzaW9uIHRyZWUgbG9naWMgKi8KCiAgICAgICAgLyogQXNzZXNzbWVudCBvZiBOZXVyb2xvZ2ljYWwgU3ltcHRvbXMgKi8KICAgICAgICBpZiBub2RlMSB0aGVuCiAgICAgICAgZWxzZQogICAgICAgIGVuZGlmOwoKICAgICAgICAvKiBJbWFnaW5nIFN0dWRpZXMgKi8KICAgICAgICBpZiBub2RlMiB0aGVuCiAgICAgICAgZWxzZQogICAgICAgIGVuZGlmOwoKICAgICAgICAvKiBQcmVwYXJlIG91dHB1dCAqLwogICAgICAgIGlmIGNvdW50KHJlY29tbWVuZGF0aW9ucykgPiAwIHRoZW4KICAgICAgICAgICAgYWxlcnRfbmVlZGVkIDo9IHRydWU7CiAgICAgICAgICAgIGFsZXJ0X21lc3NhZ2UgOj0gIkNsaW5pY2FsIERlY2lzaW9uIFN1cHBvcnQ6ICIgfHwgCiAgICAgICAgICAgICAgICAgICAgICAgICAgY291bnQocmVjb21tZW5kYXRpb25zKSB8fCAiIHJlY29tbWVuZGF0aW9ucyI7CiAgICAgICAgZWxzZQogICAgICAgICAgICBhbGVydF9uZWVkZWQgOj0gZmFsc2U7CiAgICAgICAgICAgIGFsZXJ0X21lc3NhZ2UgOj0gIk5vIHNwZWNpZmljIHJlY29tbWVuZGF0aW9ucyBhdCB0aGlzIHRpbWUiOwogICAgICAgIGVuZGlmOwogICAgOzsKICAgIAogICAgYWN0aW9uOgogICAgICAgIC8qIEV4ZWN1dGUgcmVjb21tZW5kYXRpb25zICovCiAgICAgICAgaWYgYWxlcnRfbmVlZGVkIHRoZW4KICAgICAgICAgICAgd3JpdGUgYWxlcnRfbWVzc2FnZTsKICAgICAgICAgICAgd3JpdGUgIkRlY2lzaW9uIFBhdGg6ICIgfHwgZGVjaXNpb25fcGF0aDsKICAgICAgICAgICAgCiAgICAgICAgICAgIGZvciByZWMgaW4gcmVjb21tZW5kYXRpb25zIGRvCiAgICAgICAgICAgICAgICB3cml0ZSAiICAtICIgfHwgcmVjOwogICAgICAgICAgICBlbmRkbzsKICAgICAgICAgICAgCiAgICAgICAgICAgIHJldHVybiByZWNvbW1lbmRhdGlvbnM7CiAgICAgICAgZW5kaWY7CiAgICA7OwoKZW5kOgo=",
+            "title": "Arden Syntax MLM"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/ActivityDefinition/action1",
+      "resource": {
+        "resourceType": "ActivityDefinition",
+        "id": "action1",
+        "url": "http://example.org/fhir/ActivityDefinition/action1",
+        "name": "aspirin_therapy",
+        "title": "Aspirin Therapy",
+        "status": "draft",
+        "description": "Initiate aspirin therapy for prevention.",
+        "kind": "MedicationRequest",
+        "intent": "proposal",
+        "priority": "routine",
+        "doNotPerform": false,
+        "dosage": [
+          {
+            "text": "81-325 mg Oral Daily"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/ActivityDefinition/action2",
+      "resource": {
+        "resourceType": "ActivityDefinition",
+        "id": "action2",
+        "url": "http://example.org/fhir/ActivityDefinition/action2",
+        "name": "clopidogrel_therapy",
+        "title": "Clopidogrel Therapy",
+        "status": "draft",
+        "description": "Use clopidogrel if aspirin is contraindicated.",
+        "kind": "MedicationRequest",
+        "intent": "proposal",
+        "priority": "routine",
+        "doNotPerform": false,
+        "dosage": [
+          {
+            "text": "75 mg Oral Daily"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Measure/measure1",
+      "resource": {
+        "resourceType": "Measure",
+        "id": "measure1",
+        "url": "http://example.org/fhir/Measure/measure1",
+        "name": "rate_of_tia_and_minor_stroke_diagnosis",
+        "title": "Rate of TIA and Minor Stroke Diagnosis",
+        "status": "draft",
+        "description": "Percentage of patients diagnosed with TIA or minor stroke within 24 hours of presentation.",
+        "scoring": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/measure-scoring",
+              "code": "proportion",
+              "display": "Proportion"
+            }
+          ]
+        },
+        "improvementNotation": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/measure-improvement-notation",
+              "code": "increase",
+              "display": "Increase"
+            }
+          ]
+        },
+        "group": [
+          {
+            "id": "main-group",
+            "population": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                      "code": "numerator",
+                      "display": "Numerator"
+                    }
+                  ]
+                },
+                "description": "Patients diagnosed within 24 hours",
+                "criteria": {
+                  "language": "text/cql",
+                  "expression": "Patients diagnosed within 24 hours"
+                }
+              },
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                      "code": "denominator",
+                      "display": "Denominator"
+                    }
+                  ]
+                },
+                "description": "Total patients presenting with symptoms",
+                "criteria": {
+                  "language": "text/cql",
+                  "expression": "Total patients presenting with symptoms"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/MeasureReport/report-measure1",
+      "resource": {
+        "resourceType": "MeasureReport",
+        "id": "report-measure1",
+        "status": "complete",
+        "type": "summary",
+        "measure": "http://example.org/fhir/Measure/measure1",
+        "date": "2025-10-20T22:58:12.505014",
+        "period": {
+          "start": "2025-10-20T22:58:12.505014",
+          "end": "2025-10-20T22:58:12.505014"
+        },
+        "group": [
+          {
+            "id": "main-group",
+            "population": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                      "code": "numerator"
+                    }
+                  ]
+                },
+                "count": 0
+              },
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                      "code": "denominator"
+                    }
+                  ]
+                },
+                "count": 0
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Evidence/evidence-node1",
+      "resource": {
+        "resourceType": "Evidence",
+        "id": "evidence-node1",
+        "url": "http://example.org/fhir/Evidence/evidence-node1",
+        "title": "Evidence for Assessment of Neurological Symptoms",
+        "status": "draft",
+        "description": "Are there focal neurological signs?",
+        "certainty": [
+          {
+            "rating": {
+              "text": "high"
+            },
+            "note": [
+              {
+                "text": "Recommendation strength: strong"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Evidence/evidence-node2",
+      "resource": {
+        "resourceType": "Evidence",
+        "id": "evidence-node2",
+        "url": "http://example.org/fhir/Evidence/evidence-node2",
+        "title": "Evidence for Imaging Studies",
+        "status": "draft",
+        "description": "Is there evidence of ischemia on imaging?",
+        "certainty": [
+          {
+            "rating": {
+              "text": "high"
+            },
+            "note": [
+              {
+                "text": "Recommendation strength: strong"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/EvidenceVariable/var-node1",
+      "resource": {
+        "resourceType": "EvidenceVariable",
+        "id": "var-node1",
+        "url": "http://example.org/fhir/EvidenceVariable/var-node1",
+        "name": "duration_of_symptoms",
+        "title": "Duration of symptoms",
+        "status": "draft",
+        "description": "Measurement: Duration of symptoms (Unit: hours)",
+        "note": [
+          {
+            "text": "Normal range: < 24, Threshold: 24"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/EvidenceVariable/var-node2",
+      "resource": {
+        "resourceType": "EvidenceVariable",
+        "id": "var-node2",
+        "url": "http://example.org/fhir/EvidenceVariable/var-node2",
+        "name": "imaging_results",
+        "title": "Imaging results",
+        "status": "draft",
+        "description": "Measurement: Imaging results (Unit: N/A)",
+        "note": [
+          {
+            "text": "Normal range: No ischemic changes, Threshold: Ischemic changes present"
+          }
+        ]
+      }
+    }
+  ]
+}

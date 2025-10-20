@@ -1,0 +1,14 @@
+{
+  "resourceType": "EvidenceVariable",
+  "id": "var-node2",
+  "url": "http://example.org/fhir/EvidenceVariable/var-node2",
+  "name": "imaging_results",
+  "title": "Imaging results",
+  "status": "draft",
+  "description": "Measurement: Imaging results (Unit: N/A)",
+  "note": [
+    {
+      "text": "Normal range: No ischemic changes, Threshold: Ischemic changes present"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "resourceType": "Measure",
+  "id": "measure1",
+  "url": "http://example.org/fhir/Measure/measure1",
+  "name": "rate_of_tia_and_minor_stroke_diagnosis",
+  "title": "Rate of TIA and Minor Stroke Diagnosis",
+  "status": "draft",
+  "description": "Percentage of patients diagnosed with TIA or minor stroke within 24 hours of presentation.",
+  "scoring": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/measure-scoring",
+        "code": "proportion",
+        "display": "Proportion"
+      }
+    ]
+  },
+  "improvementNotation": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/measure-improvement-notation",
+        "code": "increase",
+        "display": "Increase"
+      }
+    ]
+  },
+  "group": [
+    {
+      "id": "main-group",
+      "population": [
+        {
+          "code": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                "code": "numerator",
+                "display": "Numerator"
+              }
+            ]
+          },
+          "description": "Patients diagnosed within 24 hours",
+          "criteria": {
+            "language": "text/cql",
+            "expression": "Patients diagnosed within 24 hours"
+          }
+        },
+        {
+          "code": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                "code": "denominator",
+                "display": "Denominator"
+              }
+            ]
+          },
+          "description": "Total patients presenting with symptoms",
+          "criteria": {
+            "language": "text/cql",
+            "expression": "Total patients presenting with symptoms"
+          }
+        }
+      ]
+    }
+  ]
+}
