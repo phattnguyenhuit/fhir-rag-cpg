@@ -1,0 +1,20 @@
+{
+  "resourceType": "Evidence",
+  "id": "evidence-node5",
+  "url": "http://example.org/fhir/Evidence/evidence-node5",
+  "title": "Evidence for Endovascular Therapy Decision",
+  "status": "draft",
+  "description": "Is endovascular therapy indicated?",
+  "certainty": [
+    {
+      "rating": {
+        "text": "high"
+      },
+      "note": [
+        {
+          "text": "Recommendation strength: strong"
+        }
+      ]
+    }
+  ]
+}

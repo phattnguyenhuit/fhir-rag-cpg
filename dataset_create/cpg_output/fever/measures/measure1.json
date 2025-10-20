@@ -1,0 +1,66 @@
+{
+  "resourceType": "Measure",
+  "id": "measure1",
+  "url": "http://example.org/fhir/Measure/measure1",
+  "name": "fever_etiology_identification",
+  "title": "Fever Etiology Identification",
+  "status": "draft",
+  "description": "Percentage of patients with fever who have an identified etiology.",
+  "scoring": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/measure-scoring",
+        "code": "proportion",
+        "display": "Proportion"
+      }
+    ]
+  },
+  "improvementNotation": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/measure-improvement-notation",
+        "code": "increase",
+        "display": "Increase"
+      }
+    ]
+  },
+  "group": [
+    {
+      "id": "main-group",
+      "population": [
+        {
+          "code": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                "code": "numerator",
+                "display": "Numerator"
+              }
+            ]
+          },
+          "description": "Patients with identified etiology",
+          "criteria": {
+            "language": "text/cql",
+            "expression": "Patients with identified etiology"
+          }
+        },
+        {
+          "code": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                "code": "denominator",
+                "display": "Denominator"
+              }
+            ]
+          },
+          "description": "Total patients with fever",
+          "criteria": {
+            "language": "text/cql",
+            "expression": "Total patients with fever"
+          }
+        }
+      ]
+    }
+  ]
+}

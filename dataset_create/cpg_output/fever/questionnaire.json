@@ -1,0 +1,87 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "questionnaire-fever-in-the-returning-traveler",
+  "url": "http://example.org/fhir/Questionnaire/questionnaire-fever-in-the-returning-traveler",
+  "name": "Questionnaire_fever_in_the_returning_traveler",
+  "title": "Clinical Assessment: Fever in the Returning Traveler",
+  "status": "draft",
+  "date": "2025-10-20T16:27:01.994082",
+  "publisher": "CDC",
+  "description": "Clinical assessment questionnaire for Fever in the Returning Traveler",
+  "purpose": "Structured data collection for clinical decision support",
+  "item": [
+    {
+      "linkId": "inclusion",
+      "text": "Inclusion Criteria",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "inclusion-0",
+          "text": "Recent travel abroad",
+          "type": "boolean",
+          "required": true
+        }
+      ]
+    },
+    {
+      "linkId": "question1",
+      "text": "Has the patient traveled recently?",
+      "type": "boolean",
+      "required": true,
+      "answerOption": [
+        {
+          "valueString": "Yes"
+        },
+        {
+          "valueString": "No"
+        }
+      ]
+    },
+    {
+      "linkId": "question2",
+      "text": "Is the incubation period less than 21 days?",
+      "type": "boolean",
+      "required": true,
+      "answerOption": [
+        {
+          "valueString": "Yes"
+        },
+        {
+          "valueString": "No"
+        }
+      ]
+    },
+    {
+      "linkId": "question3",
+      "text": "Is the incubation period greater than 21 days?",
+      "type": "boolean",
+      "required": true,
+      "answerOption": [
+        {
+          "valueString": "Yes"
+        },
+        {
+          "valueString": "No"
+        }
+      ]
+    },
+    {
+      "linkId": "node1",
+      "text": "Is the incubation period less than 21 days?",
+      "type": "boolean",
+      "required": false
+    },
+    {
+      "linkId": "node2",
+      "text": "What are the potential causes?",
+      "type": "boolean",
+      "required": false
+    },
+    {
+      "linkId": "node3",
+      "text": "Is the incubation period greater than 21 days?",
+      "type": "boolean",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "resourceType": "Evidence",
+  "id": "evidence-node2",
+  "url": "http://example.org/fhir/Evidence/evidence-node2",
+  "title": "Evidence for Consider causes",
+  "status": "draft",
+  "description": "What are the potential causes?",
+  "certainty": [
+    {
+      "rating": {
+        "text": "moderate"
+      },
+      "note": [
+        {
+          "text": "Recommendation strength: strong"
+        }
+      ]
+    }
+  ]
+}

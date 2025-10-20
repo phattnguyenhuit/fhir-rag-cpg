@@ -1,0 +1,20 @@
+{
+  "resourceType": "Evidence",
+  "id": "evidence-node1",
+  "url": "http://example.org/fhir/Evidence/evidence-node1",
+  "title": "Evidence for Symptom onset",
+  "status": "draft",
+  "description": "What is the time since symptom onset?",
+  "certainty": [
+    {
+      "rating": {
+        "text": "high"
+      },
+      "note": [
+        {
+          "text": "Recommendation strength: strong"
+        }
+      ]
+    }
+  ]
+}

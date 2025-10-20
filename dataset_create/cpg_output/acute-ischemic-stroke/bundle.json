@@ -1,0 +1,710 @@
+{
+  "resourceType": "Bundle",
+  "id": "bundle-acute-ischemic-stroke-management-algorithm",
+  "type": "collection",
+  "timestamp": "2025-10-20T17:07:27.710414",
+  "entry": [
+    {
+      "fullUrl": "http://example.org/fhir/PlanDefinition/acute-ischemic-stroke-management-algorithm",
+      "resource": {
+        "resourceType": "PlanDefinition",
+        "id": "acute-ischemic-stroke-management-algorithm",
+        "url": "http://example.org/fhir/PlanDefinition/acute-ischemic-stroke-management-algorithm",
+        "identifier": [
+          {
+            "system": "http://example.org/fhir/identifiers",
+            "value": "acute-ischemic-stroke-management-algorithm"
+          }
+        ],
+        "version": "1.0.0",
+        "name": "acute_ischemic_stroke_management_algorithm",
+        "title": "Acute Ischemic Stroke Management Algorithm",
+        "type": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/plan-definition-type",
+              "code": "clinical-protocol",
+              "display": "Clinical Protocol"
+            }
+          ]
+        },
+        "status": "draft",
+        "experimental": true,
+        "date": "2025-10-20T17:07:27.586413",
+        "publisher": "American Heart Association",
+        "description": "Determine treatment options for acute ischemic stroke",
+        "useContext": [
+          {
+            "code": {
+              "system": "http://terminology.hl7.org/CodeSystem/usage-context-type",
+              "code": "focus",
+              "display": "Clinical Focus"
+            },
+            "valueCodeableConcept": {
+              "text": "Neurology"
+            }
+          }
+        ],
+        "purpose": "Determine treatment options for acute ischemic stroke",
+        "usage": "Target Population: Patients with acute ischemic stroke symptoms",
+        "topic": [
+          {
+            "text": "Acute Ischemic Stroke"
+          }
+        ],
+        "action": [
+          {
+            "id": "node1",
+            "title": "Symptom onset",
+            "description": "What is the time since symptom onset?",
+            "condition": [
+              {
+                "kind": "applicability",
+                "expression": {
+                  "language": "text/cql",
+                  "expression": "Symptom onset <= 3 hours",
+                  "description": "What is the time since symptom onset?"
+                }
+              }
+            ],
+            "timingDuration": {
+              "value": "Immediate"
+            },
+            "priority": "stat",
+            "documentation": [
+              {
+                "type": "documentation",
+                "display": "Evidence Quality: high, Recommendation: strong"
+              }
+            ],
+            "action": [
+              {
+                "title": "YES: Administer IV tPA",
+                "description": "Administer 0.9 mg/kg IV tPA"
+              },
+              {
+                "title": "NO: Assess further",
+                "description": "Determine if within 3-4.5 hours"
+              }
+            ]
+          },
+          {
+            "id": "node2",
+            "title": "IV tPA Administration",
+            "description": "Is IV tPA criteria met?",
+            "condition": [
+              {
+                "kind": "applicability",
+                "expression": {
+                  "language": "text/cql",
+                  "expression": "Yes",
+                  "description": "Is IV tPA criteria met?"
+                }
+              }
+            ],
+            "timingDuration": {
+              "value": "Immediate"
+            },
+            "priority": "stat",
+            "documentation": [
+              {
+                "type": "documentation",
+                "display": "Evidence Quality: high, Recommendation: strong"
+              }
+            ],
+            "action": [
+              {
+                "title": "YES: Administer IV tPA",
+                "description": "Administer 0.9 mg/kg IV tPA followed by 10% bolus"
+              },
+              {
+                "title": "NO: Consider other options",
+                "description": "Evaluate for endovascular therapy"
+              }
+            ]
+          },
+          {
+            "id": "node3",
+            "title": "Symptom onset",
+            "description": "Is symptom onset between 3 to 4.5 hours?",
+            "condition": [
+              {
+                "kind": "applicability",
+                "expression": {
+                  "language": "text/cql",
+                  "expression": "3 < symptom onset <= 4.5",
+                  "description": "Is symptom onset between 3 to 4.5 hours?"
+                }
+              }
+            ],
+            "timingDuration": {
+              "value": "Immediate"
+            },
+            "priority": "stat",
+            "documentation": [
+              {
+                "type": "documentation",
+                "display": "Evidence Quality: high, Recommendation: strong"
+              }
+            ],
+            "action": [
+              {
+                "title": "YES: Administer IV tPA",
+                "description": "Administer 0.9 mg/kg IV tPA"
+              },
+              {
+                "title": "NO: Assess for imaging",
+                "description": "Determine if imaging-based therapy is indicated"
+              }
+            ]
+          },
+          {
+            "id": "node4",
+            "title": "IV tPA Administration",
+            "description": "Is IV tPA administered?",
+            "condition": [
+              {
+                "kind": "applicability",
+                "expression": {
+                  "language": "text/cql",
+                  "expression": "Yes",
+                  "description": "Is IV tPA administered?"
+                }
+              }
+            ],
+            "timingDuration": {
+              "value": "Immediate"
+            },
+            "priority": "stat",
+            "documentation": [
+              {
+                "type": "documentation",
+                "display": "Evidence Quality: high, Recommendation: strong"
+              }
+            ],
+            "action": [
+              {
+                "title": "YES: Monitor patient",
+                "description": "Monitor for complications"
+              },
+              {
+                "title": "NO: Consider alternatives",
+                "description": "Evaluate for endovascular therapy"
+              }
+            ]
+          },
+          {
+            "id": "node5",
+            "title": "Endovascular Therapy Decision",
+            "description": "Is endovascular therapy indicated?",
+            "condition": [
+              {
+                "kind": "applicability",
+                "expression": {
+                  "language": "text/cql",
+                  "expression": "Discuss with vascular neurologist",
+                  "description": "Is endovascular therapy indicated?"
+                }
+              }
+            ],
+            "timingDuration": {
+              "value": "Immediate"
+            },
+            "priority": "stat",
+            "documentation": [
+              {
+                "type": "documentation",
+                "display": "Evidence Quality: high, Recommendation: strong"
+              }
+            ],
+            "action": [
+              {
+                "title": "YES: Transfer to endovascular center",
+                "description": "Transfer to endovascular capable stroke center"
+              },
+              {
+                "title": "NO: Admit to stroke unit",
+                "description": "Admit to stroke unit or ICU at stroke center"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Questionnaire/questionnaire-acute-ischemic-stroke-management-algorithm",
+      "resource": {
+        "resourceType": "Questionnaire",
+        "id": "questionnaire-acute-ischemic-stroke-management-algorithm",
+        "url": "http://example.org/fhir/Questionnaire/questionnaire-acute-ischemic-stroke-management-algorithm",
+        "name": "Questionnaire_acute_ischemic_stroke_management_algorithm",
+        "title": "Clinical Assessment: Acute Ischemic Stroke Management Algorithm",
+        "status": "draft",
+        "date": "2025-10-20T17:07:27.619414",
+        "publisher": "American Heart Association",
+        "description": "Clinical assessment questionnaire for Acute Ischemic Stroke Management Algorithm",
+        "purpose": "Structured data collection for clinical decision support",
+        "item": [
+          {
+            "linkId": "inclusion",
+            "text": "Inclusion Criteria",
+            "type": "group",
+            "item": [
+              {
+                "linkId": "inclusion-0",
+                "text": "Symptoms of stroke",
+                "type": "boolean",
+                "required": true
+              },
+              {
+                "linkId": "inclusion-1",
+                "text": "Head CT shows ischemic changes",
+                "type": "boolean",
+                "required": true
+              }
+            ]
+          },
+          {
+            "linkId": "question1",
+            "text": "Is the patient within the 3-hour window for IV tPA?",
+            "type": "boolean",
+            "required": true,
+            "answerOption": [
+              {
+                "valueString": "Yes"
+              },
+              {
+                "valueString": "No"
+              }
+            ]
+          },
+          {
+            "linkId": "question2",
+            "text": "Is the patient within the 3-4.5 hour window for IV tPA?",
+            "type": "boolean",
+            "required": true,
+            "answerOption": [
+              {
+                "valueString": "Yes"
+              },
+              {
+                "valueString": "No"
+              }
+            ]
+          },
+          {
+            "linkId": "question3",
+            "text": "Is endovascular therapy indicated?",
+            "type": "boolean",
+            "required": true,
+            "answerOption": [
+              {
+                "valueString": "Yes"
+              },
+              {
+                "valueString": "No"
+              }
+            ]
+          },
+          {
+            "linkId": "node1",
+            "text": "What is the time since symptom onset?",
+            "type": "boolean",
+            "required": false
+          },
+          {
+            "linkId": "node2",
+            "text": "Is IV tPA criteria met?",
+            "type": "boolean",
+            "required": false
+          },
+          {
+            "linkId": "node3",
+            "text": "Is symptom onset between 3 to 4.5 hours?",
+            "type": "boolean",
+            "required": false
+          },
+          {
+            "linkId": "node4",
+            "text": "Is IV tPA administered?",
+            "type": "boolean",
+            "required": false
+          },
+          {
+            "linkId": "node5",
+            "text": "Is endovascular therapy indicated?",
+            "type": "boolean",
+            "required": false
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Library/library-acute-ischemic-stroke-management-algorithm",
+      "resource": {
+        "resourceType": "Library",
+        "id": "library-acute-ischemic-stroke-management-algorithm",
+        "url": "http://example.org/fhir/Library/library-acute-ischemic-stroke-management-algorithm",
+        "name": "Library_acute_ischemic_stroke_management_algorithm",
+        "title": "Clinical Logic for Acute Ischemic Stroke Management Algorithm",
+        "status": "draft",
+        "type": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/library-type",
+              "code": "logic-library",
+              "display": "Logic Library"
+            }
+          ]
+        },
+        "description": "Contains clinical decision logic extracted from medical diagram",
+        "purpose": "Provide executable logic for clinical decision support",
+        "content": [
+          {
+            "contentType": "text/cql",
+            "data": "bGlicmFyeSBhY3V0ZV9pc2NoZW1pY19zdHJva2VfbWFuYWdlbWVudF9hbGdvcml0aG0gdmVyc2lvbiAnMS4wLjAnCgp1c2luZyBGSElSIHZlcnNpb24gJzQuMC4xJwoKaW5jbHVkZSBGSElSSGVscGVycyB2ZXJzaW9uICc0LjAuMScKCi8vIENsaW5pY2FsIFByYWN0aWNlIEd1aWRlbGluZTogQWN1dGUgSXNjaGVtaWMgU3Ryb2tlIE1hbmFnZW1lbnQgQWxnb3JpdGhtCi8vIERvbWFpbjogTmV1cm9sb2d5Ci8vIERpc2Vhc2U6IEFjdXRlIElzY2hlbWljIFN0cm9rZQoKLy8gQ29udGV4dHMKY29udGV4dCBQYXRpZW50CgovLyA9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09Ci8vIFZhbHVlIFNldHMgYW5kIENvZGVzCi8vID09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0KCi8vIENvZGVzIGZvcjogU3ltcHRvbSBvbnNldAovLyBTTk9NRUQ6IDQzMTg1NTAwNQovLyBJQ0QxMDogSTYzLjkKLy8gTE9JTkM6IExQMTUwMDAtOAoKLy8gQ29kZXMgZm9yOiBJViB0UEEgQWRtaW5pc3RyYXRpb24KCi8vIENvZGVzIGZvcjogU3ltcHRvbSBvbnNldAoKLy8gQ29kZXMgZm9yOiBJViB0UEEgQWRtaW5pc3RyYXRpb24KCi8vIENvZGVzIGZvcjogRW5kb3Zhc2N1bGFyIFRoZXJhcHkgRGVjaXNpb24KCi8vID09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0KLy8gRGF0YSBFbGVtZW50cwovLyA9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09CmRlZmluZSAiUGF0aWVudCBBZ2UiOgogIEFnZUluWWVhcnMoKQoKZGVmaW5lICJQYXRpZW50IEdlbmRlciI6CiAgUGF0aWVudC5nZW5kZXIKCi8vID09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0KLy8gSW5jbHVzaW9uIENyaXRlcmlhCi8vID09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0KZGVmaW5lICJNZWV0cyBJbmNsdXNpb24gQ3JpdGVyaWEiOgogIC8vIFN5bXB0b21zIG9mIHN0cm9rZQogIC8vIEhlYWQgQ1Qgc2hvd3MgaXNjaGVtaWMgY2hhbmdlcwogIHRydWUgLy8gVE9ETzogSW1wbGVtZW50IGFjdHVhbCBsb2dpYwoKLy8gPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PQovLyBEZWNpc2lvbiBMb2dpYwovLyA9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09CgpkZWZpbmUgIk5vZGUxIjoKICAvLyBXaGF0IGlzIHRoZSB0aW1lIHNpbmNlIHN5bXB0b20gb25zZXQ/CiAgLy8gQ29uZGl0aW9uOiBTeW1wdG9tIG9uc2V0IDw9IDMgaG91cnMKICBmYWxzZSAvLyBUT0RPOiBJbXBsZW1lbnQgYWN0dWFsIGxvZ2ljCgpkZWZpbmUgIk5vZGUyIjoKICAvLyBJcyBJViB0UEEgY3JpdGVyaWEgbWV0PwogIC8vIENvbmRpdGlvbjogWWVzCiAgZmFsc2UgLy8gVE9ETzogSW1wbGVtZW50IGFjdHVhbCBsb2dpYwoKZGVmaW5lICJOb2RlMyI6CiAgLy8gSXMgc3ltcHRvbSBvbnNldCBiZXR3ZWVuIDMgdG8gNC41IGhvdXJzPwogIC8vIENvbmRpdGlvbjogMyA8IHN5bXB0b20gb25zZXQgPD0gNC41CiAgZmFsc2UgLy8gVE9ETzogSW1wbGVtZW50IGFjdHVhbCBsb2dpYwoKZGVmaW5lICJOb2RlNCI6CiAgLy8gSXMgSVYgdFBBIGFkbWluaXN0ZXJlZD8KICAvLyBDb25kaXRpb246IFllcwogIGZhbHNlIC8vIFRPRE86IEltcGxlbWVudCBhY3R1YWwgbG9naWMKCmRlZmluZSAiTm9kZTUiOgogIC8vIElzIGVuZG92YXNjdWxhciB0aGVyYXB5IGluZGljYXRlZD8KICAvLyBDb25kaXRpb246IERpc2N1c3Mgd2l0aCB2YXNjdWxhciBuZXVyb2xvZ2lzdAogIGZhbHNlIC8vIFRPRE86IEltcGxlbWVudCBhY3R1YWwgbG9naWMKCi8vID09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0KLy8gUmVjb21tZW5kYXRpb25zCi8vID09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0KZGVmaW5lICJBY3RpdmUgUmVjb21tZW5kYXRpb25zIjoKICAvLyBDb21waWxlIGFsbCBhcHBsaWNhYmxlIHJlY29tbWVuZGF0aW9ucwogIHt9IC8vIFRPRE86IEltcGxlbWVudCByZWNvbW1lbmRhdGlvbiBsb2dpYwo="
+          },
+          {
+            "contentType": "text/plain",
+            "data": "bWFpbnRlbmFuY2U6CiAgICB0aXRsZTogQWN1dGVfSXNjaGVtaWNfU3Ryb2tlX01hbmFnZW1lbnRfQWxnb3JpdGhtOzsKICAgIG1sbW5hbWU6IGFjdXRlLWlzY2hlbWljLXN0cm9rZS1tYW5hZ2VtZW50LWFsZ29yaXRobTs7CiAgICBhcmRlbjogVmVyc2lvbiAyLjEwOzsKICAgIHZlcnNpb246IDEuMC4wOzsKICAgIGluc3RpdHV0aW9uOiBHZW5lcmF0ZWQgZnJvbSBNZWRpY2FsIERpYWdyYW07OwogICAgYXV0aG9yOiBBdXRvbWF0ZWQgQ29udmVyc2lvbiBTeXN0ZW07OwogICAgc3BlY2lhbGlzdDogOzsKICAgIGRhdGU6IDIwMjUtMTAtMjA7OwogICAgdmFsaWRhdGlvbjogdGVzdGluZzs7CgpsaWJyYXJ5OgogICAgcHVycG9zZTogRGV0ZXJtaW5lIHRyZWF0bWVudCBvcHRpb25zIGZvciBhY3V0ZSBpc2NoZW1pYyBzdHJva2U7OwogICAgZXhwbGFuYXRpb246IFRoaXMgTUxNIGltcGxlbWVudHMgY2xpbmljYWwgZGVjaXNpb24gbG9naWMgZXh0cmFjdGVkIGZyb20KICAgICAgICAgICAgICAgICBhIG1lZGljYWwgZmxvd2NoYXJ0L2RpYWdyYW0gdXNpbmcgQUkgdmlzaW9uIHRlY2hub2xvZ3kgYW5kCiAgICAgICAgICAgICAgICAgY29udmVydGVkIHRvIEZISVIgUGxhbkRlZmluaXRpb24gZm9ybWF0Ljs7CiAgICBrZXl3b3JkczogQWN1dGUgSXNjaGVtaWMgU3Ryb2tlOzsKICAgIGNpdGF0aW9uczogOzsKCmtub3dsZWRnZToKICAgIHR5cGU6IGRhdGEtZHJpdmVuOzsKICAgIAogICAgZGF0YToKICAgICAgICAvKiBQYXRpZW50IGlkZW50aWZpZXJzICovCiAgICAgICAgcGF0aWVudF9pZCA6PSByZWFkIHtwYXRpZW50X2lkZW50aWZpZXJ9OwogICAgICAgIGVuY291bnRlcl9pZCA6PSByZWFkIHtlbmNvdW50ZXJfaWR9OwogICAgICAgIAogICAgICAgIC8qIENsaW5pY2FsIGRhdGEgZWxlbWVudHMgZnJvbSBkaWFncmFtICovCiAgICAgICAgbm9kZTEgOj0gcmVhZCB7U3ltcHRvbSBvbnNldCA8PSAzIGhvdXJzfTsKICAgICAgICBub2RlMiA6PSByZWFkIHtZZXN9OwogICAgICAgIG5vZGUzIDo9IHJlYWQgezMgPCBzeW1wdG9tIG9uc2V0IDw9IDQuNX07CiAgICAgICAgbm9kZTQgOj0gcmVhZCB7WWVzfTsKICAgICAgICBub2RlNSA6PSByZWFkIHtEaXNjdXNzIHdpdGggdmFzY3VsYXIgbmV1cm9sb2dpc3R9OwogICAgOzsKICAgIAogICAgZXZva2U6CiAgICAgICAgLyogVHJpZ2dlciBjb25kaXRpb25zICovCiAgICAgICAgU3ltcHRvbXMgb2YgYWN1dGUgaXNjaGVtaWMgc3Ryb2tlIE9SCiAgICAgICAgY2xpbmljYWxfZGVjaXNpb25fc3VwcG9ydF9yZXF1ZXN0ZWQKICAgIDs7CiAgICAKICAgIGxvZ2ljOgogICAgICAgIC8qIEluaXRpYWxpemUgKi8KICAgICAgICByZWNvbW1lbmRhdGlvbnMgOj0gW107CiAgICAgICAgZGVjaXNpb25fcGF0aCA6PSAiIjsKICAgICAgICAKICAgICAgICAvKiBJbXBsZW1lbnQgZGVjaXNpb24gdHJlZSBsb2dpYyAqLwoKICAgICAgICAvKiBTeW1wdG9tIG9uc2V0ICovCiAgICAgICAgaWYgbm9kZTEgdGhlbgogICAgICAgICAgICByZWNvbW1lbmRhdGlvbnMgOj0gcmVjb21tZW5kYXRpb25zICsgWyJBZG1pbmlzdGVyIElWIHRQQSJdOwogICAgICAgICAgICBkZWNpc2lvbl9wYXRoIDo9IGRlY2lzaW9uX3BhdGggKyAiIC0+IG5vZGUxIChZRVMpIjsKICAgICAgICBlbHNlCiAgICAgICAgICAgIHJlY29tbWVuZGF0aW9ucyA6PSByZWNvbW1lbmRhdGlvbnMgKyBbIkFzc2VzcyBmdXJ0aGVyIl07CiAgICAgICAgICAgIGRlY2lzaW9uX3BhdGggOj0gZGVjaXNpb25fcGF0aCArICIgLT4gbm9kZTEgKE5PKSI7CiAgICAgICAgZW5kaWY7CgogICAgICAgIC8qIElWIHRQQSBBZG1pbmlzdHJhdGlvbiAqLwogICAgICAgIGlmIG5vZGUyIHRoZW4KICAgICAgICAgICAgcmVjb21tZW5kYXRpb25zIDo9IHJlY29tbWVuZGF0aW9ucyArIFsiQWRtaW5pc3RlciBJViB0UEEiXTsKICAgICAgICAgICAgZGVjaXNpb25fcGF0aCA6PSBkZWNpc2lvbl9wYXRoICsgIiAtPiBub2RlMiAoWUVTKSI7CiAgICAgICAgZWxzZQogICAgICAgICAgICByZWNvbW1lbmRhdGlvbnMgOj0gcmVjb21tZW5kYXRpb25zICsgWyJDb25zaWRlciBvdGhlciBvcHRpb25zIl07CiAgICAgICAgICAgIGRlY2lzaW9uX3BhdGggOj0gZGVjaXNpb25fcGF0aCArICIgLT4gbm9kZTIgKE5PKSI7CiAgICAgICAgZW5kaWY7CgogICAgICAgIC8qIFN5bXB0b20gb25zZXQgKi8KICAgICAgICBpZiBub2RlMyB0aGVuCiAgICAgICAgICAgIHJlY29tbWVuZGF0aW9ucyA6PSByZWNvbW1lbmRhdGlvbnMgKyBbIkFkbWluaXN0ZXIgSVYgdFBBIl07CiAgICAgICAgICAgIGRlY2lzaW9uX3BhdGggOj0gZGVjaXNpb25fcGF0aCArICIgLT4gbm9kZTMgKFlFUykiOwogICAgICAgIGVsc2UKICAgICAgICAgICAgcmVjb21tZW5kYXRpb25zIDo9IHJlY29tbWVuZGF0aW9ucyArIFsiQXNzZXNzIGZvciBpbWFnaW5nIl07CiAgICAgICAgICAgIGRlY2lzaW9uX3BhdGggOj0gZGVjaXNpb25fcGF0aCArICIgLT4gbm9kZTMgKE5PKSI7CiAgICAgICAgZW5kaWY7CgogICAgICAgIC8qIElWIHRQQSBBZG1pbmlzdHJhdGlvbiAqLwogICAgICAgIGlmIG5vZGU0IHRoZW4KICAgICAgICAgICAgcmVjb21tZW5kYXRpb25zIDo9IHJlY29tbWVuZGF0aW9ucyArIFsiTW9uaXRvciBwYXRpZW50Il07CiAgICAgICAgICAgIGRlY2lzaW9uX3BhdGggOj0gZGVjaXNpb25fcGF0aCArICIgLT4gbm9kZTQgKFlFUykiOwogICAgICAgIGVsc2UKICAgICAgICAgICAgcmVjb21tZW5kYXRpb25zIDo9IHJlY29tbWVuZGF0aW9ucyArIFsiQ29uc2lkZXIgYWx0ZXJuYXRpdmVzIl07CiAgICAgICAgICAgIGRlY2lzaW9uX3BhdGggOj0gZGVjaXNpb25fcGF0aCArICIgLT4gbm9kZTQgKE5PKSI7CiAgICAgICAgZW5kaWY7CgogICAgICAgIC8qIEVuZG92YXNjdWxhciBUaGVyYXB5IERlY2lzaW9uICovCiAgICAgICAgaWYgbm9kZTUgdGhlbgogICAgICAgICAgICByZWNvbW1lbmRhdGlvbnMgOj0gcmVjb21tZW5kYXRpb25zICsgWyJUcmFuc2ZlciB0byBlbmRvdmFzY3VsYXIgY2VudGVyIl07CiAgICAgICAgICAgIGRlY2lzaW9uX3BhdGggOj0gZGVjaXNpb25fcGF0aCArICIgLT4gbm9kZTUgKFlFUykiOwogICAgICAgIGVsc2UKICAgICAgICAgICAgcmVjb21tZW5kYXRpb25zIDo9IHJlY29tbWVuZGF0aW9ucyArIFsiQWRtaXQgdG8gc3Ryb2tlIHVuaXQiXTsKICAgICAgICAgICAgZGVjaXNpb25fcGF0aCA6PSBkZWNpc2lvbl9wYXRoICsgIiAtPiBub2RlNSAoTk8pIjsKICAgICAgICBlbmRpZjsKCiAgICAgICAgLyogUHJlcGFyZSBvdXRwdXQgKi8KICAgICAgICBpZiBjb3VudChyZWNvbW1lbmRhdGlvbnMpID4gMCB0aGVuCiAgICAgICAgICAgIGFsZXJ0X25lZWRlZCA6PSB0cnVlOwogICAgICAgICAgICBhbGVydF9tZXNzYWdlIDo9ICJDbGluaWNhbCBEZWNpc2lvbiBTdXBwb3J0OiAiIHx8IAogICAgICAgICAgICAgICAgICAgICAgICAgIGNvdW50KHJlY29tbWVuZGF0aW9ucykgfHwgIiByZWNvbW1lbmRhdGlvbnMiOwogICAgICAgIGVsc2UKICAgICAgICAgICAgYWxlcnRfbmVlZGVkIDo9IGZhbHNlOwogICAgICAgICAgICBhbGVydF9tZXNzYWdlIDo9ICJObyBzcGVjaWZpYyByZWNvbW1lbmRhdGlvbnMgYXQgdGhpcyB0aW1lIjsKICAgICAgICBlbmRpZjsKICAgIDs7CiAgICAKICAgIGFjdGlvbjoKICAgICAgICAvKiBFeGVjdXRlIHJlY29tbWVuZGF0aW9ucyAqLwogICAgICAgIGlmIGFsZXJ0X25lZWRlZCB0aGVuCiAgICAgICAgICAgIHdyaXRlIGFsZXJ0X21lc3NhZ2U7CiAgICAgICAgICAgIHdyaXRlICJEZWNpc2lvbiBQYXRoOiAiIHx8IGRlY2lzaW9uX3BhdGg7CiAgICAgICAgICAgIAogICAgICAgICAgICBmb3IgcmVjIGluIHJlY29tbWVuZGF0aW9ucyBkbwogICAgICAgICAgICAgICAgd3JpdGUgIiAgLSAiIHx8IHJlYzsKICAgICAgICAgICAgZW5kZG87CiAgICAgICAgICAgIAogICAgICAgICAgICByZXR1cm4gcmVjb21tZW5kYXRpb25zOwogICAgICAgIGVuZGlmOwogICAgOzsKCmVuZDoK",
+            "title": "Arden Syntax MLM"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/ActivityDefinition/action1",
+      "resource": {
+        "resourceType": "ActivityDefinition",
+        "id": "action1",
+        "url": "http://example.org/fhir/ActivityDefinition/action1",
+        "name": "iv_tpa_administration",
+        "title": "IV tPA Administration",
+        "status": "draft",
+        "description": "Administer 0.9 mg/kg IV tPA followed by 10% bolus over 60 minutes.",
+        "kind": "MedicationRequest",
+        "intent": "proposal",
+        "priority": "routine",
+        "doNotPerform": false,
+        "dosage": [
+          {
+            "text": "0.9 mg/kg IV Once"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Measure/measure1",
+      "resource": {
+        "resourceType": "Measure",
+        "id": "measure1",
+        "url": "http://example.org/fhir/Measure/measure1",
+        "name": "time_to_treatment",
+        "title": "Time to Treatment",
+        "status": "draft",
+        "description": "Time from symptom onset to treatment initiation",
+        "scoring": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/measure-scoring",
+              "code": "proportion",
+              "display": "Proportion"
+            }
+          ]
+        },
+        "improvementNotation": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/measure-improvement-notation",
+              "code": "decrease",
+              "display": "Decrease"
+            }
+          ]
+        },
+        "group": [
+          {
+            "id": "main-group",
+            "population": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                      "code": "numerator",
+                      "display": "Numerator"
+                    }
+                  ]
+                },
+                "description": "Patients treated within 3 hours",
+                "criteria": {
+                  "language": "text/cql",
+                  "expression": "Patients treated within 3 hours"
+                }
+              },
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                      "code": "denominator",
+                      "display": "Denominator"
+                    }
+                  ]
+                },
+                "description": "Total patients with acute ischemic stroke",
+                "criteria": {
+                  "language": "text/cql",
+                  "expression": "Total patients with acute ischemic stroke"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/MeasureReport/report-measure1",
+      "resource": {
+        "resourceType": "MeasureReport",
+        "id": "report-measure1",
+        "status": "complete",
+        "type": "summary",
+        "measure": "http://example.org/fhir/Measure/measure1",
+        "date": "2025-10-20T17:07:27.651416",
+        "period": {
+          "start": "2025-10-20T17:07:27.651416",
+          "end": "2025-10-20T17:07:27.651416"
+        },
+        "group": [
+          {
+            "id": "main-group",
+            "population": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                      "code": "numerator"
+                    }
+                  ]
+                },
+                "count": 0
+              },
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                      "code": "denominator"
+                    }
+                  ]
+                },
+                "count": 0
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Evidence/evidence-node1",
+      "resource": {
+        "resourceType": "Evidence",
+        "id": "evidence-node1",
+        "url": "http://example.org/fhir/Evidence/evidence-node1",
+        "title": "Evidence for Symptom onset",
+        "status": "draft",
+        "description": "What is the time since symptom onset?",
+        "certainty": [
+          {
+            "rating": {
+              "text": "high"
+            },
+            "note": [
+              {
+                "text": "Recommendation strength: strong"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Evidence/evidence-node2",
+      "resource": {
+        "resourceType": "Evidence",
+        "id": "evidence-node2",
+        "url": "http://example.org/fhir/Evidence/evidence-node2",
+        "title": "Evidence for IV tPA Administration",
+        "status": "draft",
+        "description": "Is IV tPA criteria met?",
+        "certainty": [
+          {
+            "rating": {
+              "text": "high"
+            },
+            "note": [
+              {
+                "text": "Recommendation strength: strong"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Evidence/evidence-node3",
+      "resource": {
+        "resourceType": "Evidence",
+        "id": "evidence-node3",
+        "url": "http://example.org/fhir/Evidence/evidence-node3",
+        "title": "Evidence for Symptom onset",
+        "status": "draft",
+        "description": "Is symptom onset between 3 to 4.5 hours?",
+        "certainty": [
+          {
+            "rating": {
+              "text": "high"
+            },
+            "note": [
+              {
+                "text": "Recommendation strength: strong"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Evidence/evidence-node4",
+      "resource": {
+        "resourceType": "Evidence",
+        "id": "evidence-node4",
+        "url": "http://example.org/fhir/Evidence/evidence-node4",
+        "title": "Evidence for IV tPA Administration",
+        "status": "draft",
+        "description": "Is IV tPA administered?",
+        "certainty": [
+          {
+            "rating": {
+              "text": "high"
+            },
+            "note": [
+              {
+                "text": "Recommendation strength: strong"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Evidence/evidence-node5",
+      "resource": {
+        "resourceType": "Evidence",
+        "id": "evidence-node5",
+        "url": "http://example.org/fhir/Evidence/evidence-node5",
+        "title": "Evidence for Endovascular Therapy Decision",
+        "status": "draft",
+        "description": "Is endovascular therapy indicated?",
+        "certainty": [
+          {
+            "rating": {
+              "text": "high"
+            },
+            "note": [
+              {
+                "text": "Recommendation strength: strong"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/EvidenceVariable/var-node1",
+      "resource": {
+        "resourceType": "EvidenceVariable",
+        "id": "var-node1",
+        "url": "http://example.org/fhir/EvidenceVariable/var-node1",
+        "name": "time_since_symptom_onset",
+        "title": "Time since symptom onset",
+        "status": "draft",
+        "description": "Measurement: Time since symptom onset (Unit: hours)",
+        "note": [
+          {
+            "text": "Normal range: 0-3, Threshold: 3"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/EvidenceVariable/var-node2",
+      "resource": {
+        "resourceType": "EvidenceVariable",
+        "id": "var-node2",
+        "url": "http://example.org/fhir/EvidenceVariable/var-node2",
+        "name": "iv_tpa_dosage",
+        "title": "IV tPA dosage",
+        "status": "draft",
+        "description": "Measurement: IV tPA dosage (Unit: mg/kg)",
+        "note": [
+          {
+            "text": "Normal range: 0.0-0.9, Threshold: 0.9"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/EvidenceVariable/var-node3",
+      "resource": {
+        "resourceType": "EvidenceVariable",
+        "id": "var-node3",
+        "url": "http://example.org/fhir/EvidenceVariable/var-node3",
+        "name": "time_since_symptom_onset",
+        "title": "Time since symptom onset",
+        "status": "draft",
+        "description": "Measurement: Time since symptom onset (Unit: hours)",
+        "note": [
+          {
+            "text": "Normal range: 3-4.5, Threshold: 4.5"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/EvidenceVariable/var-node4",
+      "resource": {
+        "resourceType": "EvidenceVariable",
+        "id": "var-node4",
+        "url": "http://example.org/fhir/EvidenceVariable/var-node4",
+        "name": "iv_tpa_dosage",
+        "title": "IV tPA dosage",
+        "status": "draft",
+        "description": "Measurement: IV tPA dosage (Unit: mg/kg)",
+        "note": [
+          {
+            "text": "Normal range: 0.0-0.9, Threshold: 0.9"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/EvidenceVariable/var-node5",
+      "resource": {
+        "resourceType": "EvidenceVariable",
+        "id": "var-node5",
+        "url": "http://example.org/fhir/EvidenceVariable/var-node5",
+        "name": "endovascular_therapy_indication",
+        "title": "Endovascular therapy indication",
+        "status": "draft",
+        "description": "Measurement: Endovascular therapy indication (Unit: boolean)",
+        "note": [
+          {
+            "text": "Normal range: true/false, Threshold: true"
+          }
+        ]
+      }
+    }
+  ]
+}

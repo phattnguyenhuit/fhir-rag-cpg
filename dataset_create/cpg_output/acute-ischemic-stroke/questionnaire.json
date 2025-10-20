@@ -1,0 +1,105 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "questionnaire-acute-ischemic-stroke-management-algorithm",
+  "url": "http://example.org/fhir/Questionnaire/questionnaire-acute-ischemic-stroke-management-algorithm",
+  "name": "Questionnaire_acute_ischemic_stroke_management_algorithm",
+  "title": "Clinical Assessment: Acute Ischemic Stroke Management Algorithm",
+  "status": "draft",
+  "date": "2025-10-20T17:07:27.619414",
+  "publisher": "American Heart Association",
+  "description": "Clinical assessment questionnaire for Acute Ischemic Stroke Management Algorithm",
+  "purpose": "Structured data collection for clinical decision support",
+  "item": [
+    {
+      "linkId": "inclusion",
+      "text": "Inclusion Criteria",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "inclusion-0",
+          "text": "Symptoms of stroke",
+          "type": "boolean",
+          "required": true
+        },
+        {
+          "linkId": "inclusion-1",
+          "text": "Head CT shows ischemic changes",
+          "type": "boolean",
+          "required": true
+        }
+      ]
+    },
+    {
+      "linkId": "question1",
+      "text": "Is the patient within the 3-hour window for IV tPA?",
+      "type": "boolean",
+      "required": true,
+      "answerOption": [
+        {
+          "valueString": "Yes"
+        },
+        {
+          "valueString": "No"
+        }
+      ]
+    },
+    {
+      "linkId": "question2",
+      "text": "Is the patient within the 3-4.5 hour window for IV tPA?",
+      "type": "boolean",
+      "required": true,
+      "answerOption": [
+        {
+          "valueString": "Yes"
+        },
+        {
+          "valueString": "No"
+        }
+      ]
+    },
+    {
+      "linkId": "question3",
+      "text": "Is endovascular therapy indicated?",
+      "type": "boolean",
+      "required": true,
+      "answerOption": [
+        {
+          "valueString": "Yes"
+        },
+        {
+          "valueString": "No"
+        }
+      ]
+    },
+    {
+      "linkId": "node1",
+      "text": "What is the time since symptom onset?",
+      "type": "boolean",
+      "required": false
+    },
+    {
+      "linkId": "node2",
+      "text": "Is IV tPA criteria met?",
+      "type": "boolean",
+      "required": false
+    },
+    {
+      "linkId": "node3",
+      "text": "Is symptom onset between 3 to 4.5 hours?",
+      "type": "boolean",
+      "required": false
+    },
+    {
+      "linkId": "node4",
+      "text": "Is IV tPA administered?",
+      "type": "boolean",
+      "required": false
+    },
+    {
+      "linkId": "node5",
+      "text": "Is endovascular therapy indicated?",
+      "type": "boolean",
+      "required": false
+    }
+  ]
+}

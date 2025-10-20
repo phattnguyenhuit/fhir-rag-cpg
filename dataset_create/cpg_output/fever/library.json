@@ -1,0 +1,24 @@
+{
+  "resourceType": "Library",
+  "id": "library-fever-in-the-returning-traveler",
+  "url": "http://example.org/fhir/Library/library-fever-in-the-returning-traveler",
+  "name": "Library_fever_in_the_returning_traveler",
+  "title": "Clinical Logic for Fever in the Returning Traveler",
+  "status": "draft",
+  "type": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/library-type",
+        "code": "logic-library",
+        "display": "Logic Library"
+      }
+    ]
+  },
+  "description": "Clinical decision logic extracted from medical diagram",
+  "relatedArtifact": [
+    {
+      "type": "depends-on",
+      "resource": "http://example.org/fhir/PlanDefinition/fever-in-the-returning-traveler"
+    }
+  ]
+}

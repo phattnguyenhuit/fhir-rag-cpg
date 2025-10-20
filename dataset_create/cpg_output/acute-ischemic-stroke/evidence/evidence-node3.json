@@ -1,0 +1,20 @@
+{
+  "resourceType": "Evidence",
+  "id": "evidence-node3",
+  "url": "http://example.org/fhir/Evidence/evidence-node3",
+  "title": "Evidence for Symptom onset",
+  "status": "draft",
+  "description": "Is symptom onset between 3 to 4.5 hours?",
+  "certainty": [
+    {
+      "rating": {
+        "text": "high"
+      },
+      "note": [
+        {
+          "text": "Recommendation strength: strong"
+        }
+      ]
+    }
+  ]
+}

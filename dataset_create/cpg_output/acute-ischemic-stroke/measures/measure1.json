@@ -1,0 +1,66 @@
+{
+  "resourceType": "Measure",
+  "id": "measure1",
+  "url": "http://example.org/fhir/Measure/measure1",
+  "name": "time_to_treatment",
+  "title": "Time to Treatment",
+  "status": "draft",
+  "description": "Time from symptom onset to treatment initiation",
+  "scoring": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/measure-scoring",
+        "code": "proportion",
+        "display": "Proportion"
+      }
+    ]
+  },
+  "improvementNotation": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/measure-improvement-notation",
+        "code": "decrease",
+        "display": "Decrease"
+      }
+    ]
+  },
+  "group": [
+    {
+      "id": "main-group",
+      "population": [
+        {
+          "code": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                "code": "numerator",
+                "display": "Numerator"
+              }
+            ]
+          },
+          "description": "Patients treated within 3 hours",
+          "criteria": {
+            "language": "text/cql",
+            "expression": "Patients treated within 3 hours"
+          }
+        },
+        {
+          "code": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                "code": "denominator",
+                "display": "Denominator"
+              }
+            ]
+          },
+          "description": "Total patients with acute ischemic stroke",
+          "criteria": {
+            "language": "text/cql",
+            "expression": "Total patients with acute ischemic stroke"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "resourceType": "EvidenceVariable",
+  "id": "var-node3",
+  "url": "http://example.org/fhir/EvidenceVariable/var-node3",
+  "name": "time_since_symptom_onset",
+  "title": "Time since symptom onset",
+  "status": "draft",
+  "description": "Measurement: Time since symptom onset (Unit: hours)",
+  "note": [
+    {
+      "text": "Normal range: 3-4.5, Threshold: 4.5"
+    }
+  ]
+}

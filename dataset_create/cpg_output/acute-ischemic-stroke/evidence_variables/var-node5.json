@@ -1,0 +1,14 @@
+{
+  "resourceType": "EvidenceVariable",
+  "id": "var-node5",
+  "url": "http://example.org/fhir/EvidenceVariable/var-node5",
+  "name": "endovascular_therapy_indication",
+  "title": "Endovascular therapy indication",
+  "status": "draft",
+  "description": "Measurement: Endovascular therapy indication (Unit: boolean)",
+  "note": [
+    {
+      "text": "Normal range: true/false, Threshold: true"
+    }
+  ]
+}

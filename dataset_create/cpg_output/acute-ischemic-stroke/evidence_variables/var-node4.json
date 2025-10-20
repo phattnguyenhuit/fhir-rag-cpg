@@ -1,0 +1,14 @@
+{
+  "resourceType": "EvidenceVariable",
+  "id": "var-node4",
+  "url": "http://example.org/fhir/EvidenceVariable/var-node4",
+  "name": "iv_tpa_dosage",
+  "title": "IV tPA dosage",
+  "status": "draft",
+  "description": "Measurement: IV tPA dosage (Unit: mg/kg)",
+  "note": [
+    {
+      "text": "Normal range: 0.0-0.9, Threshold: 0.9"
+    }
+  ]
+}

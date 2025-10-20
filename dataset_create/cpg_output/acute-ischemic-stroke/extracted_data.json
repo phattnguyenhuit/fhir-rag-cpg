@@ -1,0 +1,365 @@
+{
+  "metadata": {
+    "title": "Acute Ischemic Stroke Management Algorithm",
+    "disease": "Acute Ischemic Stroke",
+    "domain": "Neurology",
+    "purpose": "Determine treatment options for acute ischemic stroke",
+    "target_population": "Patients with acute ischemic stroke symptoms",
+    "evidence_level": "A",
+    "guideline_source": "American Heart Association"
+  },
+  "entry_point": {
+    "id": "entry",
+    "condition": "Symptoms of acute ischemic stroke",
+    "inclusion_criteria": [
+      "Symptoms of stroke",
+      "Head CT shows ischemic changes"
+    ],
+    "exclusion_criteria": [
+      "Head CT shows hemorrhage",
+      "Symptoms not consistent with stroke"
+    ]
+  },
+  "decision_nodes": [
+    {
+      "id": "node1",
+      "type": "condition",
+      "label": "Symptom onset",
+      "question": "What is the time since symptom onset?",
+      "condition_expression": "Symptom onset <= 3 hours",
+      "measurement": {
+        "parameter": "Time since symptom onset",
+        "unit": "hours",
+        "normal_range": "0-3",
+        "threshold": "3"
+      },
+      "branches": {
+        "yes": {
+          "next_node": "node2",
+          "actions": [
+            "Administer IV tPA"
+          ],
+          "description": "Administer 0.9 mg/kg IV tPA"
+        },
+        "no": {
+          "next_node": "node3",
+          "actions": [
+            "Assess further"
+          ],
+          "description": "Determine if within 3-4.5 hours"
+        }
+      },
+      "timing": "Immediate",
+      "priority": "stat",
+      "clinical_codes": {
+        "snomed": [
+          "431855005"
+        ],
+        "icd10": [
+          "I63.9"
+        ],
+        "loinc": [
+          "LP15000-8"
+        ]
+      },
+      "evidence": {
+        "quality": "high",
+        "recommendation_strength": "strong",
+        "references": [
+          "AHA/ASA Guidelines 2018"
+        ]
+      }
+    },
+    {
+      "id": "node2",
+      "type": "action",
+      "label": "IV tPA Administration",
+      "question": "Is IV tPA criteria met?",
+      "condition_expression": "Yes",
+      "measurement": {
+        "parameter": "IV tPA dosage",
+        "unit": "mg/kg",
+        "normal_range": "0.0-0.9",
+        "threshold": "0.9"
+      },
+      "branches": {
+        "yes": {
+          "next_node": "node4",
+          "actions": [
+            "Administer IV tPA"
+          ],
+          "description": "Administer 0.9 mg/kg IV tPA followed by 10% bolus"
+        },
+        "no": {
+          "next_node": "node5",
+          "actions": [
+            "Consider other options"
+          ],
+          "description": "Evaluate for endovascular therapy"
+        }
+      },
+      "timing": "Immediate",
+      "priority": "stat",
+      "clinical_codes": {
+        "snomed": [
+          "431855005"
+        ],
+        "icd10": [
+          "I63.9"
+        ],
+        "loinc": [
+          "LP15000-8"
+        ]
+      },
+      "evidence": {
+        "quality": "high",
+        "recommendation_strength": "strong",
+        "references": [
+          "AHA/ASA Guidelines 2018"
+        ]
+      }
+    },
+    {
+      "id": "node3",
+      "type": "condition",
+      "label": "Symptom onset",
+      "question": "Is symptom onset between 3 to 4.5 hours?",
+      "condition_expression": "3 < symptom onset <= 4.5",
+      "measurement": {
+        "parameter": "Time since symptom onset",
+        "unit": "hours",
+        "normal_range": "3-4.5",
+        "threshold": "4.5"
+      },
+      "branches": {
+        "yes": {
+          "next_node": "node6",
+          "actions": [
+            "Administer IV tPA"
+          ],
+          "description": "Administer 0.9 mg/kg IV tPA"
+        },
+        "no": {
+          "next_node": "node7",
+          "actions": [
+            "Assess for imaging"
+          ],
+          "description": "Determine if imaging-based therapy is indicated"
+        }
+      },
+      "timing": "Immediate",
+      "priority": "stat",
+      "clinical_codes": {
+        "snomed": [
+          "431855005"
+        ],
+        "icd10": [
+          "I63.9"
+        ],
+        "loinc": [
+          "LP15000-8"
+        ]
+      },
+      "evidence": {
+        "quality": "high",
+        "recommendation_strength": "strong",
+        "references": [
+          "AHA/ASA Guidelines 2018"
+        ]
+      }
+    },
+    {
+      "id": "node4",
+      "type": "action",
+      "label": "IV tPA Administration",
+      "question": "Is IV tPA administered?",
+      "condition_expression": "Yes",
+      "measurement": {
+        "parameter": "IV tPA dosage",
+        "unit": "mg/kg",
+        "normal_range": "0.0-0.9",
+        "threshold": "0.9"
+      },
+      "branches": {
+        "yes": {
+          "next_node": "node8",
+          "actions": [
+            "Monitor patient"
+          ],
+          "description": "Monitor for complications"
+        },
+        "no": {
+          "next_node": "node9",
+          "actions": [
+            "Consider alternatives"
+          ],
+          "description": "Evaluate for endovascular therapy"
+        }
+      },
+      "timing": "Immediate",
+      "priority": "stat",
+      "clinical_codes": {
+        "snomed": [
+          "431855005"
+        ],
+        "icd10": [
+          "I63.9"
+        ],
+        "loinc": [
+          "LP15000-8"
+        ]
+      },
+      "evidence": {
+        "quality": "high",
+        "recommendation_strength": "strong",
+        "references": [
+          "AHA/ASA Guidelines 2018"
+        ]
+      }
+    },
+    {
+      "id": "node5",
+      "type": "condition",
+      "label": "Endovascular Therapy Decision",
+      "question": "Is endovascular therapy indicated?",
+      "condition_expression": "Discuss with vascular neurologist",
+      "measurement": {
+        "parameter": "Endovascular therapy indication",
+        "unit": "boolean",
+        "normal_range": "true/false",
+        "threshold": "true"
+      },
+      "branches": {
+        "yes": {
+          "next_node": "node10",
+          "actions": [
+            "Transfer to endovascular center"
+          ],
+          "description": "Transfer to endovascular capable stroke center"
+        },
+        "no": {
+          "next_node": "node11",
+          "actions": [
+            "Admit to stroke unit"
+          ],
+          "description": "Admit to stroke unit or ICU at stroke center"
+        }
+      },
+      "timing": "Immediate",
+      "priority": "stat",
+      "clinical_codes": {
+        "snomed": [
+          "431855005"
+        ],
+        "icd10": [
+          "I63.9"
+        ],
+        "loinc": [
+          "LP15000-8"
+        ]
+      },
+      "evidence": {
+        "quality": "high",
+        "recommendation_strength": "strong",
+        "references": [
+          "AHA/ASA Guidelines 2018"
+        ]
+      }
+    }
+  ],
+  "action_nodes": [
+    {
+      "id": "action1",
+      "type": "medication",
+      "title": "IV tPA Administration",
+      "description": "Administer 0.9 mg/kg IV tPA followed by 10% bolus over 60 minutes.",
+      "instructions": "Administer 0.9 mg/kg IV tPA, 10% bolus followed by 90% over 60 minutes.",
+      "dosage": "0.9 mg/kg",
+      "route": "IV",
+      "frequency": "Once",
+      "duration": "60 minutes",
+      "contraindications": [
+        "Active bleeding",
+        "Recent surgery"
+      ],
+      "precautions": [
+        "Monitor for bleeding",
+        "Check blood pressure"
+      ],
+      "monitoring": [
+        "Neurological status",
+        "Vital signs"
+      ],
+      "clinical_codes": {
+        "rxnorm": [
+          "123456"
+        ],
+        "cpt": [
+          "12345"
+        ],
+        "snomed": [
+          "431855005"
+        ]
+      }
+    }
+  ],
+  "assessment_questions": [
+    {
+      "id": "question1",
+      "text": "Is the patient within the 3-hour window for IV tPA?",
+      "type": "boolean",
+      "required": true,
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "linked_node": "node1"
+    },
+    {
+      "id": "question2",
+      "text": "Is the patient within the 3-4.5 hour window for IV tPA?",
+      "type": "boolean",
+      "required": true,
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "linked_node": "node3"
+    },
+    {
+      "id": "question3",
+      "text": "Is endovascular therapy indicated?",
+      "type": "boolean",
+      "required": true,
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "linked_node": "node5"
+    }
+  ],
+  "quality_measures": [
+    {
+      "id": "measure1",
+      "title": "Time to Treatment",
+      "description": "Time from symptom onset to treatment initiation",
+      "type": "process",
+      "numerator": "Patients treated within 3 hours",
+      "denominator": "Total patients with acute ischemic stroke",
+      "improvement_notation": "decrease"
+    }
+  ],
+  "endpoints": [
+    {
+      "id": "endpoint1",
+      "category": "treatment",
+      "diagnosis": "Acute Ischemic Stroke",
+      "recommendations": [
+        "Consider IV tPA",
+        "Consider endovascular therapy"
+      ],
+      "follow_up": "Monitor neurological status and vital signs",
+      "expected_outcome": "Improvement in neurological function"
+    }
+  ]
+}

@@ -1,8 +1,7 @@
 1. ĐẠI CƯƠNG
 1.1. Định nghĩa
 1.1.1. Đột quỵ nhẹ
-Đột quỵ nhẹ là tình trạng đột quỵ nhồi máu não mà có điểm NIHSS (thang điểm đột quỵ
-của Viện sức khỏe Quốc gia Hoa Kỳ) ≤ 5 điểm.
+Đột quỵ nhẹ là tình trạng đột quỵ nhồi máu não mà có điểm NIHSS (thang điểm đột quỵ của Viện sức khỏe Quốc gia Hoa Kỳ) 
 1.1.2. Cơn thiếu máu não thoáng qua
 Cơn thiếu máu não thoáng qua (CTMNTQ) được định nghĩa là sự khởi phát đột ngột
 triệu chứng thần kinh khu trú do thiếu máu não ở một khu vực hoặc võng mạc, và các

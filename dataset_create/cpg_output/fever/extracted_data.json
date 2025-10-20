@@ -1,0 +1,224 @@
+{
+  "metadata": {
+    "title": "Fever in the Returning Traveler",
+    "disease": "Fever",
+    "domain": "Infectious Disease",
+    "purpose": "To identify potential causes of fever in returning travelers",
+    "target_population": "Travelers returning with fever",
+    "evidence_level": "B",
+    "guideline_source": "CDC"
+  },
+  "entry_point": {
+    "id": "entry",
+    "condition": "Fever in the returning traveler",
+    "inclusion_criteria": [
+      "Recent travel abroad"
+    ],
+    "exclusion_criteria": []
+  },
+  "decision_nodes": [
+    {
+      "id": "node1",
+      "type": "condition",
+      "label": "Incubation < 21 days",
+      "question": "Is the incubation period less than 21 days?",
+      "condition_expression": "Incubation < 21 days",
+      "measurement": {
+        "parameter": "Incubation period",
+        "unit": "days",
+        "normal_range": "< 21",
+        "threshold": "21"
+      },
+      "branches": {
+        "yes": {
+          "next_node": "node2",
+          "actions": [],
+          "description": "Consider causes of fever with incubation < 21 days"
+        },
+        "no": {
+          "next_node": "node3",
+          "actions": [],
+          "description": "Consider causes of fever with incubation > 21 days"
+        }
+      },
+      "timing": "Immediate",
+      "priority": "urgent",
+      "clinical_codes": {
+        "snomed": [],
+        "icd10": [],
+        "loinc": []
+      },
+      "evidence": {
+        "quality": "moderate",
+        "recommendation_strength": "strong",
+        "references": []
+      }
+    },
+    {
+      "id": "node2",
+      "type": "action",
+      "label": "Consider causes",
+      "question": "What are the potential causes?",
+      "condition_expression": "",
+      "measurement": {},
+      "branches": {
+        "yes": {
+          "next_node": "action1",
+          "actions": [],
+          "description": "Traveler's diarrhea, Dengue fever, Yellow fever, Leptospirosis, Malaria, Typhus, Trypanosomiasis, Enteric fevers"
+        },
+        "no": {
+          "next_node": "action1",
+          "actions": [],
+          "description": "No immediate action required"
+        }
+      },
+      "timing": "Immediate",
+      "priority": "urgent",
+      "clinical_codes": {
+        "snomed": [],
+        "icd10": [],
+        "loinc": []
+      },
+      "evidence": {
+        "quality": "moderate",
+        "recommendation_strength": "strong",
+        "references": []
+      }
+    },
+    {
+      "id": "node3",
+      "type": "condition",
+      "label": "Incubation > 21 days",
+      "question": "Is the incubation period greater than 21 days?",
+      "condition_expression": "Incubation > 21 days",
+      "measurement": {
+        "parameter": "Incubation period",
+        "unit": "days",
+        "normal_range": "> 21",
+        "threshold": "21"
+      },
+      "branches": {
+        "yes": {
+          "next_node": "action2",
+          "actions": [],
+          "description": "Consider causes of fever with incubation > 21 days"
+        },
+        "no": {
+          "next_node": "action2",
+          "actions": [],
+          "description": "No immediate action required"
+        }
+      },
+      "timing": "Immediate",
+      "priority": "urgent",
+      "clinical_codes": {
+        "snomed": [],
+        "icd10": [],
+        "loinc": []
+      },
+      "evidence": {
+        "quality": "moderate",
+        "recommendation_strength": "strong",
+        "references": []
+      }
+    },
+    {
+      "id": "action1",
+      "type": "action",
+      "title": "Identify major category",
+      "description": "Attempt to identify the major category of fever",
+      "instructions": "Assess for infectious, inflammatory, malignancy, or other causes.",
+      "dosage": "",
+      "route": "",
+      "frequency": "",
+      "duration": "",
+      "contraindications": [],
+      "precautions": [],
+      "monitoring": [],
+      "clinical_codes": {
+        "rxnorm": [],
+        "cpt": [],
+        "snomed": []
+      }
+    },
+    {
+      "id": "action2",
+      "type": "action",
+      "title": "Consider specific conditions",
+      "description": "Consider specific conditions based on recent history.",
+      "instructions": "Assess for recent sick contact, chemotherapy, travel, rash, arthritis, weight loss, bony pain.",
+      "dosage": "",
+      "route": "",
+      "frequency": "",
+      "duration": "",
+      "contraindications": [],
+      "precautions": [],
+      "monitoring": [],
+      "clinical_codes": {
+        "rxnorm": [],
+        "cpt": [],
+        "snomed": []
+      }
+    }
+  ],
+  "assessment_questions": [
+    {
+      "id": "question1",
+      "text": "Has the patient traveled recently?",
+      "type": "boolean",
+      "required": true,
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "linked_node": "node1"
+    },
+    {
+      "id": "question2",
+      "text": "Is the incubation period less than 21 days?",
+      "type": "boolean",
+      "required": true,
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "linked_node": "node2"
+    },
+    {
+      "id": "question3",
+      "text": "Is the incubation period greater than 21 days?",
+      "type": "boolean",
+      "required": true,
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "linked_node": "node3"
+    }
+  ],
+  "quality_measures": [
+    {
+      "id": "measure1",
+      "title": "Fever Etiology Identification",
+      "description": "Percentage of patients with fever who have an identified etiology.",
+      "type": "outcome",
+      "numerator": "Patients with identified etiology",
+      "denominator": "Total patients with fever",
+      "improvement_notation": "increase"
+    }
+  ],
+  "endpoints": [
+    {
+      "id": "endpoint1",
+      "category": "diagnosis",
+      "diagnosis": "Fever due to infectious, inflammatory, malignancy, or other causes",
+      "recommendations": [
+        "Consider further testing",
+        "Initiate treatment based on identified etiology"
+      ],
+      "follow_up": "Follow up in 1 week or sooner if symptoms worsen",
+      "expected_outcome": "Resolution of fever and identification of underlying cause"
+    }
+  ]
+}

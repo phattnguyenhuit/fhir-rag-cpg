@@ -1,0 +1,124 @@
+{
+  "resourceType": "PlanDefinition",
+  "id": "fever-in-the-returning-traveler",
+  "url": "http://example.org/fhir/PlanDefinition/fever-in-the-returning-traveler",
+  "identifier": [
+    {
+      "system": "http://example.org/fhir/identifiers",
+      "value": "fever-in-the-returning-traveler"
+    }
+  ],
+  "version": "1.0.0",
+  "name": "fever_in_the_returning_traveler",
+  "title": "Fever in the Returning Traveler",
+  "type": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/plan-definition-type",
+        "code": "clinical-protocol",
+        "display": "Clinical Protocol"
+      }
+    ]
+  },
+  "status": "draft",
+  "experimental": true,
+  "date": "2025-10-20T16:27:01.888080",
+  "publisher": "CDC",
+  "description": "To identify potential causes of fever in returning travelers",
+  "useContext": [
+    {
+      "code": {
+        "system": "http://terminology.hl7.org/CodeSystem/usage-context-type",
+        "code": "focus",
+        "display": "Clinical Focus"
+      },
+      "valueCodeableConcept": {
+        "text": "Infectious Disease"
+      }
+    }
+  ],
+  "purpose": "To identify potential causes of fever in returning travelers",
+  "usage": "Target Population: Travelers returning with fever",
+  "topic": [
+    {
+      "text": "Fever"
+    }
+  ],
+  "action": [
+    {
+      "id": "node1",
+      "title": "Incubation < 21 days",
+      "description": "Is the incubation period less than 21 days?",
+      "condition": [
+        {
+          "kind": "applicability",
+          "expression": {
+            "language": "text/cql",
+            "expression": "Incubation < 21 days",
+            "description": "Is the incubation period less than 21 days?"
+          }
+        }
+      ],
+      "timingDuration": {
+        "value": "Immediate"
+      },
+      "priority": "urgent",
+      "documentation": [
+        {
+          "type": "documentation",
+          "display": "Evidence Quality: moderate, Recommendation: strong"
+        }
+      ]
+    },
+    {
+      "id": "node2",
+      "title": "Consider causes",
+      "description": "What are the potential causes?",
+      "timingDuration": {
+        "value": "Immediate"
+      },
+      "priority": "urgent",
+      "documentation": [
+        {
+          "type": "documentation",
+          "display": "Evidence Quality: moderate, Recommendation: strong"
+        }
+      ]
+    },
+    {
+      "id": "node3",
+      "title": "Incubation > 21 days",
+      "description": "Is the incubation period greater than 21 days?",
+      "condition": [
+        {
+          "kind": "applicability",
+          "expression": {
+            "language": "text/cql",
+            "expression": "Incubation > 21 days",
+            "description": "Is the incubation period greater than 21 days?"
+          }
+        }
+      ],
+      "timingDuration": {
+        "value": "Immediate"
+      },
+      "priority": "urgent",
+      "documentation": [
+        {
+          "type": "documentation",
+          "display": "Evidence Quality: moderate, Recommendation: strong"
+        }
+      ]
+    },
+    {
+      "id": "action1",
+      "title": "Clinical Action",
+      "description": ""
+    },
+    {
+      "id": "action2",
+      "title": "Clinical Action",
+      "description": ""
+    }
+  ]
+}

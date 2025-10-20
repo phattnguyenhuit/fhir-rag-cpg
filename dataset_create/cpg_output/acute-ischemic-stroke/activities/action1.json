@@ -1,0 +1,18 @@
+{
+  "resourceType": "ActivityDefinition",
+  "id": "action1",
+  "url": "http://example.org/fhir/ActivityDefinition/action1",
+  "name": "iv_tpa_administration",
+  "title": "IV tPA Administration",
+  "status": "draft",
+  "description": "Administer 0.9 mg/kg IV tPA followed by 10% bolus over 60 minutes.",
+  "kind": "MedicationRequest",
+  "intent": "proposal",
+  "priority": "routine",
+  "doNotPerform": false,
+  "dosage": [
+    {
+      "text": "0.9 mg/kg IV Once"
+    }
+  ]
+}

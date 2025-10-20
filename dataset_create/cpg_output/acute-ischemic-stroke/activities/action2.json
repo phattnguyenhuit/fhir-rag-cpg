@@ -1,0 +1,13 @@
+{
+  "resourceType": "ActivityDefinition",
+  "id": "action2",
+  "url": "http://example.org/fhir/ActivityDefinition/action2",
+  "name": "transfer_to_endovascular_capable_stroke_center",
+  "title": "Transfer to endovascular capable stroke center",
+  "status": "draft",
+  "description": "Transfer patient for endovascular treatment options.",
+  "kind": "Procedure",
+  "intent": "proposal",
+  "priority": "routine",
+  "doNotPerform": false
+}

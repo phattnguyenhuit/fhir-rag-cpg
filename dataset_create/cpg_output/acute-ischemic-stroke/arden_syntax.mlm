@@ -1,0 +1,119 @@
+maintenance:
+    title: Acute_Ischemic_Stroke_Management_Algorithm;;
+    mlmname: acute-ischemic-stroke-management-algorithm;;
+    arden: Version 2.10;;
+    version: 1.0.0;;
+    institution: Generated from Medical Diagram;;
+    author: Automated Conversion System;;
+    specialist: ;;
+    date: 2025-10-20;;
+    validation: testing;;
+
+library:
+    purpose: Determine treatment options for acute ischemic stroke;;
+    explanation: This MLM implements clinical decision logic extracted from
+                 a medical flowchart/diagram using AI vision technology and
+                 converted to FHIR PlanDefinition format.;;
+    keywords: Acute Ischemic Stroke;;
+    citations: ;;
+
+knowledge:
+    type: data-driven;;
+    
+    data:
+        /* Patient identifiers */
+        patient_id := read {patient_identifier};
+        encounter_id := read {encounter_id};
+        
+        /* Clinical data elements from diagram */
+        node1 := read {Symptom onset <= 3 hours};
+        node2 := read {Yes};
+        node3 := read {3 < symptom onset <= 4.5};
+        node4 := read {Yes};
+        node5 := read {Discuss with vascular neurologist};
+    ;;
+    
+    evoke:
+        /* Trigger conditions */
+        Symptoms of acute ischemic stroke OR
+        clinical_decision_support_requested
+    ;;
+    
+    logic:
+        /* Initialize */
+        recommendations := [];
+        decision_path := "";
+        
+        /* Implement decision tree logic */
+
+        /* Symptom onset */
+        if node1 then
+            recommendations := recommendations + ["Administer IV tPA"];
+            decision_path := decision_path + " -> node1 (YES)";
+        else
+            recommendations := recommendations + ["Assess further"];
+            decision_path := decision_path + " -> node1 (NO)";
+        endif;
+
+        /* IV tPA Administration */
+        if node2 then
+            recommendations := recommendations + ["Administer IV tPA"];
+            decision_path := decision_path + " -> node2 (YES)";
+        else
+            recommendations := recommendations + ["Consider other options"];
+            decision_path := decision_path + " -> node2 (NO)";
+        endif;
+
+        /* Symptom onset */
+        if node3 then
+            recommendations := recommendations + ["Administer IV tPA"];
+            decision_path := decision_path + " -> node3 (YES)";
+        else
+            recommendations := recommendations + ["Assess for imaging"];
+            decision_path := decision_path + " -> node3 (NO)";
+        endif;
+
+        /* IV tPA Administration */
+        if node4 then
+            recommendations := recommendations + ["Monitor patient"];
+            decision_path := decision_path + " -> node4 (YES)";
+        else
+            recommendations := recommendations + ["Consider alternatives"];
+            decision_path := decision_path + " -> node4 (NO)";
+        endif;
+
+        /* Endovascular Therapy Decision */
+        if node5 then
+            recommendations := recommendations + ["Transfer to endovascular center"];
+            decision_path := decision_path + " -> node5 (YES)";
+        else
+            recommendations := recommendations + ["Admit to stroke unit"];
+            decision_path := decision_path + " -> node5 (NO)";
+        endif;
+
+        /* Prepare output */
+        if count(recommendations) > 0 then
+            alert_needed := true;
+            alert_message := "Clinical Decision Support: " || 
+                          count(recommendations) || " recommendations";
+        else
+            alert_needed := false;
+            alert_message := "No specific recommendations at this time";
+        endif;
+    ;;
+    
+    action:
+        /* Execute recommendations */
+        if alert_needed then
+            write alert_message;
+            write "Decision Path: " || decision_path;
+            
+            for rec in recommendations do
+                write "  - " || rec;
+            enddo;
+            
+            return recommendations;
+        endif;
+    ;;
+
+end:

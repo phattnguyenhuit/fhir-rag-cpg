@@ -17,4 +17,11 @@ Alternatively, create a `.env` file in the project root with:
 OPENAI_API_KEY=your_key_here
 ```
 
-The code uses python-dotenv to load `.env` automatically if present.
+
+```
+Set-Location D:/HealthCare_ChatBot/fhir-rag-cpg/dataset_create
+```
+Run dataset with create dataset.
+```
+D:/HealthCare_ChatBot/fhir-rag-cpg/venv/Scripts/python.exe .\data_genimg.py D:\HealthCare_ChatBot\fhir-rag-cpg\data\stroke_guideline.jpg
+```

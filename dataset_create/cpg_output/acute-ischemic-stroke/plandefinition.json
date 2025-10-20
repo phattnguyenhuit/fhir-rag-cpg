@@ -1,0 +1,224 @@
+{
+  "resourceType": "PlanDefinition",
+  "id": "acute-ischemic-stroke-management-algorithm",
+  "url": "http://example.org/fhir/PlanDefinition/acute-ischemic-stroke-management-algorithm",
+  "identifier": [
+    {
+      "system": "http://example.org/fhir/identifiers",
+      "value": "acute-ischemic-stroke-management-algorithm"
+    }
+  ],
+  "version": "1.0.0",
+  "name": "acute_ischemic_stroke_management_algorithm",
+  "title": "Acute Ischemic Stroke Management Algorithm",
+  "type": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/plan-definition-type",
+        "code": "clinical-protocol",
+        "display": "Clinical Protocol"
+      }
+    ]
+  },
+  "status": "draft",
+  "experimental": true,
+  "date": "2025-10-20T17:07:27.586413",
+  "publisher": "American Heart Association",
+  "description": "Determine treatment options for acute ischemic stroke",
+  "useContext": [
+    {
+      "code": {
+        "system": "http://terminology.hl7.org/CodeSystem/usage-context-type",
+        "code": "focus",
+        "display": "Clinical Focus"
+      },
+      "valueCodeableConcept": {
+        "text": "Neurology"
+      }
+    }
+  ],
+  "purpose": "Determine treatment options for acute ischemic stroke",
+  "usage": "Target Population: Patients with acute ischemic stroke symptoms",
+  "topic": [
+    {
+      "text": "Acute Ischemic Stroke"
+    }
+  ],
+  "action": [
+    {
+      "id": "node1",
+      "title": "Symptom onset",
+      "description": "What is the time since symptom onset?",
+      "condition": [
+        {
+          "kind": "applicability",
+          "expression": {
+            "language": "text/cql",
+            "expression": "Symptom onset <= 3 hours",
+            "description": "What is the time since symptom onset?"
+          }
+        }
+      ],
+      "timingDuration": {
+        "value": "Immediate"
+      },
+      "priority": "stat",
+      "documentation": [
+        {
+          "type": "documentation",
+          "display": "Evidence Quality: high, Recommendation: strong"
+        }
+      ],
+      "action": [
+        {
+          "title": "YES: Administer IV tPA",
+          "description": "Administer 0.9 mg/kg IV tPA"
+        },
+        {
+          "title": "NO: Assess further",
+          "description": "Determine if within 3-4.5 hours"
+        }
+      ]
+    },
+    {
+      "id": "node2",
+      "title": "IV tPA Administration",
+      "description": "Is IV tPA criteria met?",
+      "condition": [
+        {
+          "kind": "applicability",
+          "expression": {
+            "language": "text/cql",
+            "expression": "Yes",
+            "description": "Is IV tPA criteria met?"
+          }
+        }
+      ],
+      "timingDuration": {
+        "value": "Immediate"
+      },
+      "priority": "stat",
+      "documentation": [
+        {
+          "type": "documentation",
+          "display": "Evidence Quality: high, Recommendation: strong"
+        }
+      ],
+      "action": [
+        {
+          "title": "YES: Administer IV tPA",
+          "description": "Administer 0.9 mg/kg IV tPA followed by 10% bolus"
+        },
+        {
+          "title": "NO: Consider other options",
+          "description": "Evaluate for endovascular therapy"
+        }
+      ]
+    },
+    {
+      "id": "node3",
+      "title": "Symptom onset",
+      "description": "Is symptom onset between 3 to 4.5 hours?",
+      "condition": [
+        {
+          "kind": "applicability",
+          "expression": {
+            "language": "text/cql",
+            "expression": "3 < symptom onset <= 4.5",
+            "description": "Is symptom onset between 3 to 4.5 hours?"
+          }
+        }
+      ],
+      "timingDuration": {
+        "value": "Immediate"
+      },
+      "priority": "stat",
+      "documentation": [
+        {
+          "type": "documentation",
+          "display": "Evidence Quality: high, Recommendation: strong"
+        }
+      ],
+      "action": [
+        {
+          "title": "YES: Administer IV tPA",
+          "description": "Administer 0.9 mg/kg IV tPA"
+        },
+        {
+          "title": "NO: Assess for imaging",
+          "description": "Determine if imaging-based therapy is indicated"
+        }
+      ]
+    },
+    {
+      "id": "node4",
+      "title": "IV tPA Administration",
+      "description": "Is IV tPA administered?",
+      "condition": [
+        {
+          "kind": "applicability",
+          "expression": {
+            "language": "text/cql",
+            "expression": "Yes",
+            "description": "Is IV tPA administered?"
+          }
+        }
+      ],
+      "timingDuration": {
+        "value": "Immediate"
+      },
+      "priority": "stat",
+      "documentation": [
+        {
+          "type": "documentation",
+          "display": "Evidence Quality: high, Recommendation: strong"
+        }
+      ],
+      "action": [
+        {
+          "title": "YES: Monitor patient",
+          "description": "Monitor for complications"
+        },
+        {
+          "title": "NO: Consider alternatives",
+          "description": "Evaluate for endovascular therapy"
+        }
+      ]
+    },
+    {
+      "id": "node5",
+      "title": "Endovascular Therapy Decision",
+      "description": "Is endovascular therapy indicated?",
+      "condition": [
+        {
+          "kind": "applicability",
+          "expression": {
+            "language": "text/cql",
+            "expression": "Discuss with vascular neurologist",
+            "description": "Is endovascular therapy indicated?"
+          }
+        }
+      ],
+      "timingDuration": {
+        "value": "Immediate"
+      },
+      "priority": "stat",
+      "documentation": [
+        {
+          "type": "documentation",
+          "display": "Evidence Quality: high, Recommendation: strong"
+        }
+      ],
+      "action": [
+        {
+          "title": "YES: Transfer to endovascular center",
+          "description": "Transfer to endovascular capable stroke center"
+        },
+        {
+          "title": "NO: Admit to stroke unit",
+          "description": "Admit to stroke unit or ICU at stroke center"
+        }
+      ]
+    }
+  ]
+}

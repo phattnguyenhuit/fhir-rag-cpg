@@ -1,0 +1,20 @@
+{
+  "resourceType": "Evidence",
+  "id": "evidence-node4",
+  "url": "http://example.org/fhir/Evidence/evidence-node4",
+  "title": "Evidence for IV tPA Administration",
+  "status": "draft",
+  "description": "Is IV tPA administered?",
+  "certainty": [
+    {
+      "rating": {
+        "text": "high"
+      },
+      "note": [
+        {
+          "text": "Recommendation strength: strong"
+        }
+      ]
+    }
+  ]
+}

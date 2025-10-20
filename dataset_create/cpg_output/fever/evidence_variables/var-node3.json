@@ -1,0 +1,14 @@
+{
+  "resourceType": "EvidenceVariable",
+  "id": "var-node3",
+  "url": "http://example.org/fhir/EvidenceVariable/var-node3",
+  "name": "incubation_period",
+  "title": "Incubation period",
+  "status": "draft",
+  "description": "Measurement: Incubation period (Unit: days)",
+  "note": [
+    {
+      "text": "Normal range: > 21, Threshold: 21"
+    }
+  ]
+}

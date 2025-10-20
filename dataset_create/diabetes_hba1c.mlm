@@ -1,0 +1,49 @@
+maintenance:
+    title: Diabetes_HbA1c_Monitoring;;
+    mlmname: diabetes_hba1c_monitoring;;
+    arden: Version 2.10;;
+    version: 1.0;;
+    institution: Generated;;
+    author: Automated Conversion;;
+    specialist: ;;
+    date: 2025-10-20;;
+    validation: testing;;
+
+library:
+    purpose: Generated from: Patients with diabetes should have HbA1c checked every 3 months.;;
+    explanation: Generated from FHIR PlanDefinition;;
+    keywords: clinical guideline; decision support;;
+    citations: ;;
+
+knowledge:
+    type: data-driven;;
+    data:
+        /* Patient data elements */
+        diagnosis := read {diagnosis};
+        last_test_date := read {last_test_date for 'HbA1c checked every 3 months'};
+        
+    /* Check interval: every 3 months */
+    ;;
+    
+    evoke:
+        /* Trigger when patient record is accessed */
+        patient_encounter
+    ;;
+    
+    logic:
+        if diagnosis includes 'diabetes should have HbA1c checked every 3 months' then
+            recommend_action := true;
+            message := "HbA1c checked every 3 months";
+        else
+            recommend_action := false;
+        endif;
+    ;;
+    
+    action:
+        if recommend_action then
+            write message;
+            return message;
+        endif;
+    ;;
+
+end:
